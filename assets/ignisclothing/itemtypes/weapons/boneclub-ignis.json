@@ -1,0 +1,162 @@
+﻿{
+  "code": "club",
+  "class": "CombatOverhaul:MeleeWeapon",
+  "tags": ["weapon", "weapon-melee", "club", "twohanded", "onehanded"],
+  "behaviors": [
+    {
+      "name": "GroundStorable",
+      "propertiesByType": {
+          "*-skeleton-*": {
+            "layout": "WallHalves",
+            "wallOffY": 1,
+            "sprintKey": true,
+            "selectionBox": {"x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.1, "z2": 1},
+            "collisionBox": {"x1": 0, "y1": 0, "z1": 0, "x2": 0, "y2": 0, "z2": 0}
+          }
+      }
+    }
+  ],
+  "variantgroups": [
+    {"code": "type", "states": ["skeleton"]},
+    {"code": "material", "states": ["tinbronze", "bismuthbronze", "blackbronze"]}
+  ],
+  "skipVariants": [
+        "club-skeleton-cupronickel"
+  ],
+  "textures": {
+      "bonehumanoid.png": {"base": "game:block/creature/bonehumanoid"},
+      "insideskull-small.png": {"base": "game:block/creature/insideskull-small"},
+      "skullhumaniod-small.png": {"base": "game:block/creature/skullhumaniod-small"},
+      "plain.png": {"base": "game:block/leather/plain"}
+  },
+  texturesByType: {
+	    "*-copper": {
+	    	"metal": { base: "game:item/tool/shield/metal/copper" },
+	    },
+	    "*-tinbronze": {
+	    	"metal": { base: "game:item/tool/shield/metal/tinbronze" },
+	    },
+           "*-bismuthbronze": {
+	    	"metal": { base: "game:item/tool/shield/metal/bismuthbronze" }
+	    },
+           "*-blackbronze": {
+	    	"metal": { base: "game:item/tool/shield/metal/blackbronze" }
+	    },
+           "*-iron": {
+	    	"metal": { base: "game:item/tool/shield/metal/iron" }
+	    },
+           "*-meteoriciron": {
+	    	"metal": { base: "game:item/tool/shield/metal/meteoriciron" }
+	    },
+           "*-steel": {
+	    	"metal": { base: "game:item/tool/shield/metal/steel" }
+	    },
+           "*-silver": {
+	    	"metal": { base: "game:item/tool/shield/metal/silver" }
+	    },
+           "*-gold": {
+	    	"metal": { base: "game:item/tool/shield/metal/gold" }
+	    }
+  },
+  "shapeByType": {
+    "*-skeleton-*": {"base": "ignisclothing:item/weapons/boneclub"}
+  },
+  "tool": "club",
+  "attributes": {
+    "handbook": {"groupBy": ["club-*"]},
+    "groundStorageTransformByType": {
+      "*-skeleton-*": {
+          	translation: { x: 0.5, y: 0, z: 0.15 },
+			rotation: { x: 25, y: 0, z: 90 },
+			origin: { x: 0, y: 0, z: 0.5 },
+			scale: 0.8
+      }
+    },
+    "toolrackTransformByType": {
+        "*-skeleton-*": {
+            translation: { x: -0.1, y: 0.4, z: -0 },
+			rotation: { x: -90, y: 0, z: 0 },
+			origin: { x: 0, y: 0, z: 0.5 },
+			scale: 1.2
+        }
+    },
+    "ProficiencyStats": ["meleeProficiency", "clubsProficiency"],
+    "RenderingOffset": false,
+    "OneHandedStance": {
+      "CanAttack": true,
+      "CanParry": false,
+      "CanBlock": false,
+      "CanSprint": true,
+      "AttackSpeedMultiplier": 1.15,
+      "Attack": {
+        "StopOnTerrainHit": true,
+        "StopOnEntityHit": true,
+        "CollideWithTerrain": true,
+        "MaxReach": 9,
+        "DamageTypesByType": {
+          "*-skeleton-tinbronze": [{"Damage": {"DamageType": "BluntAttack", "Tier": 3, "Damage": 4}, "Knockback": 0, "DurabilityDamage": 1, "Collider": [0, 0, 0.5, 1.1, 0, 0.15]}],
+		  "*-skeleton-bismuthbronze": [{"Damage": {"DamageType": "BluntAttack", "Tier": 3, "Damage": 4}, "Knockback": 0, "DurabilityDamage": 1, "Collider": [0, 0, 0.5, 1.1, 0, 0.15]}],
+		  "*-skeleton-blackbronze": [{"Damage": {"DamageType": "BluntAttack", "Tier": 3, "Damage": 4}, "Knockback": 0, "DurabilityDamage": 1, "Collider": [0, 0, 0.5, 1.1, 0, 0.15]}],
+        }
+      },
+      "AttackHitSound": "game:sounds/thud",
+      "AttackAnimation": {"Main": ["armory:club-strike-1h-1", "armory:club-strike-1h-2"]},
+      "TpAttackAnimation": {"Main": "combatoverhaul-falx-slash"},
+      "ReadyAnimation": "armory:club-ready-1h",
+      "IdleAnimation": "armory:club-idle-1h"
+    },
+    "TwoHandedStance": {
+      "CanAttack": true,
+      "CanParry": false,
+      "CanBlock": false,
+      "CanSprint": true,
+      "AttackSpeedMultiplier": 1.15,
+      "Attack": {
+        "StopOnTerrainHit": true,
+        "StopOnEntityHit": true,
+        "CollideWithTerrain": true,
+        "MaxReach": 9,
+        "DamageTypesByType": {
+          "*-skeleton-tinbronze": [{"Damage": {"DamageType": "BluntAttack", "Tier": 3, "Damage": 5}, "Knockback": 1, "DurabilityDamage": 1, "Collider": [0, 0, 0.5, 1.1, 0, 0.15]}],
+		  "*-skeleton-bismuthbronze": [{"Damage": {"DamageType": "BluntAttack", "Tier": 3, "Damage": 5}, "Knockback": 1, "DurabilityDamage": 1, "Collider": [0, 0, 0.5, 1.1, 0, 0.15]}],
+		  "*-skeleton-blackbronze": [{"Damage": {"DamageType": "BluntAttack", "Tier": 3, "Damage": 5}, "Knockback": 1, "DurabilityDamage": 1, "Collider": [0, 0, 0.5, 1.1, 0, 0.15]}],
+        }
+      },
+      "AttackHitSound": "game:sounds/thud",
+      "AttackAnimationByType": {"*-steel": {"Main": ["armory:club-strike-2h-3", "armory:club-strike-2h-4"]}, "*": {"Main": ["armory:club-strike-2h-1", "armory:club-strike-2h-2"]}},
+      "TpAttackAnimation": {"Main": "combatoverhaul-falx-slash"},
+      "ReadyAnimation": "armory:club-ready-2h",
+      "IdleAnimation": "armory:club-idle-2h"
+    }
+  },
+  "durabilitybytype": {
+		"*-tinbronze": 550,
+		"*-bismuthbronze*": 600,
+		"*-blackbronze": 650,
+  },
+  "creativeinventory": {"general": ["*"], "ignisclothing": ["*"]},
+  "guiTransformByType": {
+    "*-skeleton-*": {
+		translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: -23, y: 140, z: -37 },
+		origin: { x: 1, y: 0.6, z: 1 },
+		scale: 2
+    }
+  },
+  "groundTransformByType": {
+      "*-skeleton-*": {
+		translation: { x: 0, y: 0.2, z: 0 },
+		rotation: { x: 0, y: 0, z: 0 },
+		origin: { x: 0, y: 0, z: 0.5 },
+		scale: 4
+      }
+  },
+  "tpHandTransformByType": {
+      "*-skeleton-*": {
+		translation: { x: 0.3, y: 0.1, z: -0.48 },
+		rotation: { x: 90, y: 0, z: 0 },
+		origin: { x: 0, y: 0, z: 0.5 },
+		scale: 1
+      }
+  }
+}

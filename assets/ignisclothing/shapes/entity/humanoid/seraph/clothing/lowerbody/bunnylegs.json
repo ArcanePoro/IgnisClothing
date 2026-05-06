@@ -1,0 +1,130 @@
+{
+	"editor": {
+		"backDropShape": "entity/humanoid/seraph-hairless",
+		"collapsedPaths": "",
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 32,
+	"textureHeight": 76,
+	"textureSizes": {
+		"seraph-naked-hairless.png": [32,76],
+		"fishnets.png": [8,12]
+	},
+	"textures": {
+		"fishnets.png": "ignisclothing:fishnets"
+	},
+	"elements": [
+		{
+			"name": "shoeR",
+			"stepParentName": "LowerFootR",
+			"from": [ -0.015, -0.1, -0.015 ],
+			"to": [ 4.015, 10.1, 3.015 ],
+			"shade": false,
+			"rotationOrigin": [ -0.1, -0.1, -0.1 ],
+			"faces": {
+				"north": { "texture": "#fishnets.png", "uv": [ 0.5, 0.5, 4.5, 10.5 ], "autoUv": false, "snapUv": false },
+				"east": { "texture": "#fishnets.png", "uv": [ 0.5, 0.5, 3.5, 10.5 ], "autoUv": false, "snapUv": false },
+				"south": { "texture": "#fishnets.png", "uv": [ 0.5, 0.5, 4.5, 10.5 ], "autoUv": false, "snapUv": false },
+				"west": { "texture": "#fishnets.png", "uv": [ 0.5, 0.5, 3.5, 10.5 ], "autoUv": false, "snapUv": false },
+				"up": { "texture": "#fishnets.png", "uv": [ 0.5, 6.5, 3.5, 10.5 ], "rotation": 90, "autoUv": false, "snapUv": false },
+				"down": { "texture": "#fishnets.png", "uv": [ 0.5, 6.5, 3.5, 10.5 ], "rotation": 90, "autoUv": false, "snapUv": false }
+			}
+		},
+		{
+			"name": "shoeL",
+			"stepParentName": "LowerFootL",
+			"from": [ -0.015, -0.1, -0.015 ],
+			"to": [ 4.015, 10.1, 3.015 ],
+			"shade": false,
+			"rotationOrigin": [ -0.1, -0.1, -0.1 ],
+			"faces": {
+				"north": { "texture": "#fishnets.png", "uv": [ 0.5, 0.5, 4.5, 10.5 ], "autoUv": false, "snapUv": false },
+				"east": { "texture": "#fishnets.png", "uv": [ 0.5, 0.5, 3.5, 10.5 ], "autoUv": false, "snapUv": false },
+				"south": { "texture": "#fishnets.png", "uv": [ 0.5, 0.5, 4.5, 10.5 ], "autoUv": false, "snapUv": false },
+				"west": { "texture": "#fishnets.png", "uv": [ 0.5, 0.5, 3.5, 10.5 ], "autoUv": false, "snapUv": false },
+				"up": { "texture": "#fishnets.png", "uv": [ 0.5, 6.5, 3.5, 10.5 ], "rotation": 90, "autoUv": false, "snapUv": false },
+				"down": { "texture": "#fishnets.png", "uv": [ 0.5, 6.5, 3.5, 10.5 ], "rotation": 90, "autoUv": false, "snapUv": false }
+			}
+		},
+		{
+			"name": "UpperFootLeft",
+			"stepParentName": "UpperFootL",
+			"from": [ -0.1, -0.1, -0.1 ],
+			"to": [ -0.1, -0.1, -0.1 ],
+			"rotationOrigin": [ -0.1, -0.1, -0.1 ],
+			"faces": {
+			},
+			"children": [
+				{
+					"name": "UpperFootLeft_geo",
+					"from": [ 0.085, 0.05, 0.085 ],
+					"to": [ 4.32, 9.05, 3.32 ],
+					"shade": false,
+					"rotationOrigin": [ 0.085, 0.05, 0.085 ],
+					"faces": {
+						"north": { "texture": "#fishnets.png", "uv": [ 0.5, 2.5, 4.5, 10.5 ], "autoUv": false, "snapUv": false },
+						"east": { "texture": "#fishnets.png", "uv": [ 1.5, 0.5, 4.5, 8.5 ], "autoUv": false, "snapUv": false },
+						"south": { "texture": "#fishnets.png", "uv": [ 0.5, 2.5, 4.5, 10.5 ], "autoUv": false, "snapUv": false },
+						"west": { "texture": "#fishnets.png", "uv": [ 1.5, 0.5, 4.5, 8.5 ], "autoUv": false, "snapUv": false },
+						"up": { "texture": "#fishnets.png", "uv": [ 0.5, 0.5, 1.5, 1.5 ], "autoUv": false, "snapUv": false },
+						"down": { "texture": "#fishnets.png", "uv": [ 1.5, 6.5, 4.5, 10.5 ], "rotation": 90, "autoUv": false, "snapUv": false }
+					}
+				}
+			]
+		},
+		{
+			"name": "UpperFootRight",
+			"stepParentName": "UpperFootR",
+			"from": [ -0.1, -0.1, -0.1 ],
+			"to": [ -0.1, -0.1, -0.1 ],
+			"rotationOrigin": [ -0.1, -0.1, -0.1 ],
+			"faces": {
+			},
+			"children": [
+				{
+					"name": "UpperFootRight_geo",
+					"from": [ 0.085, 0.0, 0.085 ],
+					"to": [ 4.32, 9.0, 3.32 ],
+					"shade": false,
+					"rotationOrigin": [ 0.085, 0.0, 0.085 ],
+					"faces": {
+						"north": { "texture": "#fishnets.png", "uv": [ 0.5, 2.5, 4.5, 10.5 ], "autoUv": false, "snapUv": false },
+						"east": { "texture": "#fishnets.png", "uv": [ 1.5, 0.5, 4.5, 8.5 ], "autoUv": false, "snapUv": false },
+						"south": { "texture": "#fishnets.png", "uv": [ 0.5, 2.5, 4.5, 10.5 ], "autoUv": false, "snapUv": false },
+						"west": { "texture": "#fishnets.png", "uv": [ 1.5, 0.5, 4.5, 8.5 ], "autoUv": false, "snapUv": false },
+						"up": { "texture": "#fishnets.png", "uv": [ 0.5, 0.5, 1.5, 1.5 ], "autoUv": false, "snapUv": false },
+						"down": { "texture": "#fishnets.png", "uv": [ 1.5, 6.5, 4.5, 10.5 ], "rotation": 90, "autoUv": false, "snapUv": false }
+					}
+				}
+			]
+		},
+		{
+			"name": "LowerTorsoOrigin",
+			"stepParentName": "LowerTorso",
+			"from": [ 3.0, 3.0, 3.0 ],
+			"to": [ 3.0, 3.0, 3.0 ],
+			"rotationOrigin": [ 3.0, 3.0, 3.0 ],
+			"faces": {
+			},
+			"children": [
+				{
+					"name": "LowerTorsoOrigin_geo",
+					"from": [ -3.02, -3.02, -3.02 ],
+					"to": [ 2.02, 2.02, 3.02 ],
+					"rotationOrigin": [ -3.02, -3.02, -3.02 ],
+					"faces": {
+						"north": { "texture": "#fishnets.png", "uv": [ 0.0, 6.0, 5.0, 11.0 ], "autoUv": false, "snapUv": false, "windMode": [-1,-1,-1,-1], "windData": [0,1,1,0] },
+						"east": { "texture": "#fishnets.png", "uv": [ 0.0, 5.0, 5.0, 11.0 ], "rotation": 90, "autoUv": false, "snapUv": false, "windMode": [-1,-1,-1,-1], "windData": [0,1,1,0] },
+						"south": { "texture": "#fishnets.png", "uv": [ 0.0, 6.0, 5.0, 11.0 ], "rotation": 90, "autoUv": false, "snapUv": false },
+						"west": { "texture": "#fishnets.png", "uv": [ 0.0, 5.0, 5.0, 11.0 ], "rotation": 90, "autoUv": false, "snapUv": false },
+						"up": { "texture": "#fishnets.png", "uv": [ 1.5, 3.5, 7.54, 8.54 ], "rotation": 270, "autoUv": false, "snapUv": false, "windMode": [-1,-1,-1,-1], "windData": [1,1,1,1] },
+						"down": { "texture": "#fishnets.png", "uv": [ 0.0, 5.0, 5.0, 11.0 ], "rotation": 180, "autoUv": false, "snapUv": false, "windMode": [-1,-1,-1,-1] }
+					}
+				}
+			]
+		}
+	],
+	"animations": [
+	]
+}

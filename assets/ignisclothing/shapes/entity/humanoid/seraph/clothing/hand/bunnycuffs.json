@@ -1,0 +1,131 @@
+{
+	"editor": {
+		"backDropShape": "entity/humanoid/seraph-hairless",
+		"collapsedPaths": "",
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 32,
+	"textureHeight": 76,
+	"textureSizes": {
+		"seraph-naked-hairless.png": [32,76],
+		"white.png": [16,16],
+		"gold.png.png": [16,16],
+	},
+	"textures": {
+		"white.png": "game:item/tool/shield/leather/white",
+		"gold.png": "game:item/tool/shield/metal/gold"
+	},
+	"elements": [
+		{
+			"name": "rightcuff",
+			"stepParentName": "LowerArmR",
+			"from": [ 0.75, 1.5, 1.05 ],
+			"to": [ 0.75, 1.5, 1.05 ],
+			"rotationOrigin": [ 0.75, 1.499, 1.05 ],
+			"faces": {
+			},
+			"children": [
+				{
+					"name": "cube",
+					"from": [ -0.975, -0.25, -1.275 ],
+					"to": [ 2.025, 1.75, 1.225 ],
+					"rotationOrigin": [ 0.025, 0.75, -0.15 ],
+					"faces": {
+						"north": { "texture": "#white.png", "uv": [ 5.0, 6.5, 8.0, 8.5 ], "autoUv": false, "snapUv": false },
+						"east": { "texture": "#white.png", "uv": [ 7.0, 8.0, 9.5, 10.0 ], "autoUv": false, "snapUv": false },
+						"south": { "texture": "#white.png", "uv": [ 8.0, 8.5, 11.0, 10.5 ], "autoUv": false, "snapUv": false },
+						"west": { "texture": "#white.png", "uv": [ 7.0, 5.0, 9.5, 7.0 ], "autoUv": false, "snapUv": false },
+						"up": { "texture": "#white.png", "uv": [ 5.0, 8.5, 8.0, 11.0 ], "autoUv": false, "snapUv": false },
+						"down": { "texture": "#white.png", "uv": [ 6.0, 6.5, 9.0, 9.0 ], "autoUv": false, "snapUv": false }
+					}
+				},
+				{
+					"name": "cube",
+					"from": [ 2.025, -0.25, -0.275 ],
+					"to": [ 3.525, 1.75, 0.225 ],
+					"rotationOrigin": [ 0.025, 0.75, -0.15 ],
+					"faces": {
+						"north": { "texture": "#white.png", "uv": [ 6.5, 7.5, 8.0, 9.5 ], "autoUv": false, "snapUv": false },
+						"east": { "texture": "#white.png", "uv": [ 7.5, 5.0, 8.0, 7.0 ], "autoUv": false, "snapUv": false },
+						"south": { "texture": "#white.png", "uv": [ 8.0, 7.5, 9.5, 9.5 ], "autoUv": false, "snapUv": false },
+						"west": { "texture": "#white.png", "uv": [ 6.0, 6.5, 6.5, 8.5 ], "autoUv": false, "snapUv": false },
+						"up": { "texture": "#white.png", "uv": [ 7.0, 9.0, 8.5, 9.5 ], "autoUv": false, "snapUv": false },
+						"down": { "texture": "#white.png", "uv": [ 9.5, 8.0, 11.0, 8.5 ], "autoUv": false, "snapUv": false }
+					}
+				},
+				{
+					"name": "cube",
+					"from": [ 2.525, 0.5, -0.325 ],
+					"to": [ 3.025, 1.0, 0.275 ],
+					"rotationOrigin": [ 2.775, 0.75, -0.025 ],
+					"rotationZ": 45.0,
+					"faces": {
+						"north": { "texture": "#gold.png", "uv": [ 8.0, 5.5, 8.5, 6.0 ], "autoUv": false, "snapUv": false },
+						"east": { "texture": "#gold.png", "uv": [ 8.5, 6.5, 9.1, 7.0 ], "autoUv": false, "snapUv": false },
+						"south": { "texture": "#gold.png", "uv": [ 6.0, 5.5, 6.5, 6.0 ], "autoUv": false, "snapUv": false },
+						"west": { "texture": "#gold.png", "uv": [ 8.0, 3.5, 8.6, 4.0 ], "autoUv": false, "snapUv": false },
+						"up": { "texture": "#gold.png", "uv": [ 7.0, 5.5, 7.5, 6.1 ], "autoUv": false, "snapUv": false },
+						"down": { "texture": "#gold.png", "uv": [ 6.5, 4.0, 7.0, 4.6 ], "autoUv": false, "snapUv": false }
+					}
+				}
+			]
+		},
+		{
+			"name": "leftcuff",
+			"stepParentName": "LowerArmL",
+			"from": [ 0.75, 1.5, 0.95 ],
+			"to": [ 0.75, 1.5, 0.95 ],
+			"rotationOrigin": [ 0.75, 1.5, 0.95 ],
+			"faces": {
+			},
+			"children": [
+				{
+					"name": "cube",
+					"from": [ -0.975, -0.25, -1.225 ],
+					"to": [ 2.025, 1.75, 1.275 ],
+					"rotationOrigin": [ 0.025, 0.75, 0.15 ],
+					"faces": {
+						"north": { "texture": "#white.png", "uv": [ 9.0, 6.5, 6.0, 8.5 ], "autoUv": false, "snapUv": false },
+						"east": { "texture": "#white.png", "uv": [ 8.5, 6.5, 6.0, 8.5 ], "autoUv": false, "snapUv": false },
+						"south": { "texture": "#white.png", "uv": [ 9.5, 7.0, 6.5, 9.0 ], "autoUv": false, "snapUv": false },
+						"west": { "texture": "#white.png", "uv": [ 8.5, 7.0, 6.0, 9.0 ], "autoUv": false, "snapUv": false },
+						"up": { "texture": "#white.png", "uv": [ 6.0, 9.0, 9.0, 6.5 ], "autoUv": false, "snapUv": false },
+						"down": { "texture": "#white.png", "uv": [ 6.5, 8.5, 9.5, 6.0 ], "autoUv": false, "snapUv": false }
+					}
+				},
+				{
+					"name": "cube",
+					"from": [ 2.025, -0.25, -0.225 ],
+					"to": [ 3.525, 1.75, 0.275 ],
+					"rotationOrigin": [ 0.025, 0.75, 0.15 ],
+					"faces": {
+						"north": { "texture": "#white.png", "uv": [ 9.5, 8.5, 8.0, 10.5 ], "autoUv": false, "snapUv": false },
+						"east": { "texture": "#white.png", "uv": [ 8.0, 6.5, 7.5, 8.5 ], "autoUv": false, "snapUv": false },
+						"south": { "texture": "#white.png", "uv": [ 8.5, 8.5, 7.0, 10.5 ], "autoUv": false, "snapUv": false },
+						"west": { "texture": "#white.png", "uv": [ 7.0, 6.0, 6.5, 8.0 ], "autoUv": false, "snapUv": false },
+						"up": { "texture": "#white.png", "uv": [ 6.5, 7.0, 8.0, 6.5 ], "autoUv": false, "snapUv": false },
+						"down": { "texture": "#white.png", "uv": [ 8.0, 7.0, 9.5, 6.5 ], "autoUv": false, "snapUv": false }
+					}
+				},
+				{
+					"name": "cube",
+					"from": [ 2.525, 0.5, -0.275 ],
+					"to": [ 3.025, 1.0, 0.325 ],
+					"rotationOrigin": [ 2.775, 0.75, 0.025 ],
+					"rotationZ": 45.0,
+					"faces": {
+						"north": { "texture": "#gold.png", "uv": [ 9.0, 7.0, 9.5, 7.5 ], "autoUv": false, "snapUv": false },
+						"east": { "texture": "#gold.png", "uv": [ 9.5, 8.0, 10.1, 8.5 ], "autoUv": false, "snapUv": false },
+						"south": { "texture": "#gold.png", "uv": [ 7.0, 7.0, 7.5, 7.5 ], "autoUv": false, "snapUv": false },
+						"west": { "texture": "#gold.png", "uv": [ 9.0, 5.0, 9.6, 5.5 ], "autoUv": false, "snapUv": false },
+						"up": { "texture": "#gold.png", "uv": [ 8.0, 7.0, 8.5, 7.6 ], "autoUv": false, "snapUv": false },
+						"down": { "texture": "#gold.png", "uv": [ 7.5, 5.5, 8.0, 6.1 ], "autoUv": false, "snapUv": false }
+					}
+				}
+			]
+		}
+	],
+	"animations": [
+	]
+}

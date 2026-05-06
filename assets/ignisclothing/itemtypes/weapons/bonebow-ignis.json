@@ -1,0 +1,87 @@
+﻿{
+  "code": "bow",
+  "class": "CombatOverhaul:Bow",
+  "tags": ["weapon", "weapon-ranged", "bow"],
+  "variantgroups": [{"code": "type", "states": ["bonebowlong"]}],
+  "creativeinventory": {"general": ["*"], "items": ["*"], "tools": ["*"], "ignisclothing": ["*"]},
+  "maxstacksize": 1,
+  "durabilityByType": {"*-bonebowlong": 750},
+  "tool": "bow",
+  "behaviors": [
+    {"name": "CombatOverhaul:AnimatableAttachable", "properties": {"animated-shape": "ignisclothing:item/weapons/bonebowlong"}},
+    {
+      "name": "GroundStorable",
+      "properties": {
+        "layout": "WallHalves",
+        "wallOffY": 2,
+        "sprintKey": true,
+        "selectionBox": {"x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.1, "z2": 1},
+        "collisionBox": {"x1": 0, "y1": 0, "z1": 0, "x2": 0, "y2": 0, "z2": 0}
+      }
+    }
+  ],
+  "attributes": {
+    "toolrackTransformByType": {
+      "*-bonebowlong": {
+          	translation: { x: -0.2, y: 1.1, z: 0.5 },
+			rotation: { x: 90, y: -5, z: 0 },
+			origin: { x: 0, y: 0, z: 0 },
+			scale: 1.4
+      }
+    },
+    "groundStorageTransformByType": {
+      "*-bonebowlong": {
+          	translation: { x: 0.4, y: 0.4, z: 0.25 },
+			rotation: { x: 10, y: 90, z: 90 },
+			origin: { x: 0, y: 0, z: 0.5 }
+      }
+    },
+    "ArrowWildcard": "*arrow-*",
+    "ArrowTransform": {"translation": {"x": -3, "y": 0.3, "z": 0}, "rotation": {"x": 0, "y": 0, "z": 1}, "scale": 0.75},
+    "ArrowDamageMultiplierByType": {"*-bonebowlong": 3},
+    "ArrowDamageTierByType": {"*-bonebowlong": 4},
+    "ArrowVelocityByType": {"*-bonebowlong": 2.4},
+    "ProficiencyStats": ["rangedProficiency", "bowsProficiency"],
+    "ReadyAnimation": "ignisclothing:bonebowlong-ready",
+    "IdleAnimation": "ignisclothing:bonebowlong-idle",
+    "WalkAnimation": "combatoverhaul:bow-walk",
+    "RunAnimation": "combatoverhaul:bow-run",
+    "SwimAnimation": "combatoverhaul:bow-swim",
+    "SwimIdleAnimation": "combatoverhaul:bow-swimidle",
+    "LoadAnimation": "ignisclothing:bonebowlong-load",
+    "DrawAnimation": "ignisclothing:bonebowlong-draw",
+    "DrawAfterLoadAnimation": "ignisclothing:bonebowlong-draw-short",
+    "ReleaseAnimation": "ignisclothing:bonebowlong-release-long",
+    "TpAimAnimationByType": {"*-bonebowlong": "bowaimlong"},
+    "ZeroingByType": {"*-bonebowlong": 0.5},
+    "ScreenShakeStrengthByType": {"*-bonebowlong": 0.25},
+    "TwoHanded": true,
+    "AimingByType": {
+      "*-bonebowlong": {
+        "AimDifficulty": 1,
+        "CursorType": "Moving",
+        "AccuracyOvertimeSec": 6,
+        "CursorTextureReady": "combatoverhaul:gui/aiming/arrow-full.png",
+        "CursorTextureNotReady": "combatoverhaul:gui/aiming/arrow-part.png",
+        "AllowSprint": false,
+        "MoveSpeedPenalty": 0.7,
+        "AimDrift": 150,
+        "AimTwitch": 45,
+        "AnimationFollowX": 5.5,
+        "AnimationFollowY": 5.4,
+        "VerticalLimit": 0.25,
+        "VerticalOffset": -0.05
+      }
+    }
+  },
+  "shape": {"base": "ignisclothing:item/weapons/bonebowlong"},
+  "guiTransformByType": {
+    "*-bonebowlong": {
+        "translation": {"x": 0, "y": 0, "z": 0}, "rotation": {"x": -135, "y": 25, "z": 41}, "origin": {"x": 0.47, "y": 0, "z": 0.59}, "scale": 1.2
+    }
+  },
+  "groundTransform": {"translation": {"x": 0, "y": 0, "z": 0}, "rotation": {"x": 0, "y": 0, "z": 0}, "origin": {"x": 0.5, "y": 0, "z": 0.5}, "scale": 4},
+  "tpHandTransformByType": {
+    "*-bonebowlong": {"translation": {"x": -0.58, "y": 0.03, "z": -0.5}, "rotation": {"x": 90, "y": 0, "z": 0}, "origin": {"x": 0.5, "y": 0, "z": 0.5}, "scale": 1}
+  }
+}

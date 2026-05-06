@@ -1,0 +1,818 @@
+﻿{
+    "code": "club",
+    "class": "CombatOverhaul:MeleeWeapon",
+    "tags": [ "weapon", "weapon-melee", "club", "twohanded", "onehanded" ],
+    "behaviors": [
+        {
+            "name": "GroundStorable",
+            "propertiesByType": {
+                "*-bigwrench-*": {
+                    "layout": "WallHalves",
+                    "wallOffY": 3,
+                    "sprintKey": true,
+                    "selectionBox": {
+                        "x1": 0,
+                        "y1": 0,
+                        "z1": 0,
+                        "x2": 1,
+                        "y2": 0.1,
+                        "z2": 1
+                    },
+                    "collisionBox": {
+                        "x1": 0,
+                        "y1": 0,
+                        "z1": 0,
+                        "x2": 0,
+                        "y2": 0,
+                        "z2": 0
+                    }
+                }
+            }
+        }
+    ],
+    "variantgroups": [
+        {
+            "code": "type",
+            "states": [ "bigwrench" ]
+        },
+        {
+            "code": "material",
+            "states": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+        }
+    ],
+    "texturesByType": {
+        "*-copper": {
+            "metal": { "base": "game:item/tool/shield/metal/copper" }
+        },
+        "*-tinbronze": {
+            "metal": { "base": "game:item/tool/shield/metal/tinbronze" }
+        },
+        "*-bismuthbronze": {
+            "metal": { "base": "game:item/tool/shield/metal/bismuthbronze" }
+        },
+        "*-blackbronze": {
+            "metal": { "base": "game:item/tool/shield/metal/blackbronze" }
+        },
+        "*-iron": {
+            "metal": { "base": "game:item/tool/shield/metal/iron" }
+        },
+        "*-meteoriciron": {
+            "metal": { "base": "game:item/tool/shield/metal/meteoriciron" }
+        },
+        "*-steel": {
+            "metal": { "base": "game:item/tool/shield/metal/steel" }
+        },
+        "*-silver": {
+            "metal": { "base": "game:item/tool/shield/metal/silver" }
+        },
+        "*-gold": {
+            "metal": { "base": "game:item/tool/shield/metal/gold" }
+        }
+    },
+    "shapeByType": {
+        "*-bigwrench*-*": { "base": "ignisclothing:item/weapons/bigwrench" }
+    },
+    "tool": "club",
+    "attributes": {
+        "handbook": { "groupBy": [ "club-*" ] },
+        "groundStorageTransformByType": {
+            "*-bigwrench*-*": {
+                "translation": {
+                    "x": 0.5,
+                    "y": 0,
+                    "z": -0.1
+                },
+                "rotation": {
+                    "x": 10,
+                    "y": 0,
+                    "z": 90
+                },
+                "origin": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0.5
+                }
+            }
+        },
+        "toolrackTransformByType": {
+            "*-bigwrench*-*": {
+                "translation": {
+                    "x": -0.1,
+                    "y": 0.4,
+                    "z": -0.5
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": -45,
+                    "z": 0
+                },
+                "origin": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0.5
+                },
+                "scale": 0.6
+            }
+        },
+        "ProficiencyStats": [ "meleeProficiency", "clubsProficiency" ],
+        "RenderingOffset": false,
+        "OneHandedStance": {
+            "CanAttack": true,
+            "CanParry": false,
+            "CanBlock": false,
+            "CanSprint": true,
+            "AttackSpeedMultiplier": 0.5,
+            "Attack": {
+                "StopOnTerrainHit": true,
+                "StopOnEntityHit": true,
+                "CollideWithTerrain": true,
+                "MaxReach": 9,
+                "DamageTypes": [
+                    {
+                        "DamageByType": {
+                            "*-bigwrench*-copper": {
+                                "DamageType": "BluntAttack",
+                                "Tier": 2,
+                                "Damage": 4
+                            },
+                            "*-bigwrench*-tinbronze": {
+                                "DamageType": "BluntAttack",
+                                "Tier": 3,
+                                "Damage": 4.5
+                            },
+                            "*-bigwrench*-bismuthbronze": {
+                                "DamageType": "BluntAttack",
+                                "Tier": 3,
+                                "Damage": 4.5
+                            },
+                            "*-bigwrench*-blackbronze": {
+                                "DamageType": "BluntAttack",
+                                "Tier": 4,
+                                "Damage": 4.5
+                            },
+                            "*-bigwrench*-iron": {
+                                "DamageType": "BluntAttack",
+                                "Tier": 4,
+                                "Damage": 5
+                            },
+                            "*-bigwrench*-meteoriciron": {
+                                "DamageType": "BluntAttack",
+                                "Tier": 5,
+                                "Damage": 5
+                            },
+                            "*-bigwrench*-steel": {
+                                "DamageType": "BluntAttack",
+                                "Tier": 6,
+                                "Damage": 5.5
+                            },
+                            "*-bigwrench*-silver": {
+                                "DamageType": "BluntAttack",
+                                "Tier": 4,
+                                "Damage": 5
+                            },
+                            "*-bigwrench*-gold": {
+                                "DamageType": "BluntAttack",
+                                "Tier": 4,
+                                "Damage": 5
+                            }
+                        },
+                        "Knockback": 1,
+                        "DurabilityDamage": 1,
+                        "Collider": [ 1.8, 0, 0.4, 2.6999998, 0, 0.050000012 ]
+                    },
+                    {
+                        "DamageByType": {
+                            "*-bigwrench*-copper": {
+                                "DamageType": "BluntAttack",
+                                "Tier": 2,
+                                "Damage": 3
+                            },
+                            "*-bigwrench*-tinbronze": {
+                                "DamageType": "BluntAttack",
+                                "Tier": 3,
+                                "Damage": 3.5
+                            },
+                            "*-bigwrench*-bismuthbronze": {
+                                "DamageType": "BluntAttack",
+                                "Tier": 3,
+                                "Damage": 3.5
+                            },
+                            "*-bigwrench*-blackbronze": {
+                                "DamageType": "BluntAttack",
+                                "Tier": 4,
+                                "Damage": 3.5
+                            },
+                            "*-bigwrench*-iron": {
+                                "DamageType": "BluntAttack",
+                                "Tier": 4,
+                                "Damage": 4
+                            },
+                            "*-bigwrench*-meteoriciron": {
+                                "DamageType": "BluntAttack",
+                                "Tier": 5,
+                                "Damage": 4
+                            },
+                            "*-bigwrench*-steel": {
+                                "DamageType": "BluntAttack",
+                                "Tier": 6,
+                                "Damage": 4.5
+                            },
+                            "*-bigwrench*-silver": {
+                                "DamageType": "BluntAttack",
+                                "Tier": 4,
+                                "Damage": 4
+                            },
+                            "*-bigwrench*-gold": {
+                                "DamageType": "BluntAttack",
+                                "Tier": 4,
+                                "Damage": 4
+                            }
+                        },
+                        "Knockback": 1,
+                        "DurabilityDamage": 1,
+                        "Collider": [ 0, 0, 0.5, 1.9, 0, 0.5 ]
+                    }
+                ]
+            },
+            "AttackHitSound": "game:sounds/thud",
+            "AttackAnimation": { "Main": [ "armory:club-strike-1h-1", "armory:club-strike-1h-2" ] },
+            "TpAttackAnimation": { "Main": "combatoverhaul-falx-slash" },
+            "ReadyAnimation": "armory:club-ready-1h",
+            "IdleAnimation": "armory:club-idle-1h"
+        },
+        "TwoHandedStance": {
+            "CanAttack": true,
+            "CanParry": false,
+            "CanBlock": true,
+            "CanSprint": true,
+            "BlockCooldownMs": 0,
+            "AttackSpeedMultiplier": 0.85,
+            "DirectionalAttacksByType": {
+                "*-bigwrench-*": {
+                    "Bottom": {
+                        "StopOnTerrainHit": true,
+                        "StopOnEntityHit": false,
+                        "CollideWithTerrain": true,
+                        "HitOnlyOneEntity": false,
+                        "MaxReach": 9,
+                        "DamageTypes": [
+                            {
+                                "DamageByType": {
+                                    "*-bigwrench-copper": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 2,
+                                        "Damage": 6
+                                    },
+                                    "*-bigwrench-tinbronze": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 3,
+                                        "Damage": 6.5
+                                    },
+                                    "*-bigwrench-bismuthbronze": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 3,
+                                        "Damage": 6.5
+                                    },
+                                    "*-bigwrench-blackbronze": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 4,
+                                        "Damage": 6.5
+                                    },
+                                    "*-bigwrench-iron": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 4,
+                                        "Damage": 7
+                                    },
+                                    "*-bigwrench-meteoriciron": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 5,
+                                        "Damage": 7
+                                    },
+                                    "*-bigwrench-steel": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 6,
+                                        "Damage": 7.5
+                                    },
+                                    "*-bigwrench-silver": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 4,
+                                        "Damage": 7
+                                    },
+                                    "*-bigwrench-gold": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 4,
+                                        "Damage": 7
+                                    }
+                                },
+                                "Knockback": 2,
+                                "DurabilityDamage": 1,
+                                "Collider": [ 0, 0, 0.5, 0.4, 0, 0.5 ]
+                            },
+                            {
+                                "DamageByType": {
+                                    "*-bigwrench-copper": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 2,
+                                        "Damage": 5
+                                    },
+                                    "*-bigwrench-tinbronze": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 3,
+                                        "Damage": 5.5
+                                    },
+                                    "*-bigwrench-bismuthbronze": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 3,
+                                        "Damage": 5.5
+                                    },
+                                    "*-bigwrench-blackbronze": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 4,
+                                        "Damage": 5.5
+                                    },
+                                    "*-bigwrench-iron": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 4,
+                                        "Damage": 6
+                                    },
+                                    "*-bigwrench-meteoriciron": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 5,
+                                        "Damage": 6
+                                    },
+                                    "*-bigwrench-steel": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 6,
+                                        "Damage": 6.5
+                                    },
+                                    "*-bigwrench-silver": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 4,
+                                        "Damage": 6
+                                    },
+                                    "*-bigwrench-gold": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 4,
+                                        "Damage": 6
+                                    }
+                                },
+                                "Knockback": 2,
+                                "DurabilityDamage": 1,
+                                "Collider": [ 0.4, 0, 0.5, 2.7, 0, 0.5 ]
+                            }
+                        ]
+                    },
+                    "Right": {
+                        "StopOnTerrainHit": true,
+                        "StopOnEntityHit": false,
+                        "CollideWithTerrain": true,
+                        "HitOnlyOneEntity": false,
+                        "MaxReach": 9,
+                        "DamageTypes": [
+                            {
+                                "DamageByType": {
+                                    "*-bigwrench-copper": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 2,
+                                        "Damage": 6
+                                    },
+                                    "*-bigwrench-tinbronze": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 3,
+                                        "Damage": 6.5
+                                    },
+                                    "*-bigwrench-bismuthbronze": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 3,
+                                        "Damage": 6.5
+                                    },
+                                    "*-bigwrench-blackbronze": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 4,
+                                        "Damage": 6.5
+                                    },
+                                    "*-bigwrench-iron": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 4,
+                                        "Damage": 7
+                                    },
+                                    "*-bigwrench-meteoriciron": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 5,
+                                        "Damage": 7
+                                    },
+                                    "*-bigwrench-steel": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 6,
+                                        "Damage": 7.5
+                                    },
+                                    "*-bigwrench-silver": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 4,
+                                        "Damage": 7
+                                    },
+                                    "*-bigwrench-gold": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 4,
+                                        "Damage": 7
+                                    }
+                                },
+                                "Knockback": 0,
+                                "DurabilityDamage": 1,
+                                "Collider": [ 1.8, 0, 0.4, 2.6999998, 0, 0.050000012 ]
+                            },
+                            {
+                                "DamageByType": {
+                                    "*-bigwrench-copper": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 2,
+                                        "Damage": 5
+                                    },
+                                    "*-bigwrench-tinbronze": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 3,
+                                        "Damage": 5.5
+                                    },
+                                    "*-bigwrench-bismuthbronze": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 3,
+                                        "Damage": 5.5
+                                    },
+                                    "*-bigwrench-blackbronze": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 4,
+                                        "Damage": 5.5
+                                    },
+                                    "*-bigwrench-iron": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 4,
+                                        "Damage": 6
+                                    },
+                                    "*-bigwrench-meteoriciron": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 5,
+                                        "Damage": 6
+                                    },
+                                    "*-bigwrench-steel": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 6,
+                                        "Damage": 6.5
+                                    },
+                                    "*-bigwrench-silver": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 4,
+                                        "Damage": 6
+                                    },
+                                    "*-bigwrench-gold": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 4,
+                                        "Damage": 6
+                                    }
+                                },
+                                "Knockback": 0,
+                                "DurabilityDamage": 1,
+                                "Collider": [ 0, 0, 0.5, 1.9, 0, 0.5 ]
+                            }
+                        ]
+                    },
+                    "Left": {
+                        "StopOnTerrainHit": true,
+                        "StopOnEntityHit": false,
+                        "CollideWithTerrain": true,
+                        "HitOnlyOneEntity": false,
+                        "MaxReach": 9,
+                        "DamageTypes": [
+                            {
+                                "DamageByType": {
+                                    "*-bigwrench-copper": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 2,
+                                        "Damage": 6
+                                    },
+                                    "*-bigwrench-tinbronze": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 3,
+                                        "Damage": 6.5
+                                    },
+                                    "*-bigwrench-bismuthbronze": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 3,
+                                        "Damage": 6.5
+                                    },
+                                    "*-bigwrench-blackbronze": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 4,
+                                        "Damage": 6.5
+                                    },
+                                    "*-bigwrench-iron": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 4,
+                                        "Damage": 7
+                                    },
+                                    "*-bigwrench-meteoriciron": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 5,
+                                        "Damage": 7
+                                    },
+                                    "*-bigwrench-steel": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 6,
+                                        "Damage": 7.5
+                                    },
+                                    "*-bigwrench-silver": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 4,
+                                        "Damage": 7
+                                    },
+                                    "*-bigwrench-gold": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 4,
+                                        "Damage": 7
+                                    }
+                                },
+                                "Knockback": 0,
+                                "DurabilityDamage": 1,
+                                "Collider": [ 1.8, 0, 0.4, 2.6999998, 0, 0.050000012 ]
+                            },
+                            {
+                                "DamageByType": {
+                                    "*-bigwrench-copper": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 2,
+                                        "Damage": 5
+                                    },
+                                    "*-bigwrench-tinbronze": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 3,
+                                        "Damage": 5.5
+                                    },
+                                    "*-bigwrench-bismuthbronze": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 3,
+                                        "Damage": 5.5
+                                    },
+                                    "*-bigwrench-blackbronze": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 4,
+                                        "Damage": 5.5
+                                    },
+                                    "*-bigwrench-iron": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 4,
+                                        "Damage": 6
+                                    },
+                                    "*-bigwrench-meteoriciron": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 5,
+                                        "Damage": 6
+                                    },
+                                    "*-bigwrench-steel": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 6,
+                                        "Damage": 6.5
+                                    },
+                                    "*-bigwrench-silver": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 4,
+                                        "Damage": 6
+                                    },
+                                    "*-bigwrench-gold": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 4,
+                                        "Damage": 6
+                                    }
+                                },
+                                "Knockback": 0,
+                                "DurabilityDamage": 1,
+                                "Collider": [ 0, 0, 0.5, 1.9, 0, 0.5 ]
+                            }
+                        ]
+                    },
+                    "Top": {
+                        "StopOnTerrainHit": true,
+                        "StopOnEntityHit": false,
+                        "CollideWithTerrain": true,
+                        "HitOnlyOneEntity": true,
+                        "MaxReach": 9,
+                        "DamageTypes": [
+                            {
+                                "DamageByType": {
+                                    "*-bigwrench-copper": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 2,
+                                        "Damage": 7
+                                    },
+                                    "*-bigwrench-tinbronze": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 3,
+                                        "Damage": 7.5
+                                    },
+                                    "*-bigwrench-bismuthbronze": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 3,
+                                        "Damage": 7.5
+                                    },
+                                    "*-bigwrench-blackbronze": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 4,
+                                        "Damage": 7.5
+                                    },
+                                    "*-bigwrench-iron": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 4,
+                                        "Damage": 8,
+                                        "ArmorPiercingTier": 1
+                                    },
+                                    "*-bigwrench-meteoriciron": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 5,
+                                        "Damage": 8,
+                                        "ArmorPiercingTier": 2
+                                    },
+                                    "*-bigwrench-steel": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 6,
+                                        "Damage": 8.5,
+                                        "ArmorPiercingTier": 2
+                                    },
+                                    "*-bigwrench-silver": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 4,
+                                        "Damage": 8,
+                                        "ArmorPiercingTier": 1
+                                    },
+                                    "*-bigwrench-gold": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 4,
+                                        "Damage": 8,
+                                        "ArmorPiercingTier": 1
+                                    }
+                                },
+                                "Knockback": -2,
+                                "DurabilityDamage": 1,
+                                "Collider": [ 1.8, 0, 0.4, 2.6999998, 0, 0.050000012 ]
+                            },
+                            {
+                                "DamageByType": {
+                                    "*-bigwrench-copper": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 2,
+                                        "Damage": 6
+                                    },
+                                    "*-bigwrench-tinbronze": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 3,
+                                        "Damage": 6.5
+                                    },
+                                    "*-bigwrench-bismuthbronze": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 3,
+                                        "Damage": 6.5
+                                    },
+                                    "*-bigwrench-blackbronze": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 4,
+                                        "Damage": 6.5
+                                    },
+                                    "*-bigwrench-iron": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 4,
+                                        "Damage": 7
+                                    },
+                                    "*-bigwrench-meteoriciron": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 5,
+                                        "Damage": 7
+                                    },
+                                    "*-bigwrench-steel": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 6,
+                                        "Damage": 7.5
+                                    },
+                                    "*-bigwrench-silver": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 4,
+                                        "Damage": 7
+                                    },
+                                    "*-bigwrench-gold": {
+                                        "DamageType": "BluntAttack",
+                                        "Tier": 4,
+                                        "Damage": 7
+                                    }
+                                },
+                                "Knockback": -2,
+                                "DurabilityDamage": 1,
+                                "Collider": [ 0, 0, 0.5, 1.9, 0, 0.5 ]
+                            }
+                        ]
+                    }
+                }
+            },
+            "AttackDirectionsType": "Square",
+            "AttackAnimationByType": {
+                "*-bigwrench-*": {
+                    "Bottom": [ "ignisclothing:bigwrench-thrust-2h-bottom" ],
+                    "Right": [ "ignisclothing:bigwrench-slash-2h-right" ],
+                    "Left": [ "ignisclothing:bigwrench-slash-2h-left" ],
+                    "Top": [ "ignisclothing:bigwrench-hit-2h-top" ]
+                }
+            },
+            "TpAttackAnimation": {
+                "Top": "combatoverhaul-falx-slash",
+                "Left": "combatoverhaul-falx-slash",
+                "Right": "combatoverhaul-falx-slash",
+                "Bottom": "combatoverhaul-spear-hit"
+            },
+            "Block": {
+                "Zones": [ "Face", "Neck", "Torso", "LeftArm", "RightArm", "LeftLeg", "RightLeg" ],
+                "Directions": [ 60, 60, 60, 60 ],
+                "Sound": "game:sounds/held/shieldblock-wood-light",
+                "BlockTier": {
+                    "BluntAttack": 5,
+                    "SlashingAttack": 5,
+                    "PiercingAttack": 5
+                },
+                "CanBlockProjectiles": false
+            },
+            "BlockAnimation": "ignisclothing:bigwrench-block-2h",
+            "AttackHitSound": "game:sounds/thud",
+            "ReadyAnimation": "ignisclothing:bigwrench-ready-2h",
+            "IdleAnimation": "ignisclothing:bigwrench-idle-2h"
+        }
+    },
+    "durabilitybytype": {
+        "*-copper": 300,
+        "*-tinbronze": 550,
+        "*-bismuthbronze": 600,
+        "*-blackbronze": 650,
+        "*-iron": 750,
+        "*-meteoriciron": 975,
+        "*-steel": 1250,
+        "*-gold": 750,
+        "*-silver": 750
+    },
+    "creativeinventory": {
+        "general": [ "*" ],
+        "ignisclothing": [ "*" ]
+    },
+    "guiTransformByType": {
+        "*-bigwrench*-*": {
+            "translation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": -31,
+                "y": 136,
+                "z": -36
+            },
+            "origin": {
+                "x": 2.3,
+                "y": 0.7,
+                "z": 1
+            },
+            "scale": 1.51
+        }
+    },
+    "groundTransformByType": {
+        "*-bigwrench*-*": {
+            "translation": {
+                "x": 0,
+                "y": 0.2,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "origin": {
+                "x": 0,
+                "y": 0,
+                "z": 0.5
+            },
+            "scale": 4
+        }
+    },
+    "tpHandTransformByType": {
+        "*-bigwrench*-*": {
+            "translation": {
+                "x": 0.85,
+                "y": 0.04,
+                "z": -0.48
+            },
+            "rotation": {
+                "x": 90,
+                "y": 0,
+                "z": 0
+            },
+            "origin": {
+                "x": 0,
+                "y": 0,
+                "z": 0.5
+            },
+            "scale": 1
+        }
+    }
+}

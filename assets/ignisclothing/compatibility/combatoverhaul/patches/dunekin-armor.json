@@ -1,0 +1,1084 @@
+[
+  {
+    "file": "ignisclothing:itemtypes/armor/dunekin-armor",
+    "op": "addmerge",
+    "path": "/behaviors",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "value": [
+      {
+        "name": "CombatOverhaul:Armor",
+        "propertiesByType": {
+          "armor-ignis-head-dunekin-copper": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Head", "Face", "Neck"],
+            "Resists": {
+              "PiercingAttack": 3,
+              "SlashingAttack": 3,
+              "BluntAttack": 1
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": 0,
+              "manipulationSpeed": -0.05,
+              "steadyAim": -0.06,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.06
+            }
+          },
+          "armor-ignis-body-dunekin-copper": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Torso", "Arms", "Hands"],
+            "Resists": {
+              "PiercingAttack": 3,
+              "SlashingAttack": 3,
+              "BluntAttack": 1
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.04,
+              "manipulationSpeed": -0.1,
+              "steadyAim": -0.17,
+              "healingeffectivness": -0.12,
+              "hungerrate": 0.09
+            }
+          },
+          "armor-ignis-chestplate-dunekin-copper": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Torso"],
+            "Resists": {
+              "PiercingAttack": 3,
+              "SlashingAttack": 3,
+              "BluntAttack": 1
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.02,
+              "manipulationSpeed": -0.05,
+              "steadyAim": -0.09,
+              "healingeffectivness": -0.06,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-arms-dunekin-copper": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Arms"],
+            "Resists": {
+              "PiercingAttack": 3,
+              "SlashingAttack": 3,
+              "BluntAttack": 1
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.01,
+              "manipulationSpeed": -0.025,
+              "steadyAim": -0.04,
+              "healingeffectivness": -0.03,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-hands-dunekin-copper": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Hands"],
+            "Resists": {
+              "PiercingAttack": 3,
+              "SlashingAttack": 3,
+              "BluntAttack": 1
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.01,
+              "manipulationSpeed": -0.025,
+              "steadyAim": -0.04,
+              "healingeffectivness": -0.03,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-legs-dunekin-copper": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Legs", "Feet"],
+            "Resists": {
+              "PiercingAttack": 3,
+              "SlashingAttack": 3,
+              "BluntAttack": 1
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.1,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.06
+            }
+          },
+          "armor-ignis-pants-dunekin-copper": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Legs"],
+            "Resists": {
+              "PiercingAttack": 3,
+              "SlashingAttack": 3,
+              "BluntAttack": 1
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.05,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.045,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-boots-dunekin-copper": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Feet"],
+            "Resists": {
+              "PiercingAttack": 3,
+              "SlashingAttack": 3,
+              "BluntAttack": 1
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.05,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.045,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-head-dunekin-*bronze": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Head", "Face", "Neck"],
+            "Resists": {
+              "PiercingAttack": 4,
+              "SlashingAttack": 4,
+              "BluntAttack": 1
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": 0,
+              "manipulationSpeed": -0.05,
+              "steadyAim": -0.06,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.06
+            }
+          },
+          "armor-ignis-body-dunekin-*bronze": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Torso", "Arms", "Hands"],
+            "Resists": {
+              "PiercingAttack": 4,
+              "SlashingAttack": 4,
+              "BluntAttack": 1
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.04,
+              "manipulationSpeed": -0.1,
+              "steadyAim": -0.17,
+              "healingeffectivness": -0.12,
+              "hungerrate": 0.09
+            }
+          },
+          "armor-ignis-chestplate-dunekin-*bronze": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Torso"],
+            "Resists": {
+              "PiercingAttack": 4,
+              "SlashingAttack": 4,
+              "BluntAttack": 1
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.02,
+              "manipulationSpeed": -0.05,
+              "steadyAim": -0.09,
+              "healingeffectivness": -0.06,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-arms-dunekin-*bronze": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Arms"],
+            "Resists": {
+              "PiercingAttack": 4,
+              "SlashingAttack": 4,
+              "BluntAttack": 1
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.01,
+              "manipulationSpeed": -0.025,
+              "steadyAim": -0.04,
+              "healingeffectivness": -0.03,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-hands-dunekin-*bronze": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Hands"],
+            "Resists": {
+              "PiercingAttack": 4,
+              "SlashingAttack": 4,
+              "BluntAttack": 1
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.01,
+              "manipulationSpeed": -0.025,
+              "steadyAim": -0.04,
+              "healingeffectivness": -0.03,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-legs-dunekin-*bronze": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Legs", "Feet"],
+            "Resists": {
+              "PiercingAttack": 4,
+              "SlashingAttack": 4,
+              "BluntAttack": 1
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.1,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.06
+            }
+          },
+          "armor-ignis-pants-dunekin-*bronze": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Legs"],
+            "Resists": {
+              "PiercingAttack": 4,
+              "SlashingAttack": 4,
+              "BluntAttack": 1
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.05,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.045,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-boots-dunekin-*bronze": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Feet"],
+            "Resists": {
+              "PiercingAttack": 4,
+              "SlashingAttack": 4,
+              "BluntAttack": 1
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.05,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.045,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-head-dunekin-iron": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Head", "Face", "Neck"],
+            "Resists": {
+              "PiercingAttack": 5,
+              "SlashingAttack": 5,
+              "BluntAttack": 2
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": 0,
+              "manipulationSpeed": -0.05,
+              "steadyAim": -0.06,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.06
+            }
+          },
+          "armor-ignis-body-dunekin-iron": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Torso", "Arms", "Hands"],
+            "Resists": {
+              "PiercingAttack": 5,
+              "SlashingAttack": 5,
+              "BluntAttack": 2
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.04,
+              "manipulationSpeed": -0.1,
+              "steadyAim": -0.17,
+              "healingeffectivness": -0.12,
+              "hungerrate": 0.09
+            }
+          },
+          "armor-ignis-chestplate-dunekin-iron": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Torso"],
+            "Resists": {
+              "PiercingAttack": 5,
+              "SlashingAttack": 5,
+              "BluntAttack": 2
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.02,
+              "manipulationSpeed": -0.05,
+              "steadyAim": -0.09,
+              "healingeffectivness": -0.06,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-arms-dunekin-iron": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Arms"],
+            "Resists": {
+              "PiercingAttack": 5,
+              "SlashingAttack": 5,
+              "BluntAttack": 2
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.01,
+              "manipulationSpeed": -0.025,
+              "steadyAim": -0.04,
+              "healingeffectivness": -0.03,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-hands-dunekin-iron": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Hands"],
+            "Resists": {
+              "PiercingAttack": 5,
+              "SlashingAttack": 5,
+              "BluntAttack": 2
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.01,
+              "manipulationSpeed": -0.025,
+              "steadyAim": -0.04,
+              "healingeffectivness": -0.03,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-legs-dunekin-iron": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Legs", "Feet"],
+            "Resists": {
+              "PiercingAttack": 5,
+              "SlashingAttack": 5,
+              "BluntAttack": 2
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.1,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.06
+            }
+          },
+          "armor-ignis-pants-dunekin-iron": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Legs"],
+            "Resists": {
+              "PiercingAttack": 5,
+              "SlashingAttack": 5,
+              "BluntAttack": 2
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.05,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.045,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-boots-dunekin-iron": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Feet"],
+            "Resists": {
+              "PiercingAttack": 5,
+              "SlashingAttack": 5,
+              "BluntAttack": 2
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.05,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.045,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-head-dunekin-meteoriciron": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Head", "Face", "Neck"],
+            "Resists": {
+                "PiercingAttack": 6,
+                "SlashingAttack": 6,
+                "BluntAttack": 3
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": 0,
+              "manipulationSpeed": -0.05,
+              "steadyAim": -0.06,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.06
+            }
+          },
+          "armor-ignis-body-dunekin-meteoriciron": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Torso", "Arms", "Hands"],
+            "Resists": {
+                "PiercingAttack": 6,
+                "SlashingAttack": 6,
+                "BluntAttack": 3
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.04,
+              "manipulationSpeed": -0.1,
+              "steadyAim": -0.17,
+              "healingeffectivness": -0.12,
+              "hungerrate": 0.09
+            }
+          },
+          "armor-ignis-chestplate-dunekin-meteoriciron": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Torso"],
+            "Resists": {
+                "PiercingAttack": 6,
+                "SlashingAttack": 6,
+                "BluntAttack": 3
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.02,
+              "manipulationSpeed": -0.05,
+              "steadyAim": -0.09,
+              "healingeffectivness": -0.06,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-arms-dunekin-meteoriciron": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Arms"],
+            "Resists": {
+                "PiercingAttack": 6,
+                "SlashingAttack": 6,
+                "BluntAttack": 3
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.01,
+              "manipulationSpeed": -0.025,
+              "steadyAim": -0.04,
+              "healingeffectivness": -0.03,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-hands-dunekin-meteoriciron": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Hands"],
+            "Resists": {
+                "PiercingAttack": 6,
+                "SlashingAttack": 6,
+                "BluntAttack": 3
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.01,
+              "manipulationSpeed": -0.025,
+              "steadyAim": -0.04,
+              "healingeffectivness": -0.03,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-legs-dunekin-meteoriciron": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Legs", "Feet"],
+            "Resists": {
+                "PiercingAttack": 6,
+                "SlashingAttack": 6,
+                "BluntAttack": 3
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.1,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.06
+            }
+          },
+          "armor-ignis-pants-dunekin-meteoriciron": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Legs"],
+            "Resists": {
+                "PiercingAttack": 6,
+                "SlashingAttack": 6,
+                "BluntAttack": 3
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.05,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.045,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-boots-dunekin-meteoriciron": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Feet"],
+            "Resists": {
+              "PiercingAttack": 6,
+              "SlashingAttack": 6,
+              "BluntAttack": 3
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.05,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.045,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-head-dunekin-steel": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Head", "Face", "Neck"],
+            "Resists": {
+                "PiercingAttack": 7,
+                "SlashingAttack": 7,
+                "BluntAttack": 3
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": 0,
+              "manipulationSpeed": -0.05,
+              "steadyAim": -0.06,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.06
+            }
+          },
+          "armor-ignis-body-dunekin-steel": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Torso", "Arms", "Hands"],
+            "Resists": {
+                "PiercingAttack": 7,
+                "SlashingAttack": 7,
+                "BluntAttack": 3
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.04,
+              "manipulationSpeed": -0.1,
+              "steadyAim": -0.17,
+              "healingeffectivness": -0.12,
+              "hungerrate": 0.09
+            }
+          },
+          "armor-ignis-chestplate-dunekin-steel": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Torso"],
+            "Resists": {
+                "PiercingAttack": 7,
+                "SlashingAttack": 7,
+                "BluntAttack": 3
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.02,
+              "manipulationSpeed": -0.05,
+              "steadyAim": -0.09,
+              "healingeffectivness": -0.06,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-arms-dunekin-steel": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Arms"],
+            "Resists": {
+                "PiercingAttack": 7,
+                "SlashingAttack": 7,
+                "BluntAttack": 3
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.01,
+              "manipulationSpeed": -0.025,
+              "steadyAim": -0.04,
+              "healingeffectivness": -0.03,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-hands-dunekin-steel": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Hands"],
+            "Resists": {
+                "PiercingAttack": 7,
+                "SlashingAttack": 7,
+                "BluntAttack": 3
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.01,
+              "manipulationSpeed": -0.025,
+              "steadyAim": -0.04,
+              "healingeffectivness": -0.03,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-legs-dunekin-steel": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Legs", "Feet"],
+            "Resists": {
+                "PiercingAttack": 7,
+                "SlashingAttack": 7,
+                "BluntAttack": 3
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.1,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.06
+            }
+          },
+          "armor-ignis-pants-dunekin-steel": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Legs"],
+            "Resists": {
+                "PiercingAttack": 7,
+                "SlashingAttack": 7,
+                "BluntAttack": 3
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.05,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.045,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-boots-dunekin-steel": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Feet"],
+            "Resists": {
+                "PiercingAttack": 7,
+                "SlashingAttack": 7,
+                "BluntAttack": 3
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.05,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.045,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-head-dunekin-silver": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Head", "Face", "Neck"],
+            "Resists": {
+              "PiercingAttack": 5,
+              "SlashingAttack": 5,
+              "BluntAttack": 2
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": 0,
+              "manipulationSpeed": -0.05,
+              "steadyAim": -0.06,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.06
+            }
+          },
+          "armor-ignis-body-dunekin-silver": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Torso", "Arms", "Hands"],
+            "Resists": {
+              "PiercingAttack": 5,
+              "SlashingAttack": 5,
+              "BluntAttack": 2
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.04,
+              "manipulationSpeed": -0.1,
+              "steadyAim": -0.17,
+              "healingeffectivness": -0.12,
+              "hungerrate": 0.09
+            }
+          },
+          "armor-ignis-chestplate-dunekin-silver": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Torso"],
+            "Resists": {
+              "PiercingAttack": 5,
+              "SlashingAttack": 5,
+              "BluntAttack": 2
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.02,
+              "manipulationSpeed": -0.05,
+              "steadyAim": -0.09,
+              "healingeffectivness": -0.06,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-arms-dunekin-silver": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Arms"],
+            "Resists": {
+              "PiercingAttack": 5,
+              "SlashingAttack": 5,
+              "BluntAttack": 2
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.01,
+              "manipulationSpeed": -0.025,
+              "steadyAim": -0.04,
+              "healingeffectivness": -0.03,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-hands-dunekin-silver": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Hands"],
+            "Resists": {
+              "PiercingAttack": 5,
+              "SlashingAttack": 5,
+              "BluntAttack": 2
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.01,
+              "manipulationSpeed": -0.025,
+              "steadyAim": -0.04,
+              "healingeffectivness": -0.03,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-legs-dunekin-silver": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Legs", "Feet"],
+            "Resists": {
+              "PiercingAttack": 5,
+              "SlashingAttack": 5,
+              "BluntAttack": 2
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.1,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.06
+            }
+          },
+          "armor-ignis-pants-dunekin-silver": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Legs"],
+            "Resists": {
+              "PiercingAttack": 5,
+              "SlashingAttack": 5,
+              "BluntAttack": 2
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.05,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.045,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-boots-dunekin-silver": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Feet"],
+            "Resists": {
+              "PiercingAttack": 5,
+              "SlashingAttack": 5,
+              "BluntAttack": 2
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.05,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.045,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-head-dunekin-gold": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Head", "Face", "Neck"],
+            "Resists": {
+              "PiercingAttack": 5,
+              "SlashingAttack": 5,
+              "BluntAttack": 2
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": 0,
+              "manipulationSpeed": -0.05,
+              "steadyAim": -0.06,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.06
+            }
+          },
+          "armor-ignis-body-dunekin-gold": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Torso", "Arms", "Hands"],
+            "Resists": {
+              "PiercingAttack": 5,
+              "SlashingAttack": 5,
+              "BluntAttack": 2
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.04,
+              "manipulationSpeed": -0.1,
+              "steadyAim": -0.17,
+              "healingeffectivness": -0.12,
+              "hungerrate": 0.09
+            }
+          },
+          "armor-ignis-chestplate-dunekin-gold": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Torso"],
+            "Resists": {
+              "PiercingAttack": 5,
+              "SlashingAttack": 5,
+              "BluntAttack": 2
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.02,
+              "manipulationSpeed": -0.05,
+              "steadyAim": -0.09,
+              "healingeffectivness": -0.06,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-arms-dunekin-gold": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Arms"],
+            "Resists": {
+              "PiercingAttack": 5,
+              "SlashingAttack": 5,
+              "BluntAttack": 2
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.01,
+              "manipulationSpeed": -0.025,
+              "steadyAim": -0.04,
+              "healingeffectivness": -0.03,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-hands-dunekin-gold": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Hands"],
+            "Resists": {
+              "PiercingAttack": 5,
+              "SlashingAttack": 5,
+              "BluntAttack": 2
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.01,
+              "manipulationSpeed": -0.025,
+              "steadyAim": -0.04,
+              "healingeffectivness": -0.03,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-legs-dunekin-gold": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Legs", "Feet"],
+            "Resists": {
+              "PiercingAttack": 5,
+              "SlashingAttack": 5,
+              "BluntAttack": 2
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.1,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.09,
+              "hungerrate": 0.06
+            }
+          },
+          "armor-ignis-pants-dunekin-gold": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Legs"],
+            "Resists": {
+              "PiercingAttack": 5,
+              "SlashingAttack": 5,
+              "BluntAttack": 2
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.05,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.045,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-boots-dunekin-gold": {
+            "Layers": ["Middle", "Outer"],
+            "Zones": ["Feet"],
+            "Resists": {
+              "PiercingAttack": 5,
+              "SlashingAttack": 5,
+              "BluntAttack": 2
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.05,
+              "manipulationSpeed": 0,
+              "steadyAim": 0,
+              "healingeffectivness": -0.045,
+              "hungerrate": 0.03
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "file": "ignisclothing:itemtypes/armor/dunekin-armor",
+    "op": "replace",
+    "path": "/durabilityByType",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "value": {
+        "armor-ignis-head-dunekin-copper": 1600,
+        "armor-ignis-body-dunekin-copper": 4800,
+        "armor-ignis-chestplate-dunekin-copper": 2400,
+        "armor-ignis-arms-dunekin-copper": 1200,
+        "armor-ignis-hands-dunekin-copper": 1200,
+        "armor-ignis-legs-dunekin-copper": 3200,
+        "armor-ignis-pants-dunekin-copper": 1600,
+        "armor-ignis-boots-dunekin-copper": 1600,
+
+        "armor-ignis-head-dunekin-tinbronze": 3000,
+        "armor-ignis-body-dunekin-tinbronze": 8800,
+        "armor-ignis-chestplate-dunekin-tinbronze": 4400,
+        "armor-ignis-arms-dunekin-tinbronze": 2200,
+        "armor-ignis-hands-dunekin-tinbronze": 2200,
+        "armor-ignis-legs-dunekin-tinbronze": 5900,
+        "armor-ignis-pants-dunekin-tinbronze": 2950,
+        "armor-ignis-boots-dunekin-tinbronze": 2950,
+
+        "armor-ignis-head-dunekin-bismuthbronze": 3200,
+        "armor-ignis-body-dunekin-bismuthbronze": 9600,
+        "armor-ignis-chestplate-dunekin-bismuthbronze": 4800,
+        "armor-ignis-arms-dunekin-bismuthbronze": 2400,
+        "armor-ignis-hands-dunekin-bismuthbronze": 2400,
+        "armor-ignis-legs-dunekin-bismuthbronze": 6400,
+        "armor-ignis-pants-dunekin-bismuthbronze": 3200,
+        "armor-ignis-boots-dunekin-bismuthbronze": 3200,
+
+        "armor-ignis-head-dunekin-blackbronze": 3500,
+        "armor-ignis-body-dunekin-blackbronze": 10400,
+        "armor-ignis-chestplate-dunekin-blackbronze": 5200,
+        "armor-ignis-arms-dunekin-blackbronze": 2600,
+        "armor-ignis-hands-dunekin-blackbronze": 2600,
+        "armor-ignis-legs-dunekin-blackbronze": 6900,
+        "armor-ignis-pants-dunekin-blackbronze": 3450,
+        "armor-ignis-boots-dunekin-blackbronze": 3450,
+
+        "armor-ignis-head-dunekin-iron": 4000,
+        "armor-ignis-body-dunekin-iron": 12000,
+        "armor-ignis-chestplate-dunekin-iron": 6000,
+        "armor-ignis-arms-dunekin-iron": 3000,
+        "armor-ignis-hands-dunekin-iron": 3000,
+        "armor-ignis-legs-dunekin-iron": 9600,
+        "armor-ignis-pants-dunekin-iron": 4800,
+        "armor-ignis-boots-dunekin-iron": 4800,
+
+        "armor-ignis-head-dunekin-meteoriciron": 5800,
+        "armor-ignis-body-dunekin-meteoriciron": 15600,
+        "armor-ignis-chestplate-dunekin-meteoriciron": 7800,
+        "armor-ignis-arms-dunekin-meteoriciron": 3900,
+        "armor-ignis-hands-dunekin-meteoriciron": 3900,
+        "armor-ignis-legs-dunekin-meteoriciron": 10400,
+        "armor-ignis-pants-dunekin-meteoriciron": 5200,
+        "armor-ignis-boots-dunekin-meteoriciron": 5200,
+
+        "armor-ignis-head-dunekin-steel": 7000,
+        "armor-ignis-body-dunekin-steel": 21000,
+        "armor-ignis-chestplate-dunekin-steel": 10500,
+        "armor-ignis-arms-dunekin-steel": 5250,
+        "armor-ignis-hands-dunekin-steel": 5250,
+        "armor-ignis-legs-dunekin-steel": 14000,
+        "armor-ignis-pants-dunekin-steel": 7000,
+        "armor-ignis-boots-dunekin-steel": 7000,
+
+        "armor-ignis-head-dunekin-silver": 4000,
+        "armor-ignis-body-dunekin-silver": 12000,
+        "armor-ignis-chestplate-dunekin-silver": 6000,
+        "armor-ignis-arms-dunekin-silver": 3000,
+        "armor-ignis-hands-dunekin-silver": 3000,
+        "armor-ignis-legs-dunekin-silver": 9600,
+        "armor-ignis-pants-dunekin-silver": 4800,
+        "armor-ignis-boots-dunekin-silver": 4800,
+
+        "armor-ignis-head-dunekin-gold": 4000,
+        "armor-ignis-body-dunekin-gold": 12000,
+        "armor-ignis-chestplate-dunekin-gold": 6000,
+        "armor-ignis-arms-dunekin-gold": 3000,
+        "armor-ignis-hands-dunekin-gold": 3000,
+        "armor-ignis-legs-dunekin-gold": 9600,
+        "armor-ignis-pants-dunekin-gold": 4800,
+        "armor-ignis-boots-dunekin-gold": 4800,
+    }
+  },
+  {
+    "file": "ignisclothing:itemtypes/armor/dunekin-armor",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "op": "replace",
+    "path": "/attributes/protectionModifiersByType",
+    "value": { "*": null }
+  },
+  {
+    "file": "ignisclothing:itemtypes/armor/dunekin-armor",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "op": "replace",
+    "path": "/attributes/statModifiersByType",
+    "value": { "*": null }
+  },
+  {
+    "file": "ignisclothing:itemtypes/armor/dunekin-armor",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "op": "replace",
+    "path": "/class",
+    "value": "CombatOverhaul:WearableArmor"
+  },
+  {
+    "file": "ignisclothing:itemtypes/armor/dunekin-armor",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "op": "add",
+    "path": "/attributes/materialCountByType",
+    "value": { "*-head-*": 4, "*-body-*": 8, "*-legs-*": 8 }
+  },  
+
+]

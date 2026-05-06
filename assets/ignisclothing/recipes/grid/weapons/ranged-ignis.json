@@ -1,0 +1,82 @@
+[
+	{
+		"ingredientPattern": "_BF,BLF,_BF",
+		"ingredients": {
+			"B": {
+				"type": "item",
+				"code": "game:bone",
+				"quantity": 3
+			},
+			"F": {
+				"type": "item",
+				"code": "game:flaxtwine"
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-normal-*"
+			}
+		},
+		"width": 3,
+		"height": 3,
+		"name": "bone longbow",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:bow-bonebowlong",
+			"quantity": 1
+		}
+	},
+	{
+		"ingredientPattern": "FRF,FSF,FSF",
+		"ingredients": {
+			"R": {
+				"type": "item",
+				"code": "game:resin",
+				"quantity": 2
+			},
+			"F": {
+				"type": "item",
+				"code": "game:fat"
+			},
+			"S": {
+				"type": "item",
+				"code": "game:stick",
+				"quantity": 2
+			}
+		},
+		"width": 3,
+		"height": 3,
+		"name": "atlatl",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:sling-atlatl",
+			"quantity": 1
+		}
+	},
+	{
+		"ingredientPattern": "S,H,F",
+		"ingredients": {
+			"H": {
+				"type": "item",
+				"code": "armory:handle-medium"
+			},
+			"F": {
+				"type": "item",
+				"code": "game:feather"
+			},
+			"S": {
+					"type": "item",
+					"code": "game:arrowhead-*",
+					"name": "metal",
+					"allowedVariants": [ "flint", "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			}
+		},
+		"width": 1,
+		"height": 3,
+		"name": "atlatl darts",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:atlatldart-{metal}",
+			"quantity": 1
+		}
+	}
+]

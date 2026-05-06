@@ -1,0 +1,246 @@
+{
+	"code": "clothes",
+	"class": "ItemWearable",
+	"variantgroups": [
+		{
+			"code": "category",
+			"states": [ "neck" ]
+		},
+		{
+			"code": "neck",
+			"combine": "SelectiveMultiply",
+			"onVariant": "category",
+			"states": [
+				"skelebra",
+				"bunnycollar",
+				"poncho"
+			]
+		}
+	],
+	"shapeByType": {
+		"*": {
+			"base": "ignisclothing:entity/humanoid/seraph/clothing/neck/{neck}"
+		}
+	},
+	"storageFlags": 128,
+	"attributes": {
+		"clothescategory": "neck",
+		"wearableAttachment": true,
+		"warmthByType": {
+			"*-neck-poncho": 1,
+			"*": 0
+		},
+		"handbook": {
+			"groupBy": [ "clothes-{category}-*" ]
+		}
+	},
+	"attributesByType": {
+		"*": {
+			"displaycaseable": true,
+			"onDisplayTransform": {
+				"translation": {
+					"x": -0.6,
+					"y": -1.2,
+					"z": 0
+				},
+				"rotation": {
+					"x": 0,
+					"y": 0,
+					"z": -41
+				}
+			}
+		}
+	},
+	"textures": {
+		"seraph": { "base": "game:block/transparent" },
+		"black.png": { "base": "game:block/leather/black" }
+	},
+	"texturesByType": {
+		"*-neck-skelebra": {
+			"orange.png": { "base": "game:block/leather/orange" }
+		},
+		"*-neck-bunnycollar": {
+			"white.png": { "base": "game:block/leather/white" }
+		},
+		"*-neck-poncho": {
+			"normal.png": { "base": "game:item/armor/cloth/normal" }
+		}
+	},
+	"creativeinventory": {
+		"general": [ "*" ],
+		"items": [ "*" ],
+		"clothing": [ "*" ],
+		"ignisclothing": [ "*" ]
+	},
+	"renderAlphaTest": 0.25,
+	"tpHandTransformByType": {
+		"*-neck-skelebra": {
+			"translation": {
+				"x": 1.4,
+				"y": 0.65,
+				"z": -0.5
+			},
+			"rotation": {
+				"x": 90,
+				"y": -180,
+				"z": 90
+			},
+			"origin": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"scale": 1
+		},
+		"*-neck-bunnycollar": {
+			"translation": {
+				"x": 1.5,
+				"y": 0.4,
+				"z": 0.5
+			},
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": -85
+			},
+			"origin": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"scale": 1
+		},
+		"*-neck-poncho": {
+			"translation": {
+				"x": 1,
+				"y": 0,
+				"z": -0.55
+			},
+			"rotation": {
+				"x": 90,
+				"y": 0,
+				"z": -85
+			},
+			"origin": {
+				"x": 0,
+				"y": 0,
+				"z": 0.5
+			},
+			"scale": 0.5
+		}
+	},
+	"guiTransformByType": {
+		"*-neck-skelebra": {
+				"translation": {
+					"x": 4,
+					"y": -18,
+					"z": 0
+				},
+				"rotation": {
+					"x": 174,
+					"y": -128,
+					"z": 6
+				},
+				"origin": {
+					"x": 0.5,
+					"y": 1.7,
+					"z": 0.5
+				},
+				"scale": 2.6
+		},
+		"*-neck-bunnycollar": {
+			"rotate": false,
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 174,
+				"y": -128,
+				"z": 6
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1.56,
+				"z": 0.54
+			},
+			"scale": 5
+		},
+		"*-neck-poncho": {
+			"rotate": false,
+			"translation": {
+				"x": 4,
+				"y": -15,
+				"z": 0
+			},
+			"rotation": {
+				"x": 174,
+				"y": -128,
+				"z": 6
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1.5599,
+				"z": 0.54
+			},
+			"scale": 1.7
+		}
+	},
+	"groundTransformByType": {
+		"*-neck-skelebra": {
+			"translation": {
+				"x": 0,
+				"y": 0.05,
+				"z": 0
+			},
+			"rotation": {
+				"x": 180,
+				"y": 0,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1.33,
+				"z": 0.5
+			},
+			"scale": 3.99
+		},
+		"*-neck-bunnycollar": {
+			"translation": {
+				"x": 0,
+				"y": 0.1,
+				"z": 0
+			},
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": 170
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1.5,
+				"z": 0.5
+			},
+			"scale": 6
+		},
+		"*-neck-poncho": {
+			"translation": {
+				"x": 0,
+				"y": 0.15,
+				"z": 0
+			},
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": 90
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1.5,
+				"z": 0.5
+			},
+			"scale": 4.5
+		}
+	}
+}

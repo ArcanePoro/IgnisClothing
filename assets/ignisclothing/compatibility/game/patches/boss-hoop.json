@@ -1,0 +1,14 @@
+﻿[
+  {
+    "file": "game:itemtypes/part/hoop.json",
+    "op": "addeach",
+    "path": "/variantgroups/0/states/8",
+    "value": ["copper"]
+  },
+  {
+    "file": "game:itemtypes/part/boss.json",
+    "op": "addeach",
+    "path": "/variantgroups/0/states/8",
+    "value": ["copper"]
+  }
+]

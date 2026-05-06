@@ -1,0 +1,73 @@
+{
+	code: "clothes",
+	class: "ItemWearable",
+	variantgroups: [
+		{ code: "category",  states: ["upperbodyover"] },
+		{ code: "upperbodyover", combine: "SelectiveMultiply", onVariant: "category", states: [
+			"bunnybodysuit"
+		] },
+	],
+	storageFlags: 128,
+	shapeByType: {
+		"*": { base: "ignisclothing:entity/humanoid/seraph/clothing/upperbodyover/{upperbodyover}" }
+	},
+	"textures": {
+		"seraph": { "base": "game:block/transparent" }
+    },
+	texturesByType: {
+		"*-upperbodyover-bunnybodysuit": {
+			"black.png": { base: "game:item/tool/shield/leather/black" }
+		}
+	},
+	attributes: {
+		clothescategory: "upperbodyover",
+		wearableAttachment: true,
+		wearableTexturePrefixCode: null,
+		handbook: {
+			groupBy: ["clothes-{category}-*"]
+		}
+	},
+	attributesByType: {
+		"*-upperbodyover-bunnybodysuit": {
+			warmth: 0.5
+		}
+	},
+	creativeinventory: { "general": ["*"], "items": ["*"], "clothing": ["*"], "ignisclothing": ["*"] },
+	renderAlphaTest: 0.25,
+	fpHandTransformByType: {
+		"*-upperbodyover-bunnybodysuit": {
+			translation: { x: 0.05, y: -0.6, z: 0.3 },
+			rotation: { x: 180, y: 150, z: 180 },
+			scale: 2
+		}
+	},
+	tpHandTransformByType: {
+		"*-upperbodyover-bunnybodysuit": {
+			translation: { x: -0.3, y: -0.9, z: -0.7 },
+			rotation: { x: -71, y: 180, z: 83 },
+			scale: 0.55
+		}
+	},
+	guiTransformByType: {
+		"*-upperbodyover-bunnybodysuit": {
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: -180, y: -66, z: 18 },
+			origin: { x: 0.2, y: 1.3, z: 0.4 },
+			scale: 2.5
+		},
+		"*": {
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: -180, y: -66, z: 18 },
+			origin: { x: 0.2, y: 1.3, z: 0.5 },
+			scale: 1.29
+		}
+	},
+	groundTransformByType: {
+		"*-upperbodyover-bunnybodysuit": {
+			translation: { x: 0.05, y: 0.05, z: 0 },
+			rotation: { x: 0, y: 0, z: -87 },
+			origin: { x: 0.5, y: 0.5, z: 0.5299 },
+			scale: 2.19
+		}
+	}
+}

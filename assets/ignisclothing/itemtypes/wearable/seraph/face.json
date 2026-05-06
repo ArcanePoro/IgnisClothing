@@ -1,0 +1,202 @@
+{
+	code: "clothes",
+	class: "ItemWearable",
+	variantgroups: [
+		{ code: "category",  states: ["face"] },
+		{ code: "face", states: [
+			"bugsgoggles", "barnowl", "yeenhead"
+		  ] }
+	],
+	shapeByType: { 
+		"*": {	base: "ignisclothing:entity/humanoid/seraph/clothing/face/{face}" }
+	},
+	storageFlags: 128,
+	attributes: {
+		clothescategory: "face",
+		wearableAttachment: true,
+		warmth: 0.25,
+		handbook: {
+			groupBy: ["clothes-{category}-*"]
+		}
+	},
+	attributesByType: {
+		"*-face-bugsgoggles": { eyeprotective: true },
+		"*-face-barnowl": {
+			disableElements: ["hidefacialhair"]
+		},
+		"*": {
+			disableElements: ["hidefacialhair"]
+		}
+	},
+	textures: {
+		"seraph": { base: "game:block/transparent" }
+	},
+	texturesByType: {
+		"*-face-bugsgoggles": {
+			"black.png": { base: "game:block/black" },
+			"smoky.png": { base: "game:block/glass/smoky" },
+			"linen.png": { base: "game:block/linen" },
+			"brass.png": { base: "game:block/metal/ingot/brass" }
+		},
+		"*-face-barnowl": {
+			"black.png": { base: "game:block/black" },
+			"pinkoyster.png": { base: "game:block/plant/mushroom/pinkoyster/pinkoyster" },
+			"plain.png": { base: "game:item/tool/shield/leather/plain" },
+			"white.png": { base: "game:item/tool/shield/leather/white" }
+		}
+	},
+	creativeinventory: { "general": ["*"], "items": ["*"], "clothing": ["*"], "ignisclothing": ["*"] },
+	renderAlphaTest: 0.25,
+	guiTransformByType: {
+		"*-face-bugsgoggles": {
+			"rotate": false,
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": 19
+			},
+			"rotation": {
+				"x": -173,
+				"y": -54,
+				"z": 18
+			},
+			"origin": {
+				"x": 0.46,
+				"y": 1.75,
+				"z": 0.5
+			},
+			"scale": 3.11
+		},
+		"*-face-barnowl": {
+			"rotate": false,
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": 19
+			},
+			"rotation": {
+				"x": -173,
+				"y": -54,
+				"z": 18
+			},
+			"origin": {
+				"x": 0.46,
+				"y": 1.75,
+				"z": 0.5
+			},
+			"scale": 3.11
+		},
+		"*-face-yeenhead": {
+			"rotate": false,
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": 19
+			},
+			"rotation": {
+				"x": -173,
+				"y": -54,
+				"z": 18
+			},
+			"origin": {
+				"x": 0.46,
+				"y": 1.75,
+				"z": 0.5
+			},
+			"scale": 2.25
+		},
+		"*": {
+			"rotation": {
+				"x": 1,
+				"y": -121,
+				"z": -167
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1.62,
+				"z": 0.5
+			},
+			"scale": 3.23
+		}
+	},
+	tpHandTransformByType: {
+		"*-face-bugsgoggles": {
+			"translation": {
+				"x": -0.74,
+				"y": -2.39,
+				"z": -0.97
+			},
+			"rotation": {
+				"x": 87,
+				"y": 180,
+				"z": 0
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1.5,
+				"z": 0.5
+			},
+			"scale": 0.66
+		},
+		"*-face-barnowl": {
+			"rotate": false,
+			"translation": {
+				"x": -0.55,
+				"y": -2.2,
+				"z": -0.94
+			},
+			"rotation": {
+				"x": -89,
+				"y": 180,
+				"z": 102
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1.5,
+				"z": 0.5
+			},
+			"scale": 0.7
+		},
+		"*-face-yeenhead": {
+			"translation": {
+				"x": -0.7,
+				"y": -2,
+				"z": -0.8
+			},
+			"rotation": {
+				"x": 0,
+				"y": 180,
+				"z": 90
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1.5,
+				"z": 0.5
+			},
+			"scale": 0.7
+		},
+		"*": {
+			"translation": {
+				"x": -0.8,
+				"y": -2.7,
+				"z": -0.9
+			},
+			"rotation": {
+				"x": 51,
+				"y": 149,
+				"z": 42
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1.5,
+				"z": 0.5
+			},
+			"scale": 0.55
+		}
+	},
+	groundTransform: {
+		rotation: { x: 0, y: 0, z: 0 },
+		origin: { x: 0.5, y: 1.5, z: 0.5299 },
+		scale: 2.58
+	}
+}

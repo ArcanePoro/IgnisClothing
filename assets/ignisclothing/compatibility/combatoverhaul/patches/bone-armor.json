@@ -1,0 +1,101 @@
+[
+  {
+    "file": "ignisclothing:itemtypes/armor/bone-armor",
+    "op": "addmerge",
+    "path": "/behaviors",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "value": [
+      {
+        "name": "CombatOverhaul:Armor",
+        "propertiesByType": {
+          "armor-ignis-head-improvised-bone": {
+            "Layers": ["Middle"],
+            "Zones": ["Head", "Face"],
+            "Resists": {
+              "PiercingAttack": 0,
+              "SlashingAttack": 3,
+              "BluntAttack": 1
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": 0,
+              "manipulationSpeed": 0,
+              "healingeffectivness": -0.03,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-body-improvised-bone": {
+            "Layers": ["Middle"],
+            "Zones": ["Torso", "Arms"],
+            "Resists": {
+              "PiercingAttack": 0,
+              "SlashingAttack": 3,
+              "BluntAttack": 1
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": 0,
+              "manipulationSpeed": -0.02,
+              "healingeffectivness": -0.03,
+              "hungerrate": 0.03
+            }
+          },
+          "armor-ignis-legs-improvised-bone": {
+            "Layers": ["Middle"],
+            "Zones": ["Legs"],
+            "Resists": {
+              "PiercingAttack": 0,
+              "SlashingAttack": 3,
+              "BluntAttack": 1
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+              "walkspeed": -0.02,
+              "manipulationSpeed": 0,
+              "healingeffectivness": -0.03,
+              "hungerrate": 0.03
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "file": "ignisclothing:itemtypes/armor/bone-armor",
+    "op": "replace",
+    "path": "/durabilityByType",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "value": {
+        "*": 1400,
+    }
+  },
+  {
+    "file": "ignisclothing:itemtypes/armor/bone-armor",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "op": "replace",
+    "path": "/attributes/protectionModifiersByType",
+    "value": { "*": null }
+  },
+  {
+    "file": "ignisclothing:itemtypes/armor/bone-armor",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "op": "replace",
+    "path": "/attributes/statModifiersByType",
+    "value": { "*": null }
+  },
+  {
+    "file": "ignisclothing:itemtypes/armor/bone-armor",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "op": "replace",
+    "path": "/class",
+    "value": "CombatOverhaul:WearableArmor"
+  },
+  {
+    "file": "ignisclothing:itemtypes/armor/bone-armor",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "op": "add",
+    "path": "/attributes/materialCountByType",
+    "value": { "*-head-*": 4, "*-body-*": 8, "*-legs-*": 8 }
+  },  
+
+]

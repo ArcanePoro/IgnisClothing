@@ -1,0 +1,45 @@
+[
+	{
+		ingredientPattern: "LOL,PMP,LNL",
+		ingredients: {
+			"O": { type: "item", code: "game:vegetable-onion"},
+			"P": { type: "item", code: "game:plank-*", quantity: 3 },
+			"L": { type: "item", code: "game:leather-normal-*", quantity: 2 },
+			"M": { type: "item", code: "game:boss-{metal}", name: "metal", allowedVariants: ["copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ] },
+			"N": { type: "item", code: "game:metalnailsandstrips-{metal}", name: "metal", allowedVariants: ["copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ], quantity: 4 }
+		},
+		width: 3,
+		height: 3,
+		name: "onion shield",
+		output: { type: "item", code: "ignisclothing:shield-light-onion-{metal}", quantity: 1 }
+	},
+	{
+		ingredientPattern: "NHN,LPL,_P_",
+		ingredients: {
+			"P": { type: "item", code: "game:plank-*", quantity: 2 },
+			"L": { type: "item", code: "game:leather-normal-*", quantity: 2 },
+			"H": { type: "item", code: "game:hoop-{metal}", name: "metal", allowedVariants: ["copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ] },
+			"N": { type: "item", code: "game:metalnailsandstrips-{metal}", name: "metal", allowedVariants: ["copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ], quantity: 2 }
+		},
+		width: 3,
+		height: 3,
+		name: "solar shield",
+		output: { type: "item", code: "ignisclothing:shield-light-solar-{metal}", quantity: 1 }
+	},
+	{
+		ingredientPattern: "OSL,PBP,WHW",
+		ingredients: {
+			"O": { type: "item", code: "game:bone", quantity: 4 },
+			"S": { type: "item", code: "game:clutter-skull/humanoid" },
+			"P": { type: "item", code: "game:plank-*", quantity: 2 },
+			"W": { type: "item", code: "game:plank-*" },
+			"L": { type: "item", code: "game:leather-normal-*", quantity: 4 },
+			"H": { type: "item", code: "game:hoop-{metal}", name: "metal", allowedVariants: ["copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ] },
+			"B": { type: "item", code: "game:boss-{metal}", name: "metal", allowedVariants: ["copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ] }
+		},
+		width: 3,
+		height: 3,
+		name: "skeleton shield",
+		output: { type: "item", code: "ignisclothing:shield-heavy-skeleton-{metal}", quantity: 1 }
+	}
+]

@@ -1,0 +1,359 @@
+﻿{
+  "code": "shield",
+  "class": "CombatOverhaul:MeleeWeapon",
+  "tags": ["shield", "onehanded"],
+  "storageFlags": 257,
+  "tool": "shield",
+  "variantgroups": [
+    {"code": "type", "states": ["light"]},
+    {"code": "subtype", "states": ["onion", "solar" ]},
+    {"code": "material", "states": ["copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]}
+  ],
+  "behaviorsByType": {
+    "*": [
+      {
+        "name": "GroundStorable",
+        "properties": {
+          "layout": "WallHalves",
+          "wallOffY": 1,
+          "sprintKey": true,
+          "selectionBox": {"x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.1, "z2": 1},
+          "collisionBox": {"x1": 0, "y1": 0, "z1": 0, "x2": 0, "y2": 0, "z2": 0}
+        }
+      }
+    ]
+  },
+  "attributes": {
+    "handbook": {"groupBy": ["shield-*"]},
+    "groundStorageTransformByType": {
+      "*-light-onion-*": {
+			translation: { x: 0.75, y: 0.3, z: 0.825 },
+			rotation: { x: 20, y: 180, z: 0 },
+			origin: { x: 0, y: 0, z: 0 }
+      },
+      "*-light-solar-*": {
+			translation: { x: 1.25, y: 0.45, z: 0.77 },
+			rotation: { x: 20, y: 180, z: 0 },
+			origin: { x: 0, y: 0, z: 0 }
+      }
+    },
+    "toolrackTransformByType": {			
+      "*-light-onion-*": {
+            translation: { x: 0.2, y: 0, z: 0 },
+		    rotation: { x: 90, y: 0, z: -90 },
+		    origin: { x: 0.25, y: 0.1, z: 0.3 }
+      },
+      "*-light-solar-*": {
+			translation: { x: 0.2, y: 0, z: 0.4 },
+			rotation: { x: 90, y: 0, z: -90 },
+			origin: { x: 0.25, y: 0.1, z: 0.3 },
+			scale: 0.8
+      }
+    },
+    "OffHandStanceByType": {
+      "*-copper": {
+        "CanAttack": false,
+        "CanParry": true,
+        "CanBlock": true,
+        "CanSprint": true,
+        "CanBash": true,
+        "SpeedPenalty": 0,
+        "BlockSpeedPenalty": -0.1,
+        "Parry": {
+          "Zones": ["Head", "Face", "Neck", "Torso", "LeftArm", "RightArm", "LeftHand", "RightHand", "LeftLeg", "RightLeg", "LeftFoot", "RightFoot"],
+          "Directions": [45, 45, 45, 45],
+          "Sound": "game:sounds/held/shieldblock-wood-heavy",
+          "BlockTier": {"BluntAttack": 5, "SlashingAttack": 5, "PiercingAttack": 5}
+        },
+        "Block": {
+          "Zones": ["Face", "Neck", "Torso", "LeftArm", "RightArm", "LeftHand", "RightHand", "LeftLeg", "RightLeg"],
+          "Directions": [60, 60, 60, 60],
+          "Sound": "game:sounds/held/shieldblock-wood-light",
+          "BlockTier": {"BluntAttack": 3, "SlashingAttack": 3, "PiercingAttack": 3}
+        },
+        "BlockBash": {
+          "StopOnTerrainHit": false,
+          "StopOnEntityHit": true,
+          "CollideWithTerrain": true,
+          "MaxReach": 9,
+          "DamageTypes": [
+            {
+              "DamageByType": {"*": {"DamageType": "BluntAttack", "Tier": 0, "Damage": 1}},
+              "Knockback": 2,
+              "DurabilityDamage": 1,
+              "Collider": [-0.3, -0.3, 0.2, 0.39999998, -0.3, 0.2]
+            }
+          ]
+        },
+        "BlockCooldownMs": 300,
+        "BlockAnimation": "armory:shield-light-parry",
+        "ReadyAnimation": "armory:shield-light-ready",
+        "IdleAnimation": "armory:shield-light-ready",
+        "BlockBashAnimation": {"Main": ["combatoverhaul:shield-light-bash"]},
+        "BlockTpAnimation": "block"
+      },
+      "*-*bronze": {
+        "CanAttack": false,
+        "CanParry": true,
+        "CanBlock": true,
+        "CanSprint": true,
+        "CanBash": true,
+        "SpeedPenalty": 0,
+        "BlockSpeedPenalty": -0.2,
+        "Parry": {
+          "Zones": ["Head", "Face", "Neck", "Torso", "LeftArm", "RightArm", "LeftHand", "RightHand", "LeftLeg", "RightLeg", "LeftFoot", "RightFoot"],
+          "Directions": [45, 45, 45, 45],
+          "Sound": "game:sounds/held/shieldblock-wood-heavy",
+          "BlockTier": {"BluntAttack": 6, "SlashingAttack": 6, "PiercingAttack": 6}
+        },
+        "Block": {
+          "Zones": ["Face", "Neck", "Torso", "LeftArm", "RightArm", "LeftHand", "RightHand", "LeftLeg", "RightLeg"],
+          "Directions": [60, 60, 60, 60],
+          "Sound": "game:sounds/held/shieldblock-wood-light",
+          "BlockTier": {"BluntAttack": 4, "SlashingAttack": 4, "PiercingAttack": 4}
+        },
+        "BlockBash": {
+          "StopOnTerrainHit": false,
+          "StopOnEntityHit": true,
+          "CollideWithTerrain": true,
+          "MaxReach": 9,
+          "DamageTypes": [
+            {
+              "DamageByType": {"*": {"DamageType": "BluntAttack", "Tier": 0, "Damage": 1}},
+              "Knockback": 2,
+              "DurabilityDamage": 1,
+              "Collider": [-0.3, -0.3, 0.2, 0.39999998, -0.3, 0.2]
+            }
+          ]
+        },
+        "BlockCooldownMs": 300,
+        "BlockAnimation": "armory:shield-light-parry",
+        "ReadyAnimation": "armory:shield-light-ready",
+        "IdleAnimation": "armory:shield-light-ready",
+        "BlockBashAnimation": {"Main": ["combatoverhaul:shield-light-bash"]},
+        "BlockTpAnimation": "block"
+      },
+      "@.*-(iron|silver|gold)": {
+        "CanAttack": false,
+        "CanParry": true,
+        "CanBlock": true,
+        "CanSprint": true,
+        "CanBash": true,
+        "SpeedPenalty": 0,
+        "BlockSpeedPenalty": -0.2,
+        "Parry": {
+          "Zones": ["Head", "Face", "Neck", "Torso", "LeftArm", "RightArm", "LeftHand", "RightHand", "LeftLeg", "RightLeg", "LeftFoot", "RightFoot"],
+          "Directions": [60, 60, 60, 60],
+          "Sound": "game:sounds/held/shieldblock-wood-heavy",
+          "BlockTier": {"BluntAttack": 7, "SlashingAttack": 7, "PiercingAttack": 7}
+        },
+        "Block": {
+          "Zones": ["Face", "Neck", "Torso", "LeftArm", "RightArm", "LeftHand", "RightHand", "LeftLeg", "RightLeg"],
+          "Directions": [60, 60, 60, 60],
+          "Sound": "game:sounds/held/shieldblock-wood-light",
+          "BlockTier": {"BluntAttack": 5, "SlashingAttack": 5, "PiercingAttack": 5}
+        },
+        "BlockBash": {
+          "StopOnTerrainHit": false,
+          "StopOnEntityHit": true,
+          "CollideWithTerrain": true,
+          "MaxReach": 9,
+          "DamageTypes": [
+            {
+              "DamageByType": {"*": {"DamageType": "BluntAttack", "Tier": 0, "Damage": 1}},
+              "Knockback": 2,
+              "DurabilityDamage": 1,
+              "Collider": [-0.3, -0.3, 0.2, 0.39999998, -0.3, 0.2]
+            }
+          ]
+        },
+        "BlockCooldownMs": 300,
+        "BlockAnimation": "armory:shield-light-parry",
+        "ReadyAnimation": "armory:shield-light-ready",
+        "IdleAnimation": "armory:shield-light-ready",
+        "BlockBashAnimation": {"Main": ["combatoverhaul:shield-light-bash"]},
+        "BlockTpAnimation": "block"
+      },
+      "@.*-meteoriciron": {
+        "CanAttack": false,
+        "CanParry": true,
+        "CanBlock": true,
+        "CanSprint": true,
+        "CanBash": true,
+        "SpeedPenalty": 0,
+        "BlockSpeedPenalty": -0.2,
+        "Parry": {
+          "Zones": ["Head", "Face", "Neck", "Torso", "LeftArm", "RightArm", "LeftHand", "RightHand", "LeftLeg", "RightLeg", "LeftFoot", "RightFoot"],
+          "Directions": [60, 60, 60, 60],
+          "Sound": "game:sounds/held/shieldblock-wood-heavy",
+          "BlockTier": {"BluntAttack": 8, "SlashingAttack": 8, "PiercingAttack": 8}
+        },
+        "Block": {
+          "Zones": ["Face", "Neck", "Torso", "LeftArm", "RightArm", "LeftHand", "RightHand", "LeftLeg", "RightLeg"],
+          "Directions": [60, 60, 60, 60],
+          "Sound": "game:sounds/held/shieldblock-wood-light",
+          "BlockTier": {"BluntAttack": 6, "SlashingAttack": 6, "PiercingAttack": 6}
+        },
+        "BlockBash": {
+          "StopOnTerrainHit": false,
+          "StopOnEntityHit": true,
+          "CollideWithTerrain": true,
+          "MaxReach": 9,
+          "DamageTypes": [
+            {
+              "DamageByType": {"*": {"DamageType": "BluntAttack", "Tier": 0, "Damage": 1}},
+              "Knockback": 2,
+              "DurabilityDamage": 1,
+              "Collider": [-0.3, -0.3, 0.2, 0.39999998, -0.3, 0.2]
+            }
+          ]
+        },
+        "BlockCooldownMs": 300,
+        "BlockAnimation": "armory:shield-light-parry",
+        "ReadyAnimation": "armory:shield-light-ready",
+        "IdleAnimation": "armory:shield-light-ready",
+        "BlockBashAnimation": {"Main": ["combatoverhaul:shield-light-bash"]},
+        "BlockTpAnimation": "block"
+      },
+      "*-steel": {
+        "CanAttack": false,
+        "CanParry": true,
+        "CanBlock": true,
+        "CanSprint": true,
+        "CanBash": true,
+        "SpeedPenalty": 0,
+        "BlockSpeedPenalty": 0,
+        "Parry": {
+          "Zones": ["Head", "Face", "Neck", "Torso", "LeftArm", "RightArm", "LeftHand", "RightHand", "LeftLeg", "RightLeg", "LeftFoot", "RightFoot"],
+          "Directions": [90, 90, 90, 90],
+          "Sound": "game:sounds/held/shieldblock-wood-heavy",
+          "BlockTier": {"BluntAttack": 9, "SlashingAttack": 9, "PiercingAttack": 9}
+        },
+        "Block": {
+          "Zones": ["Head", "Face", "Neck", "Torso", "LeftArm", "RightArm", "LeftHand", "RightHand"],
+          "Directions": [45, 45, 45, 45],
+          "Sound": "game:sounds/held/shieldblock-wood-light",
+          "BlockTier": {"BluntAttack": 7, "SlashingAttack": 7, "PiercingAttack": 7}
+        },
+        "BlockBash": {
+          "StopOnTerrainHit": false,
+          "StopOnEntityHit": true,
+          "CollideWithTerrain": true,
+          "MaxReach": 9,
+          "DamageTypes": [
+            {
+              "DamageByType": {"*": {"DamageType": "BluntAttack", "Tier": 0, "Damage": 1}},
+              "Knockback": 2,
+              "DurabilityDamage": 1,
+              "Collider": [-0.3, -0.3, 0.2, 0.39999998, -0.3, 0.2]
+            }
+          ]
+        },
+        "BlockCooldownMs": 300,
+        "BlockAnimation": "armory:shield-light-parry",
+        "ReadyAnimation": "armory:shield-light-ready",
+        "IdleAnimation": "armory:shield-light-ready",
+        "BlockBashAnimation": {"Main": ["combatoverhaul:shield-light-bash"]},
+        "BlockTpAnimation": "block"
+      }
+    }
+  },
+  "shapeByType": {
+    "*-light-onion-*": {"base": "ignisclothing:item/weapons/onionshield"},
+    "*-light-solar-*": {"base": "ignisclothing:item/weapons/solarshield"}
+  },
+  	"textures": {
+		"wood.png": { "base": "game:item/tool/shield/wood" },
+        "green.png": { "base": "game:item/tool/shield/leather/green" },
+        "plain.png": { "base": "game:item/tool/shield/leather/plain" },
+        "handle.png": { "base": "game:item/tool/material/handle" },
+		"solar-knight-sigil.png": { "base": "ignisclothing:solar-knight-sigil" },
+    },
+	texturesByType: {
+		"*-copper": {
+			"metal": { base: "game:item/tool/shield/metal/copper" },
+		},
+		"*-tinbronze": {
+			"metal": { base: "game:item/tool/shield/metal/tinbronze" },
+		},
+        "*-bismuthbronze": {
+			"metal": { base: "game:item/tool/shield/metal/bismuthbronze" }
+		},
+        "*-blackbronze": {
+			"metal": { base: "game:item/tool/shield/metal/blackbronze" }
+		},
+        "*-iron": {
+			"metal": { base: "game:item/tool/shield/metal/iron" }
+		},
+        "*-meteoriciron": {
+			"metal": { base: "game:item/tool/shield/metal/meteoriciron" }
+		},
+        "*-steel": {
+			"metal": { base: "game:item/tool/shield/metal/steel" }
+		},
+        "*-silver": {
+			"metal": { base: "game:item/tool/shield/metal/silver" }
+		},
+        "*-gold": {
+			"metal": { base: "game:item/tool/shield/metal/gold" }
+		}
+	},
+  "durabilitybytype": {"*-copper": 600, "*-tinbronze": 1000, "*-bismuthbronze": 1000, "*-blackbronze": 1000, "*-iron": 1500, "*-meteoriciron": 2100, "*-steel": 3000, "*-silver": 1500, "*-gold": 1500},
+  "creativeinventory": {"general": ["*"], "ignisclothing": ["*"]},
+  "guiTransformByType": {
+    "*-light-onion-*": {
+        translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: 31, y: 27, z: 138 },
+		origin: { x: 0, y: 0.15, z: 0 },
+		scale: 1.62
+    },
+    "*-light-solar-*": {
+		translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: 29, y: -19, z: -162 },
+		origin: { x: 0.4, y: 0, z: 0.2 },
+		scale: 1.62
+    }
+  },
+  "groundTransformByType": {	
+    "*-light-onion-*": {
+		translation: { x: -0.05, y: 0.1, z: 0.1 },
+		rotation: { x: -90, y: 0, z: 0 },
+		origin: { x: 0, y: 0, z: 0 },
+		scale: 6
+    },
+    "*-light-solar-*": {
+		translation: { x: 0.5, y: 0.1, z: 0 },
+		rotation: { x: -90, y: 0, z: 0 },
+		origin: { x: 0, y: 0, z: 0 },
+		scale: 6
+    }
+  },
+  "tpHandTransformByType": {
+    "*-light-onion-*": {
+        translation: { x: 0, y: 0, z: -0.1 },
+		rotation: { x: -15, y: 0, z: -90 },
+		origin: { x: 0, y: 0, z: 0 },
+		scale: 1
+    },
+    "*-light-solar-*": {
+		translation: { x: 0.125, y: 0.4, z: -0.35 },
+		rotation: { x: -30, y: -5, z: -90 },
+		origin: { x: 0, y: 0, z: 0 },
+		scale: 1
+    }
+  },
+  "tpOffHandTransformByType": {
+    "*-light-onion-*": {
+        translation: { x: 0.05, y: 0, z: 0.1 },
+		rotation: { x: -150, y: 0, z: -90 },
+		origin: { x: 0, y: 0, z: 0 },
+		scale: 1
+    },
+    "*-light-solar-*": {
+		translation: { x: 0.15, y: -0.5, z: -0.125 },
+		rotation: { x: -150, y: 0, z: -90 },
+		origin: { x: 0, y: 0, z: 0 },
+		scale: 1
+    }
+  }
+}

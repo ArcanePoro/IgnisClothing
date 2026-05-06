@@ -1,0 +1,18 @@
+{
+	ingredient: { type: "item", code: "game:ingot-*", name: "metal", allowedVariants: ["copper", "tinbronze", "bismuthbronze", "blackbronze", "silver", "gold", "iron", "meteoriciron", "steel"] },
+	name: "boss",
+	pattern: [[
+		"_____",
+		"_###_",
+		"_###_",
+		"_###_",
+		"_____"
+	],[
+		"#####",
+		"#___#",
+		"#___#",
+		"#___#",
+		"#####"
+	]],
+	output: { type: "item", code: "game:boss-{metal}" }  
+}

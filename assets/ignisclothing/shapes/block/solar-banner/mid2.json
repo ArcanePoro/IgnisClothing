@@ -1,0 +1,73 @@
+{
+  "editor": {
+    "collapsedPaths": "",
+    "allAngles": false,
+    "entityTextureMode": false,
+    "singleTexture": false,
+    "vsFormatConverted": false
+  },
+  "textureWidth": 16,
+  "textureHeight": 16,
+  "textureSizes": {
+    "red.png": [16, 16]
+  },
+    "textures": {
+        "red.png": "game:block/cloth/banner/library/sunlarge/red"
+    },
+  "elements": [
+    {
+      "name": "origin rug",
+      "from": [7.5, 16, -0.2],
+      "to": [7.5, 16, -0.2],
+      "rotationOrigin": [7.5, 16, -0.2],
+      "children": [
+        {
+          "name": "segment 1",
+          "from": [-7.5, -16, 0],
+          "to": [8.5, 0, 0.5],
+          "rotationOrigin": [0.5, 0, 0],
+          "faces": {
+            "north": {
+              "texture": "#red.png",
+              "uv": [0, 0, 16, 16],
+              "autoUv": false,
+              "snapUv": false
+            },
+            "east": {
+              "texture": "#red.png",
+              "uv": [0, 0, 0.5, 16],
+              "autoUv": false,
+              "snapUv": false
+            },
+            "south": {
+              "texture": "#red.png",
+              "uv": [0, 0, 16, 16],
+              "autoUv": false,
+              "snapUv": false
+            },
+            "west": {
+              "texture": "#red.png",
+              "uv": [0, 0, 0.5, 16],
+              "autoUv": false,
+              "snapUv": false
+            },
+            "up": {
+              "texture": "#red.png",
+              "uv": [0, 0, 16, 0.5],
+              "autoUv": false,
+              "snapUv": false
+            },
+            "down": {
+              "texture": "#red.png",
+              "uv": [0, 0, 16, 0.5],
+              "autoUv": false,
+              "snapUv": false
+            }
+          },
+          "shade": false
+        }
+      ]
+    }
+  ],
+  "animations": []
+}

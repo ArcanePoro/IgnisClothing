@@ -1,0 +1,79 @@
+﻿{
+    "code": "atlatldart",
+    "class": "CombatOverhaul:Projectile",
+    "variantgroups": [
+        {
+            "code": "material",
+            "states": [ "flint", "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+        }
+    ],
+    "SelectionBoxSize": {
+        "x": 0.1,
+        "y": 0.1
+    },
+    "CollisionBoxSize": {
+        "x": 0.05,
+        "y": 0.05
+    },
+    "client": {
+        "size": 1,
+        "renderer": "Shape",
+        "shape": { "base": "ignisclothing:item/weapons/atlatldart" },
+        "texturesByType": {
+            "*-flint": {
+                "metal": { "base": "game:block/stone/flint" }
+            },
+            "*-copper": {
+                "metal": { "base": "game:item/tool/shield/metal/copper" }
+            },
+            "*-tinbronze": {
+                "metal": { "base": "game:item/tool/shield/metal/tinbronze" }
+            },
+            "*-bismuthbronze": {
+                "metal": { "base": "game:item/tool/shield/metal/bismuthbronze" }
+            },
+            "*-blackbronze": {
+                "metal": { "base": "game:item/tool/shield/metal/blackbronze" }
+            },
+            "*-iron": {
+                "metal": { "base": "game:item/tool/shield/metal/iron" }
+            },
+            "*-meteoriciron": {
+                "metal": { "base": "game:item/tool/shield/metal/meteoriciron" }
+            },
+            "*-steel": {
+                "metal": { "base": "game:item/tool/shield/metal/steel" }
+            },
+            "*-silver": {
+                "metal": { "base": "game:item/tool/shield/metal/silver" }
+            },
+            "*-gold": {
+                "metal": { "base": "game:item/tool/shield/metal/gold" }
+            }
+        },
+        "behaviors": [
+            {
+                "code": "CombatOverhaul:ProjectilePhysics",
+                "groundDragFactor": 0.5,
+                "airDragFactor": 0.5,
+                "gravityFactor": 0.5
+            },
+            { "code": "interpolateposition" }
+        ]
+    },
+    "server": {
+        "behaviors": [
+            {
+                "code": "CombatOverhaul:ProjectilePhysics",
+                "groundDragFactor": 0.5,
+                "airDragFactor": 0.5,
+                "gravityFactor": 0.5
+            },
+            {
+                "code": "despawn",
+                "minSeconds": 0
+            }
+        ]
+    },
+    "sounds": {}
+}

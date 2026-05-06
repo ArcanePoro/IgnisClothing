@@ -1,0 +1,443 @@
+[
+  {
+    "file": "ignisclothing:itemtypes/armor/ranger-armor",
+    "op": "addmerge",
+    "path": "/behaviors",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "value": [
+      {
+        "name": "CombatOverhaul:Armor",
+        "propertiesByType": {
+            "armor-ignis-head-ranger-copper": {
+                "Layers": [ "Skin", "Middle", "Outer" ],
+                "Zones": [ "Head", "Face", "Neck" ],
+                "Resists": {
+                    "PiercingAttack": 4,
+                    "SlashingAttack": 4,
+                    "BluntAttack": 6
+                },
+                "FlatReduction": {},
+                "PlayerStats": {
+                    "walkspeed": 0,
+                    "manipulationSpeed": -0.05,
+                    "steadyAim": 0.00,
+                    "healingeffectivness": -0.22,
+                    "hungerrate": 0.12
+                }
+            },
+            "armor-ignis-body-ranger-copper": {
+                "Layers": [ "Skin", "Middle", "Outer" ],
+                "Zones": [ "Torso", "Arms", "Hands" ],
+                "Resists": {
+                    "PiercingAttack": 4,
+                    "SlashingAttack": 4,
+                    "BluntAttack": 6
+                },
+                "FlatReduction": {},
+                "PlayerStats": {
+                    "walkspeed": -0.1,
+                    "manipulationSpeed": -0.18,
+                    "steadyAim": 0.00,
+                    "healingeffectivness": -0.28,
+                    "hungerrate": 0.13
+                }
+            },
+            "armor-ignis-legs-ranger-copper": {
+                "Layers": [ "Skin", "Middle", "Outer" ],
+                "Zones": [ "Legs", "Feet" ],
+                "Resists": {
+                    "PiercingAttack": 4,
+                    "SlashingAttack": 4,
+                    "BluntAttack": 6
+                },
+                "FlatReduction": {},
+                "PlayerStats": {
+                    "walkspeed": -0.11,
+                    "manipulationSpeed": 0,
+                    "steadyAim": 0,
+                    "healingeffectivness": -0.19,
+                    "hungerrate": 0.08
+                }
+            },
+            "armor-ignis-head-ranger-*bronze": {
+                "Layers": [ "Skin", "Middle", "Outer" ],
+                "Zones": [ "Head", "Face", "Neck" ],
+                "Resists": {
+                    "PiercingAttack": 5,
+                    "SlashingAttack": 5,
+                    "BluntAttack": 6
+                },
+                "FlatReduction": {},
+                "PlayerStats": {
+                    "walkspeed": 0,
+                    "manipulationSpeed": -0.05,
+                    "steadyAim": 0.00,
+                    "healingeffectivness": -0.22,
+                    "hungerrate": 0.12
+                }
+            },
+            "armor-ignis-body-ranger-*bronze": {
+                "Layers": [ "Skin", "Middle", "Outer" ],
+                "Zones": [ "Torso", "Arms", "Hands" ],
+                "Resists": {
+                    "PiercingAttack": 5,
+                    "SlashingAttack": 5,
+                    "BluntAttack": 6
+                },
+                "FlatReduction": {},
+                "PlayerStats": {
+                    "walkspeed": -0.1,
+                    "manipulationSpeed": -0.18,
+                    "steadyAim": 0.00,
+                    "healingeffectivness": -0.28,
+                    "hungerrate": 0.13
+                }
+            },
+          "armor-ignis-legs-ranger-*bronze": {
+            "Layers": ["Skin", "Middle", "Outer"],
+            "Zones": ["Legs", "Feet"],
+            "Resists": {
+                "PiercingAttack": 5,
+                "SlashingAttack": 5,
+                "BluntAttack": 6
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+                "walkspeed": -0.11,
+                "manipulationSpeed": 0,
+                "steadyAim": 0,
+                "healingeffectivness": -0.19,
+                "hungerrate": 0.08
+            }
+          },
+          "armor-ignis-head-ranger-iron": {
+            "Layers": ["Skin", "Middle", "Outer"],
+            "Zones": ["Head", "Face", "Neck"],
+            "Resists": {
+              "PiercingAttack": 6,
+              "SlashingAttack": 6,
+              "BluntAttack": 6
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+                "walkspeed": 0,
+                "manipulationSpeed": -0.05,
+                "steadyAim": 0.00,
+                "healingeffectivness": -0.22,
+                "hungerrate": 0.12
+            }
+          },
+          "armor-ignis-body-ranger-iron": {
+            "Layers": ["Skin", "Middle", "Outer"],
+            "Zones": ["Torso", "Arms", "Hands"],
+            "Resists": {
+                "PiercingAttack": 6,
+                "SlashingAttack": 6,
+                "BluntAttack": 6
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+                "walkspeed": -0.1,
+                "manipulationSpeed": -0.18,
+                "steadyAim": 0.00,
+                "healingeffectivness": -0.28,
+                "hungerrate": 0.13
+            }
+          },
+          "armor-ignis-legs-ranger-iron": {
+            "Layers": ["Skin", "Middle", "Outer"],
+            "Zones": ["Legs", "Feet"],
+            "Resists": {
+                "PiercingAttack": 6,
+                "SlashingAttack": 6,
+                "BluntAttack": 6
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+                "walkspeed": -0.11,
+                "manipulationSpeed": 0,
+                "steadyAim": 0,
+                "healingeffectivness": -0.19,
+                "hungerrate": 0.08
+            }
+          },
+          "armor-ignis-head-ranger-meteoriciron": {
+            "Layers": ["Skin", "Middle", "Outer"],
+            "Zones": ["Head", "Face", "Neck"],
+            "Resists": {
+                "PiercingAttack": 7,
+                "SlashingAttack": 7,
+                "BluntAttack": 6
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+                "walkspeed": 0,
+                "manipulationSpeed": -0.05,
+                "steadyAim": 0.00,
+                "healingeffectivness": -0.22,
+                "hungerrate": 0.12
+            }
+          },
+          "armor-ignis-body-ranger-meteoriciron": {
+            "Layers": ["Skin", "Middle", "Outer"],
+            "Zones": ["Torso", "Arms", "Hands"],
+            "Resists": {
+                "PiercingAttack": 7,
+                "SlashingAttack": 7,
+                "BluntAttack": 6
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+                "walkspeed": -0.1,
+                "manipulationSpeed": -0.18,
+                "steadyAim": 0.00,
+                "healingeffectivness": -0.28,
+                "hungerrate": 0.13
+            }
+          },
+          "armor-ignis-legs-ranger-meteoriciron": {
+            "Layers": ["Skin", "Middle", "Outer"],
+            "Zones": ["Legs", "Feet"],
+            "Resists": {
+              "PiercingAttack": 7,
+              "SlashingAttack": 7,
+              "BluntAttack": 6
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+                "walkspeed": -0.11,
+                "manipulationSpeed": 0,
+                "steadyAim": 0,
+                "healingeffectivness": -0.19,
+                "hungerrate": 0.08
+            }
+          },
+          "armor-ignis-head-ranger-steel": {
+            "Layers": ["Skin", "Middle", "Outer"],
+            "Zones": ["Head", "Face", "Neck"],
+            "Resists": {
+              "PiercingAttack": 8,
+              "SlashingAttack": 8,
+              "BluntAttack": 6
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+                "walkspeed": 0,
+                "manipulationSpeed": -0.05,
+                "steadyAim": 0.00,
+                "healingeffectivness": -0.22,
+                "hungerrate": 0.12
+            }
+          },
+          "armor-ignis-body-ranger-steel": {
+            "Layers": ["Skin", "Middle", "Outer"],
+            "Zones": ["Torso", "Arms", "Hands"],
+            "Resists": {
+                "PiercingAttack": 8,
+                "SlashingAttack": 8,
+                "BluntAttack": 6
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+                "walkspeed": -0.1,
+                "manipulationSpeed": -0.18,
+                "steadyAim": 0.00,
+                "healingeffectivness": -0.28,
+                "hungerrate": 0.13
+            }
+          },
+          "armor-ignis-legs-ranger-steel": {
+            "Layers": ["Skin", "Middle", "Outer"],
+            "Zones": ["Legs", "Feet"],
+            "Resists": {
+                "PiercingAttack": 8,
+                "SlashingAttack": 8,
+                "BluntAttack": 6
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+                "walkspeed": -0.11,
+                "manipulationSpeed": 0,
+                "steadyAim": 0,
+                "healingeffectivness": -0.19,
+                "hungerrate": 0.08
+            }
+          },
+          "armor-ignis-head-ranger-silver": {
+            "Layers": ["Skin", "Middle", "Outer"],
+            "Zones": ["Head", "Face", "Neck"],
+            "Resists": {
+                "PiercingAttack": 6,
+                "SlashingAttack": 6,
+                "BluntAttack": 6
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+                "walkspeed": 0,
+                "manipulationSpeed": -0.05,
+                "steadyAim": 0.00,
+                "healingeffectivness": -0.22,
+                "hungerrate": 0.12
+            }
+          },
+          "armor-ignis-body-ranger-silver": {
+            "Layers": ["Skin", "Middle", "Outer"],
+            "Zones": ["Torso", "Arms", "Hands"],
+            "Resists": {
+                "PiercingAttack": 6,
+                "SlashingAttack": 6,
+                "BluntAttack": 6
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+                "walkspeed": -0.1,
+                "manipulationSpeed": -0.18,
+                "steadyAim": 0.00,
+                "healingeffectivness": -0.28,
+                "hungerrate": 0.13
+            }
+          },
+          "armor-ignis-legs-ranger-silver": {
+            "Layers": ["Skin", "Middle", "Outer"],
+            "Zones": ["Legs", "Feet"],
+            "Resists": {
+                "PiercingAttack": 6,
+                "SlashingAttack": 6,
+                "BluntAttack": 6
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+                "walkspeed": -0.11,
+                "manipulationSpeed": 0,
+                "steadyAim": 0,
+                "healingeffectivness": -0.19,
+                "hungerrate": 0.08
+            }
+          },
+          "armor-ignis-head-ranger-gold": {
+            "Layers": ["Skin", "Middle", "Outer"],
+            "Zones": ["Head", "Face", "Neck"],
+            "Resists": {
+                "PiercingAttack": 6,
+                "SlashingAttack": 6,
+                "BluntAttack": 6
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+                "walkspeed": 0,
+                "manipulationSpeed": -0.05,
+                "steadyAim": 0.00,
+                "healingeffectivness": -0.22,
+                "hungerrate": 0.12
+            }
+          },
+          "armor-ignis-body-ranger-gold": {
+            "Layers": ["Skin", "Middle", "Outer"],
+            "Zones": ["Torso", "Arms", "Hands"],
+            "Resists": {
+                "PiercingAttack": 6,
+                "SlashingAttack": 6,
+                "BluntAttack": 6
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+                "walkspeed": -0.1,
+                "manipulationSpeed": -0.18,
+                "steadyAim": 0.00,
+                "healingeffectivness": -0.28,
+                "hungerrate": 0.13
+            }
+          },
+          "armor-ignis-legs-ranger-gold": {
+            "Layers": ["Skin", "Middle", "Outer"],
+            "Zones": ["Legs", "Feet"],
+            "Resists": {
+                "PiercingAttack": 6,
+                "SlashingAttack": 6,
+                "BluntAttack": 6
+            },
+            "FlatReduction": {},
+            "PlayerStats": {
+                "walkspeed": -0.11,
+                "manipulationSpeed": 0,
+                "steadyAim": 0,
+                "healingeffectivness": -0.19,
+                "hungerrate": 0.08
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "file": "ignisclothing:itemtypes/armor/ranger-armor",
+    "op": "replace",
+    "path": "/durabilityByType",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "value": {
+        "armor-ignis-head-ranger-copper": 1600,
+        "armor-ignis-body-ranger-copper": 4800,
+        "armor-ignis-legs-ranger-copper": 3200,
+
+        "armor-ignis-head-ranger-tinbronze": 3000,
+        "armor-ignis-body-ranger-tinbronze": 8800,
+        "armor-ignis-legs-ranger-tinbronze": 5900,
+
+        "armor-ignis-head-ranger-bismuthbronze": 3200,
+        "armor-ignis-body-ranger-bismuthbronze": 9600,
+        "armor-ignis-legs-ranger-bismuthbronze": 6400,
+
+        "armor-ignis-head-ranger-blackbronze": 3500,
+        "armor-ignis-body-ranger-blackbronze": 10400,
+        "armor-ignis-legs-ranger-blackbronze": 6900,
+
+        "armor-ignis-head-ranger-iron": 4000,
+        "armor-ignis-body-ranger-iron": 12000,
+        "armor-ignis-legs-ranger-iron": 9600,
+
+        "armor-ignis-head-ranger-meteoriciron": 5800,
+        "armor-ignis-body-ranger-meteoriciron": 15600,
+        "armor-ignis-legs-ranger-meteoriciron": 10400,
+
+        "armor-ignis-head-ranger-steel": 7000,
+        "armor-ignis-body-ranger-steel": 21000,
+        "armor-ignis-legs-ranger-steel": 14000,
+
+        "armor-ignis-head-ranger-silver": 4000,
+        "armor-ignis-body-ranger-silver": 12000,
+        "armor-ignis-legs-ranger-silver": 9600,
+
+        "armor-ignis-head-ranger-gold": 4000,
+        "armor-ignis-body-ranger-gold": 12000,
+        "armor-ignis-legs-ranger-gold": 9600
+    }
+  },
+  {
+    "file": "ignisclothing:itemtypes/armor/ranger-armor",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "op": "replace",
+    "path": "/attributes/protectionModifiersByType",
+    "value": { "*": null }
+  },
+  {
+    "file": "ignisclothing:itemtypes/armor/ranger-armor",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "op": "replace",
+    "path": "/attributes/statModifiersByType",
+    "value": { "*": null }
+  },
+  {
+    "file": "ignisclothing:itemtypes/armor/ranger-armor",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "op": "replace",
+    "path": "/class",
+    "value": "CombatOverhaul:WearableArmor"
+  },
+  {
+    "file": "ignisclothing:itemtypes/armor/ranger-armor",
+    "dependsOn": [{ "modId": "combatoverhaul" }],
+    "op": "add",
+    "path": "/attributes/materialCountByType",
+    "value": { "*-head-*": 4, "*-body-*": 8, "*-legs-*": 8 }
+  }  
+]

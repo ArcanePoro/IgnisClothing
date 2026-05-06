@@ -1,0 +1,124 @@
+{
+	"editor": {
+		"backDropShape": "entity/humanoid/seraph-hairless",
+		"collapsedPaths": "",
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 32,
+	"textureHeight": 76,
+	"textureSizes": {
+		"tancloth": [16, 16],
+		"metal": [32, 16],
+		"seraph-naked-hairless.png": [32, 76]
+	},
+	"textures": {
+		"tancloth": "ignisclothing:dunekin-helm/tan-cloth",
+		"metal": "game:item/tool/material/tinbronze"
+	},
+	"elements": [
+		{
+			"name": "UpperFootR_geo",
+			"from": [0.15, 0, 0.55],
+			"to": [0.15, 0, 0.55],
+			"rotationOrigin": [0.15, 0, 0.55],
+			"children": [
+				{
+					"name": "UpperFootR_geo2",
+					"from": [-0.37, 4.05, -0.75],
+					"to": [4.33, 9.05, 2.95],
+					"rotationOrigin": [0, 0, -0.75],
+					"uv": [0, 0],
+					"shade": false,
+					"faces": {
+						"north": {"texture": "#tancloth", "uv": [6, 9.5, 10.5, 14.5], "autoUv": false, "snapUv": false},
+						"east": {"texture": "#tancloth", "uv": [6, 7.5, 9.5, 12.5], "autoUv": false, "snapUv": false},
+						"south": {"texture": "#tancloth", "uv": [5.5, 8, 10.2, 13], "autoUv": false, "snapUv": false},
+						"west": {"texture": "#tancloth", "uv": [2.5, 5.5, 6.2, 10.5], "autoUv": false, "snapUv": false},
+						"up": {"texture": "#tancloth", "uv": [5, 4, 8.7, 8.7], "rotation": 90, "autoUv": false, "snapUv": false},
+						"down": {"texture": "#tancloth", "uv": [5, 6, 8.7, 10.7], "rotation": 90, "autoUv": false, "snapUv": false}
+					},
+					"stepParentName": "",
+					"climateColorMap": "",
+					"gradientShade": false,
+					"renderPass": 0,
+					"seasonColorMap": ""
+				},
+				{
+					"name": "UpperFootR_geo_geo",
+					"from": [-0.55, -0.25, -1.05],
+					"to": [4.45, 4.25, 3.95],
+					"rotationOrigin": [-0.55, -0.25, -1.05],
+					"uv": [0, 0],
+					"shade": false,
+					"faces": {
+						"north": {"texture": "#tancloth", "uv": [5, 0, 10, 4.5], "autoUv": false, "snapUv": false},
+						"east": {"texture": "#tancloth", "uv": [8, 0, 13, 4.5], "autoUv": false, "snapUv": false},
+						"south": {"texture": "#tancloth", "uv": [6, 0, 11, 4.5], "autoUv": false, "snapUv": false},
+						"west": {"texture": "#tancloth", "uv": [4, 0, 9, 4.5], "autoUv": false, "snapUv": false},
+						"up": {"texture": "#tancloth", "uv": [6, 4.5, 11, 9.5], "rotation": 90, "autoUv": false, "snapUv": false},
+						"down": {"texture": "#tancloth", "uv": [6, 8, 11, 13], "rotation": 90, "autoUv": false, "snapUv": false}
+					},
+					"stepParentName": "",
+					"climateColorMap": "",
+					"gradientShade": false,
+					"renderPass": 0,
+					"seasonColorMap": ""
+				}
+			],
+			"stepParentName": "UpperFootR"
+		},
+		{
+			"name": "UpperFootL_geo",
+			"from": [6.15, 9, 7.45],
+			"to": [6.15, 9, 7.45],
+			"rotationOrigin": [6.15, 9, 7.45],
+			"children": [
+				{
+					"name": "UpperFootL_geo2",
+					"from": [-6.37, -4.95, -7.75],
+					"to": [-1.67, 0.05, -4.05],
+					"rotationOrigin": [-6, -9, -8.15],
+					"uv": [0, 0],
+					"shade": false,
+					"faces": {
+						"north": {"texture": "#tancloth", "uv": [5, 8, 9.7, 13], "autoUv": false, "snapUv": false},
+						"east": {"texture": "#tancloth", "uv": [4, 8, 7.5, 13], "autoUv": false, "snapUv": false},
+						"south": {"texture": "#tancloth", "uv": [4, 6, 8.5, 11], "autoUv": false, "snapUv": false},
+						"west": {"texture": "#tancloth", "uv": [7, 7, 10.5, 12], "autoUv": false, "snapUv": false},
+						"up": {"texture": "#tancloth", "uv": [5, 6.5, 8.7, 11.2], "rotation": 90, "autoUv": false, "snapUv": false},
+						"down": {"texture": "#tancloth", "uv": [4.5, 5, 8.2, 9.7], "rotation": 90, "autoUv": false, "snapUv": false}
+					},
+					"stepParentName": "",
+					"climateColorMap": "",
+					"gradientShade": false,
+					"renderPass": 0,
+					"seasonColorMap": ""
+				},
+				{
+					"name": "UpperFootL_geo_geo",
+					"from": [-6.55, -9.25, -8.75],
+					"to": [-1.55, -4.75, -3.75],
+					"rotationOrigin": [-6.55, -9.25, -8.75],
+					"uv": [0, 0],
+					"shade": false,
+					"faces": {
+						"north": {"texture": "#tancloth", "uv": [5, 0, 10, 4.5], "autoUv": false, "snapUv": false},
+						"east": {"texture": "#tancloth", "uv": [8, 0, 13, 4.5], "autoUv": false, "snapUv": false},
+						"south": {"texture": "#tancloth", "uv": [6, 0, 11, 4.5], "autoUv": false, "snapUv": false},
+						"west": {"texture": "#tancloth", "uv": [4, 0, 9, 4.5], "autoUv": false, "snapUv": false},
+						"up": {"texture": "#tancloth", "uv": [6, 4.5, 11, 9.5], "rotation": 90, "autoUv": false, "snapUv": false},
+						"down": {"texture": "#tancloth", "uv": [6, 8, 11, 13], "rotation": 90, "autoUv": false, "snapUv": false}
+					},
+					"stepParentName": "",
+					"climateColorMap": "",
+					"gradientShade": false,
+					"renderPass": 0,
+					"seasonColorMap": ""
+				}
+			],
+			"stepParentName": "UpperFootL"
+		}
+	],
+	"animations": []
+}

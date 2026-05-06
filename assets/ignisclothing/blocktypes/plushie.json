@@ -1,0 +1,155 @@
+{
+	"code": "plushie",
+	"class": "Block",
+	"variantgroups": [
+		{
+			"code": "type",
+			"states": [ "weh", "blahaj" ]
+		},
+		{
+			"code": "side",
+			"loadFromProperties": "abstract/horizontalorientation"
+		}
+	],
+	"shape": {
+		"base": "ignisclothing:block/{type}",
+		"rotateYByType": {
+			"*-north": 180,
+			"*-east": 90,
+			"*-south": 0,
+			"*-west": 270
+		}
+	},
+	"behaviors": [
+		{
+			"name": "HorizontalOrientable",
+			"properties": { "dropBlockFace": "north" }
+		}
+	],
+	"sideopaqueByType": {
+		"*-north": {
+			"all": false
+		},
+		"*-east": {
+			"all": false
+		},
+		"*-west": {
+			"all": false
+		},
+		"*-south": {
+			"all": false
+		}
+	},
+	"blockmaterial": "Cloth",
+	"creativeinventory": {
+		"general": [ "*-north" ],
+		"ignisclothing": [ "*-north" ]
+	},
+	"replaceable": 700,
+	"resistance": 1,
+	"lightAbsorption": 0,
+	"selectionbox": {
+		"x1": 0.25,
+		"y1": 0.0,
+		"z1": 0.25,
+		"x2": 0.75,
+		"y2": 0.4,
+		"z2": 0.75
+	},
+	"collisionbox": {
+		"x1": 0.25,
+		"y1": 0.0,
+		"z1": 0.25,
+		"x2": 0.75,
+		"y2": 0.3,
+		"z2": 0.75
+	},
+	"combustibleProps": {
+		"burnTemperature": 400,
+		"burnDuration": 4
+	},
+	"guiTransformByType": {
+		"*weh*": {
+			"rotation": {
+				"x": -22,
+				"y": 142,
+				"z": 0
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.25,
+				"z": 0.6
+			},
+			"scale": 1.7
+		},
+		"*blahaj*": {
+			"rotation": {
+				"x": -22,
+				"y": 142,
+				"z": 0
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.25,
+				"z": 0.6
+			},
+			"scale": 2.15
+		}
+	},
+	"groundTransform": {
+		"translation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"rotation": {
+			"x": 0,
+			"y": -45,
+			"z": 0
+		},
+		"origin": {
+			"x": 0.5,
+			"y": 0,
+			"z": 0.5
+		},
+		"scale": 4.01
+	},
+	"heldTpIdleAnimation": "holdbothhandslarge",
+	"heldRightReadyAnimation": "heldblockready",
+	"heldTpUseAnimation": "twohandplaceblock",
+	"tpHandTransformByType": {
+		"*weh*": {
+			"translation": {
+				"x": -1,
+				"y": -0.5,
+				"z": -0.2
+			},
+			"rotation": {
+				"x": -76,
+				"y": 0,
+				"z": -103
+			},
+			"scale": 1
+		},
+		"*blahaj*": {
+			"translation": {
+				"x": -1,
+				"y": -0.4,
+				"z": -0.2
+			},
+			"rotation": {
+				"x": -14,
+				"y": 6,
+				"z": -82
+			},
+			"scale": 1
+		}
+	},
+	"sounds": {
+		"place": "game:block/cloth",
+		"break": "game:block/cloth",
+		"hit": "game:block/cloth",
+		"walk": "game:walk/cloth"
+	},
+	"materialDensity": 200
+}

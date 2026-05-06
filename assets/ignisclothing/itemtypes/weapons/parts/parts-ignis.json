@@ -1,0 +1,137 @@
+{
+	code: "parts",
+	variantgroups: [
+		{"code": "type", "states": ["billhookpole", "solarlongsword", "parrydagger", "solarpike"]},
+		{"code": "material", "states": ["wood", "copper", "tinbronze", "bismuthbronze", "blackbronze", "gold", "silver", "iron", "meteoriciron", "steel"]}
+	],
+	skipVariants: [
+		"*-billhookpole-wood",
+		"*-solarlongsword-wood",
+		"*-parrydagger-wood"
+	],
+	heldTpUseAnimation: "interactstatic", 
+	maxstacksize: 4,
+	shapeByType: {
+		"*-billhookpole-*": { base: "ignisclothing:item/weapons/parts/billhookpolepart" },
+		"*-solarlongsword-*": { base: "ignisclothing:item/weapons/parts/solarlongswordpart" },
+		"*-parrydagger-*": { base: "ignisclothing:item/weapons/parts/parrydaggerpart" },
+		"*-solarpike-*": { base: "ignisclothing:item/weapons/parts/solarpikepart" }
+	},
+    "texturesByType": {
+		  "*-wood": {
+          	"metal": { base: "game:block/wood/debarked/oak" },
+          },
+          "*-copper": {
+          	"metal": { base: "game:item/tool/shield/metal/copper" },
+          },
+          "*-tinbronze": {
+          	"metal": { base: "game:item/tool/shield/metal/tinbronze" },
+          },
+          "*-bismuthbronze": {
+          	"metal": { base: "game:item/tool/shield/metal/bismuthbronze" }
+          },
+          "*-blackbronze": {
+          	"metal": { base: "game:item/tool/shield/metal/blackbronze" }
+          },
+          "*-iron": {
+          	"metal": { base: "game:item/tool/shield/metal/iron" }
+          },
+          "*-meteoriciron": {
+          	"metal": { base: "game:item/tool/shield/metal/meteoriciron" }
+          },
+          "*-steel": {
+          	"metal": { base: "game:item/tool/shield/metal/steel" }
+          },
+          "*-silver": {
+          	"metal": { base: "game:item/tool/shield/metal/silver" }
+          },
+          "*-gold": {
+          	"metal": { base: "game:item/tool/shield/metal/gold" }
+          }
+    },
+	attributes: {
+		onTongTransformByType: {
+			"*-billhookpole-*": {
+				translation: { x: -0.4, y: -0.28, z: -0.4 },
+				rotation: { x: 16, y: -55, z: 10 },
+				origin: { x: 0, y: 0, z: 0.5 }
+			},
+			"*-solarlongsword-*": {
+				translation: { x: -0.4, y: -0.21, z: -0.4 },
+				rotation: { x: 88, y: 18, z: -26 },
+				origin: { x: 0, y: 0, z: 0.5 }
+			},
+			"*-parrydagger-*": {
+				translation: { x: -0.6, y: -0.28, z: -0.33 },
+				rotation: { x: 89, y: 20, z: -90 },
+				origin: { x: 0, y: 0, z: 0.5 }
+			},
+			"*-solarpike-*": {
+				translation: { x: -0.4, y: -0.19, z: -0.55 },
+				rotation: { x: 93, y: 17, z: 0 },
+				origin: { x: 0, y: 0, z: 0.5 }
+			}
+		}
+	},
+	creativeinventory: { "general": ["*"], "items": ["*"], "ignisclothing": ["*"] },
+	guiTransformByType: {
+		"*-billhookpole-*": {
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: 85, y: -47, z: 0 },
+			origin: { x: -0.05, y: -9, z: 0 },
+			scaleXyz: { x: -2.5, y: 2.5, z: 2.5 }
+		},
+		"*-solarlongsword-*": {
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: 85, y: -47, z: 0 },
+			origin: { x: 0.2, y: -10, z: 0 },
+			scaleXyz: { x: -1.8, y: 1.8, z: 1.8 }
+		},
+		"*-parrydagger-*": {
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: 85, y: -43, z: 0 },
+			origin: { x: 0.2, y: -5, z: 0.2 },
+			scaleXyz: { x: -2.5, y: 2.5, z: 2.5 }
+		},
+		"*-solarpike-*": {
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: 85, y: -43, z: 0 },
+			origin: { x: 0.1, y: -3, z: 0.3 },
+			scaleXyz: { x: -2.72, y: 2.72, z: 2.72 }
+		}
+	},
+	groundTransformByType: {
+		"*": {
+			translation: { x: 0, y: 0.35, z: 0 },
+			rotation: { x: 0, y: 0, z: 0 },
+			origin: { x: 0.6, y: 0.45, z: 0.5 },
+			scale: 3.5
+		}
+	},
+	tpHandTransformByType: {
+		"*-billhookpole-*": {
+			translation: { x: 0, y: 0.05, z: -0.5 },
+			rotation: { x: 90, y: 0, z: 0 },
+			origin: { x: 0, y: 0, z: 0.5 },
+			scale: 1
+		},
+		"*-solarlongsword-*": {
+			translation: { x: 0.15, y: 0.05, z: -0.5 },
+			rotation: { x: 90, y: 0, z: 0 },
+			origin: { x: 0, y: 0, z: 0.5 },
+			scale: 1
+		},
+		"*-parrydagger-*": {
+			translation: { x: 0.05, y: 0.05, z: -0.5 },
+			rotation: { x: 90, y: 0, z: 0 },
+			origin: { x: 0, y: 0, z: 0.5 },
+			scale: 1
+		},
+		"*-solarpike-*": {
+			translation: { x: 0.05, y: 0.05, z: -0.5 },
+			rotation: { x: 90, y: 0, z: 0 },
+			origin: { x: 0, y: 0, z: 0.5 },
+			scale: 1
+		}
+	}
+}

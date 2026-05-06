@@ -1,0 +1,25 @@
+[
+    {
+      ingredientPattern: "P,F",
+      ingredients: {
+        "P": { type: "item", code: "game:paper-parchment" },
+        "F": { type: "item", code: "game:fat" }
+      },
+      width: 1,
+      height: 2,
+      shapeless: true,
+      name: "envelope with fat",
+      output: { type: "item", code: "envelopes:envelope-empty", quantity: 1  }
+    },
+	{
+		ingredientPattern: "BBB,B_B,OOO",
+		ingredients: {
+			"B": { type: "item", code: "game:bone", quantity: 2 },
+			"O": { type: "item", code: "game:bone" }
+		},
+		width: 3,
+		height: 3,
+		name: "skeleton skull",
+		output: { type: "item", code: "game:clutter-skull/humanoid", quantity: 1 }
+	}
+]

@@ -1,0 +1,345 @@
+﻿{
+  "code": "sword",
+  "class": "CombatOverhaul:MeleeWeapon",
+  "tags": ["weapon", "weapon-melee", "shield", "onehanded"],
+  "behaviorsByType": {
+    "*-parrydagger-*": [
+      {
+        "name": "GroundStorable",
+        "properties": {
+          "layout": "WallHalves",
+          "wallOffY": 1,
+          "sprintKey": true,
+          "selectionBox": {"x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.1, "z2": 1},
+          "collisionBox": {"x1": 0, "y1": 0, "z1": 0, "x2": 0, "y2": 0, "z2": 0}
+        }
+      }
+    ]
+  },
+  "variantgroups": [
+    {"code": "handling", "states": ["short"]},
+    {"code": "type", "states": ["parrydagger"]},
+    {"code": "material", "states": ["copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold"]}
+  ],
+    "textures": {
+      "handle.png": {"base": "game:item/tool/material/handle"}
+  },
+  "texturesByType": {
+	    "*-copper": {
+	    	"metal": { base: "game:item/tool/shield/metal/copper" },
+	    },
+	    "*-tinbronze": {
+	    	"metal": { base: "game:item/tool/shield/metal/tinbronze" },
+	    },
+           "*-bismuthbronze": {
+	    	"metal": { base: "game:item/tool/shield/metal/bismuthbronze" }
+	    },
+           "*-blackbronze": {
+	    	"metal": { base: "game:item/tool/shield/metal/blackbronze" }
+	    },
+           "*-iron": {
+	    	"metal": { base: "game:item/tool/shield/metal/iron" }
+	    },
+           "*-meteoriciron": {
+	    	"metal": { base: "game:item/tool/shield/metal/meteoriciron" }
+	    },
+           "*-steel": {
+	    	"metal": { base: "game:item/tool/shield/metal/steel" }
+	    },
+           "*-silver": {
+	    	"metal": { base: "game:item/tool/shield/metal/silver" }
+	    },
+           "*-gold": {
+	    	"metal": { base: "game:item/tool/shield/metal/gold" }
+	    }
+  },
+  "shapeByType": {
+    "*-parrydagger*-*": {"base": "ignisclothing:item/weapons/parrydagger"},
+  },
+  "tool": "sword",
+  "storageFlags": 257,
+  "attributes": {
+    "handbook": {"groupBy": ["sword-short-*"]},
+    "groundStorageTransformByType": {
+      "*-parrydagger*-*": {
+          	translation: { x: 0.5, y: 0.95, z: 0.45 },
+			rotation: { x: 20, y: 0, z: -90 },
+			origin: { x: 0, y: 0, z: 0.5 },
+			scale: 1.2
+      }
+    },
+    "toolrackTransformByType": {
+      "*-parrydagger*-*": {
+            translation: { x: 1, y: 0.4, z: 0 },
+			rotation: { x: 0, y: 0, z: 180 },
+			origin: { x: 0, y: 0, z: 0.5 },
+			scale: 1.2
+      }
+    },
+    "ProficiencyStats": ["meleeProficiency", "oneHandedSwordsProficiency"],
+    "RenderingOffset": false,
+    "OffHandStanceByType": {
+      "*-copper": {
+        "CanAttack": false,
+        "CanParry": true,
+        "CanBlock": false,
+        "CanSprint": true,
+        "CanBash": true,
+        "SpeedPenalty": 0,
+        "BlockSpeedPenalty": 0,
+        "Parry": {
+          "Zones": ["Head", "Face", "Neck", "Torso", "LeftArm", "RightArm", "LeftHand", "RightHand", "LeftLeg", "RightLeg", "LeftFoot", "RightFoot"],
+          "Directions": [60, 60, 60, 60],
+          "Sound": "game:sounds/held/shieldblock-metal-heavy",
+          "BlockTier": {"BluntAttack": 5, "SlashingAttack": 5, "PiercingAttack": 5}
+        },
+        "BlockCooldownMs": 300,
+        "BlockAnimation": "ignisclothing:parrydagger-offhand-parry",
+        "ReadyAnimation": "ignisclothing:parrydagger-offhand-ready",
+        "IdleAnimation": "ignisclothing:parrydagger-offhand-ready",
+      },
+      "*-*bronze": {
+        "CanAttack": false,
+        "CanParry": true,
+        "CanBlock": false,
+        "CanSprint": true,
+        "CanBash": true,
+        "SpeedPenalty": 0,
+        "BlockSpeedPenalty": 0,
+        "Parry": {
+          "Zones": ["Head", "Face", "Neck", "Torso", "LeftArm", "RightArm", "LeftHand", "RightHand", "LeftLeg", "RightLeg", "LeftFoot", "RightFoot"],
+          "Directions": [60, 60, 60, 60],
+          "Sound": "game:sounds/held/shieldblock-metal-heavy",
+          "BlockTier": {"BluntAttack": 6, "SlashingAttack": 6, "PiercingAttack": 6}
+        },
+        "BlockCooldownMs": 300,
+        "BlockAnimation": "ignisclothing:parrydagger-offhand-parry",
+        "ReadyAnimation": "ignisclothing:parrydagger-offhand-ready",
+        "IdleAnimation": "ignisclothing:parrydagger-offhand-ready",
+      },
+      "@.*-(iron|silver|gold)": {
+        "CanAttack": false,
+        "CanParry": true,
+        "CanBlock": false,
+        "CanSprint": true,
+        "CanBash": true,
+        "SpeedPenalty": 0,
+        "BlockSpeedPenalty": 0,
+        "Parry": {
+          "Zones": ["Head", "Face", "Neck", "Torso", "LeftArm", "RightArm", "LeftHand", "RightHand", "LeftLeg", "RightLeg", "LeftFoot", "RightFoot"],
+          "Directions": [60, 60, 60, 60],
+          "Sound": "game:sounds/held/shieldblock-metal-heavy",
+          "BlockTier": {"BluntAttack": 7, "SlashingAttack": 7, "PiercingAttack": 7}
+        },
+        "BlockCooldownMs": 300,
+        "BlockAnimation": "ignisclothing:parrydagger-offhand-parry",
+        "ReadyAnimation": "ignisclothing:parrydagger-offhand-ready",
+        "IdleAnimation": "ignisclothing:parrydagger-offhand-ready",
+      },
+      "@.*-meteoriciron": {
+        "CanAttack": false,
+        "CanParry": true,
+        "CanBlock": false,
+        "CanSprint": true,
+        "CanBash": true,
+        "SpeedPenalty": 0,
+        "BlockSpeedPenalty": 0,
+        "Parry": {
+          "Zones": ["Head", "Face", "Neck", "Torso", "LeftArm", "RightArm", "LeftHand", "RightHand", "LeftLeg", "RightLeg", "LeftFoot", "RightFoot"],
+          "Directions": [60, 60, 60, 60],
+          "Sound": "game:sounds/held/shieldblock-metal-heavy",
+          "BlockTier": {"BluntAttack": 8, "SlashingAttack": 8, "PiercingAttack": 8}
+        },
+        "BlockCooldownMs": 300,
+        "BlockAnimation": "ignisclothing:parrydagger-offhand-parry",
+        "ReadyAnimation": "ignisclothing:parrydagger-offhand-ready",
+        "IdleAnimation": "ignisclothing:parrydagger-offhand-ready",
+      },
+      "*-steel": {
+        "CanAttack": false,
+        "CanParry": true,
+        "CanBlock": false,
+        "CanSprint": true,
+        "CanBash": true,
+        "SpeedPenalty": 0,
+        "BlockSpeedPenalty": 0,
+        "Parry": {
+          "Zones": ["Head", "Face", "Neck", "Torso", "LeftArm", "RightArm", "LeftHand", "RightHand", "LeftLeg", "RightLeg", "LeftFoot", "RightFoot"],
+          "Directions": [60, 60, 60, 60],
+          "Sound": "game:sounds/held/shieldblock-metal-heavy",
+          "BlockTier": {"BluntAttack": 9, "SlashingAttack": 9, "PiercingAttack": 9}
+        },
+        "BlockCooldownMs": 300,
+        "BlockAnimation": "ignisclothing:parrydagger-offhand-parry",
+        "ReadyAnimation": "ignisclothing:parrydagger-offhand-ready",
+        "IdleAnimation": "ignisclothing:parrydagger-offhand-ready",
+      }
+    },
+    "OneHandedStance": {
+      "CanAttack": true,
+      "CanParry": false,
+      "CanBlock": false,
+      "CanSprint": true,
+      "AttackSpeedMultiplier": 1.25,
+       "DirectionalAttacksByType": {
+          "*-parrydagger-*": {
+            "Top": {
+              "StopOnTerrainHit": true,
+              "StopOnEntityHit": false,
+              "CollideWithTerrain": true,
+              "HitOnlyOneEntity": false,
+              "MaxReach": 9,
+              "DamageTypes": [
+                {
+                  "DamageByType": {
+                    "*-parrydagger-copper":        {"DamageType": "PiercingAttack", "Tier": 2, "Damage": 3},
+                    "*-parrydagger-tinbronze":     {"DamageType": "PiercingAttack", "Tier": 3, "Damage": 3.5},
+                    "*-parrydagger-bismuthbronze": {"DamageType": "PiercingAttack", "Tier": 3, "Damage": 3.5},
+                    "*-parrydagger-blackbronze":   {"DamageType": "PiercingAttack", "Tier": 4, "Damage": 3.5},
+                    "*-parrydagger-iron":          {"DamageType": "PiercingAttack", "Tier": 4, "Damage": 4},
+                    "*-parrydagger-meteoriciron":  {"DamageType": "PiercingAttack", "Tier": 5, "Damage": 4},
+                    "*-parrydagger-steel":         {"DamageType": "PiercingAttack", "Tier": 6, "Damage": 4.5},
+                    "*-parrydagger-silver":        {"DamageType": "PiercingAttack", "Tier": 4, "Damage": 4},
+                    "*-parrydagger-gold":          {"DamageType": "PiercingAttack", "Tier": 4, "Damage": 4}
+                  },
+                  "Knockback": 0,
+                  "DurabilityDamage": 1,
+                  "Collider": [0.6, 0, 0.5, 0.95000005, 0, 0.5]
+                }
+              ]
+            },
+            "Left": {
+              "StopOnTerrainHit": true,
+              "StopOnEntityHit": false,
+              "CollideWithTerrain": true,
+              "HitOnlyOneEntity": false,
+              "MaxReach": 9,
+              "DamageTypes": [
+                {
+                  "DamageByType": {
+                    "*-parrydagger-copper":        {"DamageType": "SlashingAttack", "Tier": 2, "Damage": 3},
+                    "*-parrydagger-tinbronze":     {"DamageType": "SlashingAttack", "Tier": 3, "Damage": 3.5},
+                    "*-parrydagger-bismuthbronze": {"DamageType": "SlashingAttack", "Tier": 3, "Damage": 3.5},
+                    "*-parrydagger-blackbronze":   {"DamageType": "SlashingAttack", "Tier": 4, "Damage": 3.5},
+                    "*-parrydagger-iron":          {"DamageType": "SlashingAttack", "Tier": 4, "Damage": 4},
+                    "*-parrydagger-meteoriciron":  {"DamageType": "SlashingAttack", "Tier": 5, "Damage": 4},
+                    "*-parrydagger-steel":         {"DamageType": "SlashingAttack", "Tier": 6, "Damage": 4.5},
+                    "*-parrydagger-silver":        {"DamageType": "SlashingAttack", "Tier": 4, "Damage": 4},
+                    "*-parrydagger-gold":          {"DamageType": "SlashingAttack", "Tier": 4, "Damage": 4}
+                  },
+                  "Knockback": 0,
+                  "DurabilityDamage": 1,
+                  "Collider": [0.6, 0, 0.5, 0.95000005, 0, 0.5]
+                }
+              ]
+            },
+            "Right": {
+              "StopOnTerrainHit": true,
+              "StopOnEntityHit": false,
+              "CollideWithTerrain": true,
+              "HitOnlyOneEntity": false,
+              "MaxReach": 9,
+              "DamageTypes": [
+                {
+                  "DamageByType": {
+                    "*-parrydagger-copper":        {"DamageType": "SlashingAttack", "Tier": 2, "Damage": 3},
+                    "*-parrydagger-tinbronze":     {"DamageType": "SlashingAttack", "Tier": 3, "Damage": 3.5},
+                    "*-parrydagger-bismuthbronze": {"DamageType": "SlashingAttack", "Tier": 3, "Damage": 3.5},
+                    "*-parrydagger-blackbronze":   {"DamageType": "SlashingAttack", "Tier": 4, "Damage": 3.5},
+                    "*-parrydagger-iron":          {"DamageType": "SlashingAttack", "Tier": 4, "Damage": 4},
+                    "*-parrydagger-meteoriciron":  {"DamageType": "SlashingAttack", "Tier": 5, "Damage": 4},
+                    "*-parrydagger-steel":         {"DamageType": "SlashingAttack", "Tier": 6, "Damage": 4.5},
+                    "*-parrydagger-silver":        {"DamageType": "SlashingAttack", "Tier": 4, "Damage": 4},
+                    "*-parrydagger-gold":          {"DamageType": "SlashingAttack", "Tier": 4, "Damage": 4}
+                  },
+                  "Knockback": 0,
+                  "DurabilityDamage": 1,
+                  "Collider": [0.6, 0, 0.5, 0.95000005, 0, 0.5]
+                }
+              ]
+            },
+            "Bottom": {
+              "StopOnTerrainHit": true,
+              "StopOnEntityHit": false,
+              "CollideWithTerrain": true,
+              "HitOnlyOneEntity": true,
+              "MaxReach": 9,
+              "DamageTypes": [
+                {
+                  "DamageByType": {
+                    "*-parrydagger-copper":        {"DamageType": "SlashingAttack", "Tier": 2, "Damage": 3},
+                    "*-parrydagger-tinbronze":     {"DamageType": "SlashingAttack", "Tier": 3, "Damage": 3.5},
+                    "*-parrydagger-bismuthbronze": {"DamageType": "SlashingAttack", "Tier": 3, "Damage": 3.5},
+                    "*-parrydagger-blackbronze":   {"DamageType": "SlashingAttack", "Tier": 4, "Damage": 3.5},
+                    "*-parrydagger-iron":          {"DamageType": "SlashingAttack", "Tier": 4, "Damage": 4},
+                    "*-parrydagger-meteoriciron":  {"DamageType": "SlashingAttack", "Tier": 5, "Damage": 4},
+                    "*-parrydagger-steel":         {"DamageType": "SlashingAttack", "Tier": 6, "Damage": 4.5},
+                    "*-parrydagger-silver":        {"DamageType": "SlashingAttack", "Tier": 4, "Damage": 4},
+                    "*-parrydagger-gold":          {"DamageType": "SlashingAttack", "Tier": 4, "Damage": 4}
+                  },
+                  "Knockback": 0,
+                  "DurabilityDamage": 1,
+                  "Collider": [0.6, 0, 0.5, 0.95000005, 0, 0.5]
+                }
+              ]
+            }
+          },
+      },
+      "AttackHitSound": "game:sounds/thud",
+      "AttackDirectionsType": "Square",
+      "AttackAnimationByType": {
+          "*-parrydagger-*": {
+            "Top": ["ignisclothing:parrydagger-thrust-1h-top"],
+            "Left": ["ignisclothing:parrydagger-slash-1h-left"],
+            "Right": ["ignisclothing:parrydagger-slash-1h-right"],
+            "Bottom": ["ignisclothing:parrydagger-upslash-1h-bottom"]
+          },
+      },
+      "TpAttackAnimation": {"Top": "combatoverhaul-falx-slash", "Left": "combatoverhaul-falx-slash", "Right": "combatoverhaul-falx-slash", "Bottom": "combatoverhaul-spear-hit"},
+      "ReadyAnimation": "ignisclothing:parrydagger-1h-ready",
+      "IdleAnimation": "ignisclothing:parrydagger-1h-idle",
+      "SpeedPenalty": 0,
+    }
+  },
+  "durabilitybytype": {
+      "*-copper": 450, 
+      "*-tinbronze": 775, 
+      "*-bismuthbronze": 900, 
+      "*-blackbronze": 975, 
+      "*-iron": 1125, 
+      "*-meteoriciron": 1500, 
+      "*-steel": 1875,
+      "*-silver": 1125,
+      "*-gold": 1125
+  },
+  "creativeinventory": {"general": ["*"], "ignisclothing": ["*"]},
+  "guiTransformByType": {
+    "*-parrydagger*-*": {
+        translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: 57, y: -39, z: -22 },
+		origin: { x: 0.5, y: -0.4, z: 0.3 },
+		scaleXyz: { x: -2, y: 2, z: 2 }
+    }
+  },
+  "groundTransformByType": {
+      "*-parrydagger*-*": {
+        "translation": {"x": 0, "y": 0, "z": 0}, "rotation": {"x": 0, "y": 0, "z": 0}, "origin": {"x": 0, "y": 0, "z": 0}, "scale": 4
+      }
+  },
+  "tpHandTransformByType": {
+      "*-parrydagger*-*": {
+        translation: { x: 0.14, y: 0.05, z: -0.5 },
+		rotation: { x: 90, y: 0, z: 0 },
+		origin: { x: 0, y: 0, z: 0.5 },
+		scale: 1
+      }
+  },
+  "tpOffHandTransformByType": {
+      "*-parrydagger*-*": {
+		translation: { x: 0.14, y: 0.05, z: -0.5 },
+		rotation: { x: 90, y: 0, z: 0 },
+		origin: { x: 0, y: 0, z: 0.5 },
+		scale: 1
+      }
+  }
+}

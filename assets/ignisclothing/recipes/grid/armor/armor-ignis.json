@@ -1,0 +1,920 @@
+[
+	{
+		"ingredientPattern": "CLC,DBD,GBG",
+		"recipeGroup": 1,
+		"ingredients": {
+			"C": {
+				"type": "item",
+				"code": "game:clay-red"
+			},
+			"B": {
+				"type": "item",
+				"code": "game:bone",
+				"quantity": 2
+			},
+			"D": {
+				"type": "item",
+				"code": "game:bone",
+				"quantity": 3
+			},
+			"G": {
+				"type": "item",
+				"code": "game:metalbit-gold",
+				"quantity": 2
+			},
+			"L": {
+				"type": "item",
+				"code": "game:cloth-plain",
+				"quantity": 2
+			}
+		},
+		"width": 3,
+		"height": 3,
+		"name": "bone armor head",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-head-improvised-bone"
+		}
+	},
+	{
+		"ingredientPattern": "CB,G_",
+		"recipeGroup": 2,
+		"ingredients": {
+			"C": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-head-improvised-bone"
+			},
+			"B": {
+				"type": "item",
+				"code": "game:bone",
+				"quantity": 4
+			},
+			"G": {
+				"type": "item",
+				"code": "game:metalbit-gold",
+				"quantity": 1
+			}
+		},
+		"width": 2,
+		"height": 2,
+		"name": "bone armor head repair",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-head-improvised-bone"
+		}
+	},
+	{
+		"ingredientPattern": "BGB,DBD,DBD",
+		"recipeGroup": 1,
+		"ingredients": {
+			"B": {
+				"type": "item",
+				"code": "game:bone",
+				"quantity": 2
+			},
+			"D": {
+				"type": "item",
+				"code": "game:bone",
+				"quantity": 3
+			},
+			"G": {
+				"type": "item",
+				"code": "game:metalbit-gold",
+				"quantity": 2
+			}
+		},
+		"width": 3,
+		"height": 3,
+		"name": "bone armor body",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-body-improvised-bone"
+		}
+	},
+	{
+		"ingredientPattern": "CB,G_",
+		"recipeGroup": 2,
+		"ingredients": {
+			"C": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-body-improvised-bone"
+			},
+			"B": {
+				"type": "item",
+				"code": "game:bone",
+				"quantity": 10
+			},
+			"G": {
+				"type": "item",
+				"code": "game:metalbit-gold",
+				"quantity": 1
+			}
+		},
+		"width": 2,
+		"height": 2,
+		"name": "bone armor body repair",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-body-improvised-bone"
+		}
+	},
+	{
+		"ingredientPattern": "LLL,BGB,B_B",
+		"recipeGroup": 1,
+		"ingredients": {
+			"B": {
+				"type": "item",
+				"code": "game:bone",
+				"quantity": 2
+			},
+			"G": {
+				"type": "item",
+				"code": "game:metalbit-gold",
+				"quantity": 6
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-normal-*",
+				"quantity": 2
+			}
+		},
+		"width": 3,
+		"height": 3,
+		"name": "bone armor legs",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-legs-improvised-bone"
+		}
+	},
+	{
+		"ingredientPattern": "CB,G_",
+		"recipeGroup": 2,
+		"ingredients": {
+			"C": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-legs-improvised-bone"
+			},
+			"B": {
+				"type": "item",
+				"code": "game:bone",
+				"quantity": 2
+			},
+			"G": {
+				"type": "item",
+				"code": "game:metalbit-gold",
+				"quantity": 1
+			}
+		},
+		"width": 2,
+		"height": 2,
+		"name": "bone armor legs repair",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-legs-improvised-bone"
+		}
+	},
+	{
+		"ingredientPattern": "CCC,PLP",
+		"recipeGroup": 1,
+		"ingredients": {
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			},
+			"C": {
+				"type": "item",
+				"code": "game:cloth-plain"
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-normal-*",
+				"quantity": 2
+			}
+		},
+		"width": 3,
+		"height": 2,
+		"name": "dunekin armor helmet",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-head-dunekin-{metal}",
+			"name": "metal",
+			"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+		}
+	},
+	{
+		"ingredientPattern": "AN",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-head-dunekin-{metal}",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalnailsandstrips-*",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ],
+				"quantity": 4
+			}
+		},
+		"width": 2,
+		"height": 1,
+		"name": "dunekin armor helmet repair",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-head-dunekin-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "CPC,PLP,C_C",
+		"recipeGroup": 1,
+		"ingredients": {
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			},
+			"C": {
+				"type": "item",
+				"code": "game:cloth-plain"
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-normal-*",
+				"quantity": 3
+			}
+		},
+		"width": 3,
+		"height": 3,
+		"name": "dunekin armor body",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-body-dunekin-{metal}",
+			"name": "metal",
+			"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+		}
+	},
+	{
+		"ingredientPattern": "AN",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-body-dunekin-{metal}",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalnailsandstrips-*",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ],
+				"quantity": 4
+			}
+		},
+		"width": 2,
+		"height": 1,
+		"name": "dunekin armor body repair",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-body-dunekin-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "CPC,_L_",
+		"recipeGroup": 1,
+		"ingredients": {
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			},
+			"C": {
+				"type": "item",
+				"code": "game:cloth-plain"
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-normal-*",
+				"quantity": 1
+			}
+		},
+		"width": 3,
+		"height": 2,
+		"name": "dunekin armor chestplate",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-chestplate-dunekin-{metal}",
+			"name": "metal",
+			"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+		}
+	},
+	{
+		"ingredientPattern": "AN",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-chestplate-dunekin-{metal}",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalnailsandstrips-*",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ],
+				"quantity": 2
+			}
+		},
+		"width": 2,
+		"height": 1,
+		"name": "dunekin armor chestplate repair",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-chestplate-dunekin-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "CLP",
+		"recipeGroup": 1,
+		"ingredients": {
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			},
+			"C": {
+				"type": "item",
+				"code": "game:cloth-plain"
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-normal-*",
+				"quantity": 1
+			}
+		},
+		"width": 3,
+		"height": 1,
+		"name": "dunekin armor arms",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-arms-dunekin-{metal}",
+			"name": "metal",
+			"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+		}
+	},
+	{
+		"ingredientPattern": "AN",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-arms-dunekin-{metal}",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalnailsandstrips-*",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ],
+				"quantity": 1
+			}
+		},
+		"width": 2,
+		"height": 1,
+		"name": "dunekin armor arms repair",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-arms-dunekin-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "PLC",
+		"recipeGroup": 1,
+		"ingredients": {
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			},
+			"C": {
+				"type": "item",
+				"code": "game:cloth-plain"
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-normal-*",
+				"quantity": 1
+			}
+		},
+		"width": 3,
+		"height": 1,
+		"name": "dunekin armor hands",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-hands-dunekin-{metal}",
+			"name": "metal",
+			"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+		}
+	},
+	{
+		"ingredientPattern": "AN",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-hands-dunekin-{metal}",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalnailsandstrips-*",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ],
+				"quantity": 1
+			}
+		},
+		"width": 2,
+		"height": 1,
+		"name": "dunekin armor hands repair",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-hands-dunekin-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "CAH",
+		"recipeGroup": 3,
+		"ingredients": {
+			"C": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-chestplate-dunekin-{metal}",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			},
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-arms-dunekin-{metal}",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			},
+			"H": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-hands-dunekin-{metal}",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			}
+		},
+		"width": 3,
+		"height": 1,
+		"name": "dunekin armor body combine",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-body-dunekin-{metal}",
+			"name": "metal",
+			"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+		}
+	},
+	{
+		"ingredientPattern": "PLP,C_C,C_C",
+		"recipeGroup": 1,
+		"ingredients": {
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			},
+			"C": {
+				"type": "item",
+				"code": "game:cloth-plain"
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-normal-*",
+				"quantity": 2
+			}
+		},
+		"width": 3,
+		"height": 3,
+		"name": "dunekin armor legs",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-legs-dunekin-{metal}",
+			"name": "metal",
+			"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+		}
+	},
+	{
+		"ingredientPattern": "AN",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-legs-dunekin-{metal}",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalnailsandstrips-*",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ],
+				"quantity": 4
+			}
+		},
+		"width": 2,
+		"height": 1,
+		"name": "dunekin armor legs repair",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-legs-dunekin-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "CPC,_L_",
+		"recipeGroup": 1,
+		"ingredients": {
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			},
+			"C": {
+				"type": "item",
+				"code": "game:cloth-plain"
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-normal-*",
+				"quantity": 1
+			}
+		},
+		"width": 3,
+		"height": 2,
+		"name": "dunekin armor pants",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-pants-dunekin-{metal}",
+			"name": "metal",
+			"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+		}
+	},
+	{
+		"ingredientPattern": "AN",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-pants-dunekin-{metal}",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalnailsandstrips-*",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ],
+				"quantity": 2
+			}
+		},
+		"width": 2,
+		"height": 1,
+		"name": "dunekin armor pants repair",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-pants-dunekin-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "_L_,CPC",
+		"recipeGroup": 1,
+		"ingredients": {
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			},
+			"C": {
+				"type": "item",
+				"code": "game:cloth-plain"
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-normal-*",
+				"quantity": 1
+			}
+		},
+		"width": 3,
+		"height": 2,
+		"name": "dunekin armor boots",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-boots-dunekin-{metal}",
+			"name": "metal",
+			"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+		}
+	},
+	{
+		"ingredientPattern": "AN",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-boots-dunekin-{metal}",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalnailsandstrips-*",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ],
+				"quantity": 2
+			}
+		},
+		"width": 2,
+		"height": 1,
+		"name": "dunekin armor boots repair",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-boots-dunekin-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "P,B",
+		"recipeGroup": 3,
+		"ingredients": {
+			"P": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-pants-dunekin-{metal}",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			},
+			"B": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-boots-dunekin-{metal}",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			}
+		},
+		"width": 1,
+		"height": 2,
+		"name": "dunekin armor legs and boots combo",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-legs-dunekin-{metal}",
+			"name": "metal",
+			"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+		}
+	},
+	{
+		"ingredientPattern": "CLC,QFO,PKP",
+		"recipeGroup": 1,
+		"ingredients": {
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			},
+			"C": {
+				"type": "item",
+				"code": "game:cloth-plain",
+				"quantity": 2
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-normal-*",
+				"quantity": 2
+			},
+			"Q": {
+				"type": "item",
+				"code": "game:ore-quartz",
+				"quantity": 2
+			},
+			"O": {
+				"type": "item",
+				"code": "game:ore-quartz"
+			},
+			"F": {
+				"type": "item",
+				"code": "game:flaxtwine",
+				"quantity": 2
+			},
+			"K": {
+				"type": "item",
+				"code": "combatoverhaul:sewingkit-armor-sewing-*",
+				"quantity": 1,
+				"isTool": true,
+				"toolDurabilityCost": 1
+			}
+		},
+		"width": 3,
+		"height": 3,
+		"name": "ranger armor helmet",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-head-ranger-{metal}",
+			"name": "metal",
+			"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+		}
+	},
+	{
+		"ingredientPattern": "ANC",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-head-ranger-{metal}",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalnailsandstrips-*",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ],
+				"quantity": 4
+			},
+			"C": {
+				"type": "item",
+				"code": "game:hammer-*",
+				"isTool": true,
+				"toolDurabilityCost": 5
+			}
+		},
+		"width": 3,
+		"height": 1,
+		"name": "ranger armor helmet repair",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-head-ranger-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "CKL,CPL,CNL",
+		"recipeGroup": 1,
+		"ingredients": {
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ],
+				"quantity": 2
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			},
+			"C": {
+				"type": "item",
+				"code": "game:cloth-plain",
+				"quantity": 4
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-normal-*",
+				"quantity": 2
+			},
+			"K": {
+				"type": "item",
+				"code": "combatoverhaul:sewingkit-armor-sewing-*",
+				"quantity": 1,
+				"isTool": true,
+				"toolDurabilityCost": 1
+			}
+		},
+		"width": 3,
+		"height": 3,
+		"name": "ranger armor body",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-body-ranger-{metal}",
+			"name": "metal",
+			"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+		}
+	},
+	{
+		"ingredientPattern": "ANC",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-body-ranger-{metal}",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalnailsandstrips-*",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ],
+				"quantity": 4
+			},
+			"C": {
+				"type": "item",
+				"code": "game:hammer-*",
+				"isTool": true,
+				"toolDurabilityCost": 5
+			}
+		},
+		"width": 3,
+		"height": 1,
+		"name": "ranger armor body repair",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-body-ranger-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "LPL,LFL,CKC",
+		"recipeGroup": 1,
+		"ingredients": {
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ],
+				"quantity": 2
+			},
+			"C": {
+				"type": "item",
+				"code": "game:cloth-plain",
+				"quantity": 4
+			},
+			"F": {
+				"type": "item",
+				"code": "game:flaxtwine",
+				"quantity": 2
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-normal-*"
+			},
+			"K": {
+				"type": "item",
+				"code": "combatoverhaul:sewingkit-armor-sewing-*",
+				"quantity": 1,
+				"isTool": true,
+				"toolDurabilityCost": 1
+			}
+		},
+		"width": 3,
+		"height": 3,
+		"name": "ranger armor legs",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-legs-ranger-{metal}",
+			"name": "metal",
+			"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+		}
+	},
+	{
+		"ingredientPattern": "ANC",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-legs-ranger-{metal}",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalnailsandstrips-*",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ],
+				"quantity": 4
+			},
+			"C": {
+				"type": "item",
+				"code": "game:hammer-*",
+				"isTool": true,
+				"toolDurabilityCost": 5
+			}
+		},
+		"width": 3,
+		"height": 1,
+		"name": "ranger armor legs repair",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-legs-ranger-{metal}"
+		}
+	}
+]

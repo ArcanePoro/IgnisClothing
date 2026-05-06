@@ -1,0 +1,253 @@
+{
+  "editor": {
+    "collapsedPaths": "",
+    "allAngles": false,
+    "entityTextureMode": false,
+    "singleTexture": false,
+    "vsFormatConverted": false
+  },
+  "textureWidth": 16,
+  "textureHeight": 16,
+  "textureSizes": {
+    "deco1": [16, 16],
+    "red.png": [16, 16],
+    "blackbronze5": [16, 16]
+  },
+    "textures": {
+        "deco1": "game:block/cloth/banner/library/deco1",
+        "red.png": "game:block/cloth/banner/library/sunlarge/red",
+        "blackbronze5": "game:block/metal/sheet/blackbronze5"
+    },
+  "elements": [
+    {
+      "name": "origin rug",
+      "from": [8, 16, 0],
+      "to": [8, 16, 0],
+      "rotationOrigin": [8, 16, 0],
+      "children": [
+        {
+          "name": "wood bottom 1",
+          "from": [3.5, -0.3, -0.5],
+          "to": [3.5, -0.3, -0.5],
+          "rotationOrigin": [3.5, -0.3, -0.5],
+          "rotationZ": -5,
+          "children": []
+        },
+        {
+          "name": "wood bottom 2",
+          "from": [-2.5, -0.3, -0.5],
+          "to": [-2.5, -0.3, -0.5],
+          "rotationOrigin": [-2.5, -0.3, -0.5],
+          "rotationZ": 5,
+          "children": [
+            {
+              "name": "Cube8end 4",
+              "from": [-6.85, -1.5, -0.5],
+              "to": [-5.85, 0.5, 1.5],
+              "rotationOrigin": [-6.35, -1.5, -0.5],
+              "faces": {
+                "north": {
+                  "texture": "#blackbronze5",
+                  "uv": [0, 0, 1, 2],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "east": {
+                  "texture": "#blackbronze5",
+                  "uv": [0, 0, 2, 2],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "south": {
+                  "texture": "#blackbronze5",
+                  "uv": [0, 0, 1, 2],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "west": {
+                  "texture": "#blackbronze5",
+                  "uv": [0, 0, 2, 2],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "up": {
+                  "texture": "#blackbronze5",
+                  "uv": [0, 0, 1, 2],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "down": {
+                  "texture": "#blackbronze5",
+                  "uv": [0, 0, 1, 2],
+                  "autoUv": false,
+                  "snapUv": false
+                }
+              },
+              "shade": false
+            },
+            {
+              "name": "wood bottom 2_geo",
+              "from": [-5.85, -1, 0],
+              "to": [-2, 0, 1],
+              "rotationOrigin": [-4, -1, 0],
+              "faces": {
+                "north": {
+                  "texture": "#blackbronze5",
+                  "uv": [0, 0, 2, 1],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "east": {
+                  "texture": "#blackbronze5",
+                  "uv": [0, 0, 1, 1],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "south": {
+                  "texture": "#blackbronze5",
+                  "uv": [0, 0, 2, 1],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "west": {
+                  "texture": "#blackbronze5",
+                  "uv": [0, 0, 1, 1],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "up": {
+                  "texture": "#blackbronze5",
+                  "uv": [0, 0, 2, 1],
+                  "autoUv": false,
+                  "snapUv": false
+                },
+                "down": {
+                  "texture": "#blackbronze5",
+                  "uv": [0, 0, 2, 1],
+                  "autoUv": false,
+                  "snapUv": false
+                }
+              },
+              "shade": false
+            }
+          ]
+        },
+        {
+          "name": "rug wrap 2",
+          "from": [-8, -1.5, -1],
+          "to": [0, 0.5, 1],
+          "rotationOrigin": [0, 0.5, -1],
+          "faces": {
+            "north": {
+              "texture": "#red.png",
+              "uv": [8, 0.5, 16, 2.5],
+              "autoUv": false,
+              "snapUv": false
+            },
+            "east": {
+              "texture": "#red.png",
+              "uv": [0, 0, 2, 2],
+              "autoUv": false,
+              "snapUv": false
+            },
+            "south": {
+              "texture": "#red.png",
+              "uv": [0, 0, 8, 2],
+              "autoUv": false,
+              "snapUv": false
+            },
+            "west": {
+              "texture": "#red.png",
+              "uv": [0, 0, 2, 2],
+              "autoUv": false,
+              "snapUv": false
+            },
+            "up": {
+              "texture": "#red.png",
+              "uv": [0, 0, 8, 2],
+              "autoUv": false,
+              "snapUv": false
+            },
+            "down": {
+              "texture": "#red.png",
+              "uv": [16, 0, 8, 2],
+              "autoUv": false,
+              "snapUv": false
+            }
+          },
+          "rotationX": 0.1,
+          "rotationZ": 5,
+          "shade": false
+        },
+        {
+          "name": "rug wrap 3",
+          "from": [0, -1.5, -1],
+          "to": [8, 0.5, 1],
+          "rotationOrigin": [0, 0.5, -1],
+          "faces": {
+            "north": {
+              "texture": "#red.png",
+              "uv": [0, 0.5, 8, 2.5],
+              "autoUv": false,
+              "snapUv": false
+            },
+            "east": {
+              "texture": "#red.png",
+              "uv": [0, 0, 2, 2],
+              "autoUv": false,
+              "snapUv": false
+            },
+            "south": {
+              "texture": "#red.png",
+              "uv": [8, 0.5, 16, 2.5],
+              "autoUv": false,
+              "snapUv": false
+            },
+            "west": {
+              "texture": "#red.png",
+              "uv": [0, 0, 2, 2],
+              "autoUv": false,
+              "snapUv": false
+            },
+            "up": {
+              "texture": "#red.png",
+              "uv": [8, 0, 16, 2],
+              "autoUv": false,
+              "snapUv": false
+            },
+            "down": {
+              "texture": "#red.png",
+              "uv": [8, 0, 0, 2],
+              "autoUv": false,
+              "snapUv": false
+            }
+          },
+          "shade": false
+        },
+        {
+          "name": "lower deco",
+          "from": [-6, -4.5, -0.09],
+          "to": [6, -1.5, 0.01],
+          "rotationOrigin": [-6, -4.5, -0.2],
+          "faces": {
+            "north": {
+              "texture": "#deco1",
+              "uv": [2, 0, 14, 3],
+              "autoUv": false,
+              "snapUv": false
+            },
+            "south": {
+              "texture": "#deco1",
+              "uv": [2, 0, 14, 3],
+              "autoUv": false,
+              "snapUv": false
+            }
+          },
+          "shade": false,
+          "renderPass": 2
+        }
+      ]
+    }
+  ],
+  "animations": []
+}

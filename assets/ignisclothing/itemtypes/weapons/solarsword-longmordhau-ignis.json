@@ -1,0 +1,293 @@
+﻿{
+  "code": "sword",
+  "class": "CombatOverhaul:MeleeWeapon",
+  "tags": ["weapon", "weapon-melee", "sword", "twohanded", "onehanded"],
+  "behaviorsByType": {
+    "*": [
+      {
+        "name": "GroundStorable",
+        "properties": {
+          "layout": "WallHalves",
+          "wallOffY": 2,
+          "sprintKey": true,
+          "selectionBox": {"x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.1, "z2": 1},
+          "collisionBox": {"x1": 0, "y1": 0, "z1": 0, "x2": 0, "y2": 0, "z2": 0}
+        }
+      }
+    ]
+  },
+  "variantgroups": [
+    {"code": "handling", "states": ["long"]},
+    {"code": "type", "states": ["solarmordhau"]},
+    {"code": "material", "states": ["copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold"]}
+  ],
+  "damagedby": ["attacking"],
+  "tool": "sword",
+  "textures": {"metal": {"base": "game:block/metal/plate/{material}"}},
+  "shapeByType": {"*-solar*-*": {"base": "ignisclothing:item/weapons/solarlongsword"}},
+  "attributes": {
+    "handbook": {"groupBy": ["sword-long-*"]},
+    "groundStorageTransformByType": {
+      "*-solar*-*": {
+          	translation: { x: 0.5, y: 0, z: 0.12 },
+			rotation: { x: 10, y: 90, z: 90 },
+			origin: { x: 0, y: 0, z: 0.5 },
+			scale: 1.2
+      },
+    },
+    "toolrackTransformByType": {
+      "*-solar*-*": {
+            translation: { x: 1.45, y: 0.4, z: 0 },
+			rotation: { x: 0, y: 180, z: 0 },
+			origin: { x: 0, y: 0, z: 0.5 },
+			scale: 1.8
+          }
+    },
+    "ProficiencyStats": ["meleeProficiency", "twoHandedSwordsProficiency"],
+    "RenderingOffset": false,
+    "OneHandedStance": {
+      "CanAttack": true,
+      "CanParry": false,
+      "CanBlock": false,
+      "CanSprint": true,
+      "DirectionalAttacks": {
+          "Top": {
+            "StopOnTerrainHit": true,
+            "StopOnEntityHit": true,
+            "CollideWithTerrain": true,
+            "MaxReach": 9,
+            "DamageTypes": [
+                {
+                  "DamageByType": {
+                    "*-solarmordhau*-copper":        {"DamageType": "BluntAttack", "Tier": 1, "Damage": 3.5},
+                    "*-solarmordhau*-*bronze":       {"DamageType": "BluntAttack", "Tier": 2, "Damage": 4},
+                    "*-solarmordhau*-iron":          {"DamageType": "BluntAttack", "Tier": 3, "Damage": 4.5},
+                    "*-solarmordhau*-meteoriciron":  {"DamageType": "BluntAttack", "Tier": 4, "Damage": 4.5},
+                    "*-solarmordhau*-steel":         {"DamageType": "BluntAttack", "Tier": 5, "Damage": 5},
+                    "*-solarmordhau*-silver":        {"DamageType": "BluntAttack", "Tier": 3, "Damage": 4.5},
+                    "*-solarmordhau*-gold":          {"DamageType": "BluntAttack", "Tier": 3, "Damage": 4.5}
+                  },
+                  "Knockback": 0,
+                  "DurabilityDamage": 1,
+                  "Collider": [0, 0, 0.515, 1.75, 0, 0.515]
+                }
+            ]
+          },
+          "BottomRight": {
+            "StopOnTerrainHit": true,
+            "StopOnEntityHit": true,
+            "CollideWithTerrain": true,
+            "MaxReach": 9,
+            "DamageTypes": [
+                {
+                  "DamageByType": {
+                    "*-solarmordhau*-copper":        {"DamageType": "BluntAttack", "Tier": 1, "Damage": 3.5},
+                    "*-solarmordhau*-*bronze":       {"DamageType": "BluntAttack", "Tier": 2, "Damage": 4},
+                    "*-solarmordhau*-iron":          {"DamageType": "BluntAttack", "Tier": 3, "Damage": 4.5},
+                    "*-solarmordhau*-meteoriciron":  {"DamageType": "BluntAttack", "Tier": 4, "Damage": 4.5},
+                    "*-solarmordhau*-steel":         {"DamageType": "BluntAttack", "Tier": 5, "Damage": 5},
+                    "*-solarmordhau*-silver":        {"DamageType": "BluntAttack", "Tier": 3, "Damage": 4.5},
+                    "*-solarmordhau*-gold":          {"DamageType": "BluntAttack", "Tier": 3, "Damage": 4.5}
+                  },
+                  "Knockback": 0,
+                  "DurabilityDamage": 1,
+                  "Collider": [0, 0, 0.515, 1.75, 0, 0.515]
+                }
+            ]
+          },
+          "BottomLeft": {
+            "StopOnTerrainHit": true,
+            "StopOnEntityHit": true,
+            "CollideWithTerrain": true,
+            "MaxReach": 9,
+            "DamageTypes": [
+                {
+                  "DamageByType": {
+                    "*-solarmordhau*-copper":        {"DamageType": "BluntAttack", "Tier": 1, "Damage": 3.5},
+                    "*-solarmordhau*-*bronze":       {"DamageType": "BluntAttack", "Tier": 2, "Damage": 4},
+                    "*-solarmordhau*-iron":          {"DamageType": "BluntAttack", "Tier": 3, "Damage": 4.5},
+                    "*-solarmordhau*-meteoriciron":  {"DamageType": "BluntAttack", "Tier": 4, "Damage": 4.5},
+                    "*-solarmordhau*-steel":         {"DamageType": "BluntAttack", "Tier": 5, "Damage": 5},
+                    "*-solarmordhau*-silver":        {"DamageType": "BluntAttack", "Tier": 3, "Damage": 4.5},
+                    "*-solarmordhau*-gold":          {"DamageType": "BluntAttack", "Tier": 3, "Damage": 4.5}
+                  },
+                  "Knockback": 0,
+                  "DurabilityDamage": 1,
+                  "Collider": [0, 0, 0.515, 1.75, 0, 0.515]
+                },
+            ]
+          }
+      },
+      "AttackHitSound": "game:sounds/thud",
+      "AttackDirectionsType": "Triangle",
+      "AttackAnimationByType": {
+        "*-solar*-*": {
+            "Top": ["armory:sword-long-thrust-1h-3"],
+            "BottomLeft": ["armory:sword-long-thrust-1h-2"],
+            "BottomRight": ["armory:sword-long-thrust-1h-1"]
+        }
+      },
+      "TpAttackAnimation": {"Main": "combatoverhaul-falx-slash"},
+      "SpeedPenalty": 0,
+      "ReadyAnimation": "armory:sword-long-ready-1h",
+      "IdleAnimation": "armory:sword-long-idle-1h",
+      "AttackTpAnimation": "falx"
+    },
+    "TwoHandedStance": {
+      "CanAttack": true,
+      "CanParry": true,
+      "CanBlock": false,
+      "CanSprint": true,
+      "DirectionalAttacksByType": {
+          "*-solarmordhau-*": {
+            "Top": {
+              "StopOnTerrainHit": true,
+              "StopOnEntityHit": true,
+              "CollideWithTerrain": true,
+              "MaxReach": 9,
+              "DamageTypes": [
+                  {
+                    "DamageByType": {
+                      "*-solarmordhau-copper":        {"DamageType": "BluntAttack", "Tier": 1, "Damage": 4.5},
+                      "*-solarmordhau-*bronze":       {"DamageType": "BluntAttack", "Tier": 2, "Damage": 5},
+                      "*-solarmordhau-iron":          {"DamageType": "BluntAttack", "Tier": 3, "Damage": 5.5},
+                      "*-solarmordhau-meteoriciron":  {"DamageType": "BluntAttack", "Tier": 4, "Damage": 5.5},
+                      "*-solarmordhau-steel":         {"DamageType": "BluntAttack", "Tier": 5, "Damage": 6},
+                      "*-solarmordhau-silver":        {"DamageType": "BluntAttack", "Tier": 3, "Damage": 5.5},
+                      "*-solarmordhau-gold":          {"DamageType": "BluntAttack", "Tier": 3, "Damage": 5.5}
+                    },
+                    "Knockback": 0,
+                    "DurabilityDamage": 1,
+                    "Collider": [0, 0, 0.515, 1.75, 0, 0.515]
+                  }
+              ]
+            },
+            "Left": {
+              "StopOnTerrainHit": true,
+              "StopOnEntityHit": true,
+              "CollideWithTerrain": true,
+              "MaxReach": 9,
+              "DamageTypes": [
+                  {
+                    "DamageByType": {
+                      "*-solarmordhau-copper":        {"DamageType": "BluntAttack", "Tier": 1, "Damage": 4.5},
+                      "*-solarmordhau-*bronze":       {"DamageType": "BluntAttack", "Tier": 2, "Damage": 5},
+                      "*-solarmordhau-iron":          {"DamageType": "BluntAttack", "Tier": 3, "Damage": 5.5},
+                      "*-solarmordhau-meteoriciron":  {"DamageType": "BluntAttack", "Tier": 4, "Damage": 5.5},
+                      "*-solarmordhau-steel":         {"DamageType": "BluntAttack", "Tier": 5, "Damage": 6},
+                      "*-solarmordhau-silver":        {"DamageType": "BluntAttack", "Tier": 3, "Damage": 5.5},
+                      "*-solarmordhau-gold":          {"DamageType": "BluntAttack", "Tier": 3, "Damage": 5.5}
+                    },
+                    "Knockback": 0,
+                    "DurabilityDamage": 1,
+                    "Collider": [0, 0, 0.515, 1.75, 0, 0.515]
+                  }
+              ]
+            },
+            "Right": {
+              "StopOnTerrainHit": true,
+              "StopOnEntityHit": true,
+              "CollideWithTerrain": true,
+              "MaxReach": 9,
+              "DamageTypes": [
+                  {
+                    "DamageByType": {
+                      "*-solarmordhau-copper":        {"DamageType": "BluntAttack", "Tier": 1, "Damage": 4.5},
+                      "*-solarmordhau-*bronze":       {"DamageType": "BluntAttack", "Tier": 2, "Damage": 5},
+                      "*-solarmordhau-iron":          {"DamageType": "BluntAttack", "Tier": 3, "Damage": 5.5},
+                      "*-solarmordhau-meteoriciron":  {"DamageType": "BluntAttack", "Tier": 4, "Damage": 5.5},
+                      "*-solarmordhau-steel":         {"DamageType": "BluntAttack", "Tier": 5, "Damage": 6},
+                      "*-solarmordhau-silver":        {"DamageType": "BluntAttack", "Tier": 3, "Damage": 5.5},
+                      "*-solarmordhau-gold":          {"DamageType": "BluntAttack", "Tier": 3, "Damage": 5.5}
+                    },
+                    "Knockback": 0,
+                    "DurabilityDamage": 1,
+                    "Collider": [0, 0, 0.515, 1.75, 0, 0.515]
+                  }
+              ]
+            },
+            "Bottom": {
+              "StopOnTerrainHit": true,
+              "StopOnEntityHit": true,
+              "CollideWithTerrain": true,
+              "MaxReach": 9,
+              "DamageTypes": [
+                  {
+                    "DamageByType": {
+                      "*-solarmordhau-copper":        {"DamageType": "BluntAttack", "Tier": 1, "Damage": 4.5},
+                      "*-solarmordhau-*bronze":       {"DamageType": "BluntAttack", "Tier": 2, "Damage": 5},
+                      "*-solarmordhau-iron":          {"DamageType": "BluntAttack", "Tier": 3, "Damage": 5.5},
+                      "*-solarmordhau-meteoriciron":  {"DamageType": "BluntAttack", "Tier": 4, "Damage": 5.5},
+                      "*-solarmordhau-steel":         {"DamageType": "BluntAttack", "Tier": 5, "Damage": 6},
+                      "*-solarmordhau-silver":        {"DamageType": "BluntAttack", "Tier": 3, "Damage": 5.5},
+                      "*-solarmordhau-gold":          {"DamageType": "BluntAttack", "Tier": 3, "Damage": 5.5}
+                    },
+                    "Knockback": 0,
+                    "DurabilityDamage": 1,
+                    "Collider": [0, 0, 0.515, 1.75, 0, 0.515]
+                  }
+              ]
+            }
+          }
+      },
+      "AttackHitSound": "game:sounds/thud",
+      "AttackDirectionsType": "Square",
+      "AttackAnimationByType": {
+        "*-solar*-*": {
+          "Top": ["armory:sword-long-slash-2h-top"],
+          "Left": ["armory:sword-long-slash-2h-left"],
+          "Right": ["armory:sword-long-slash-2h-right"],
+          "Bottom": ["armory:sword-long-thrust-2h-bottom"]
+        }
+      },
+      "TpAttackAnimation": {"Top": "combatoverhaul-falx-slash", "Left": "combatoverhaul-falx-slash", "Right": "combatoverhaul-falx-slash", "Bottom": "combatoverhaul-falx-slash"},
+      "SpeedPenalty": 0,
+      "BlockSpeedPenalty": 0,
+      "Parry": {
+        "Zones": ["Head", "Face", "Neck", "Torso", "LeftArm", "RightArm", "LeftHand", "RightHand", "LeftLeg", "RightLeg", "LeftFoot", "RightFoot"],
+        "Directions": [90, 90, 90, 90],
+        "Sound": "game:sounds/held/shieldblock-metal-heavy",
+        "BlockTier": {"BluntAttack": 9, "SlashingAttack": 9, "PiercingAttack": 9},
+        "CanBlockProjectiles": false
+      },
+      "BlockCooldownMs": 300,
+      "BlockAnimation": "armory:sword-long-parry-2h",
+      "ReadyAnimation": "armory:sword-long-ready-2h",
+      "IdleAnimation": "armory:sword-long-idle-2h",
+      "AttackTpAnimation": "falx"
+    }
+  },
+  "durabilitybytype": {
+        "*-copper": 300,
+		"*-tinbronze": 550,
+		"*-bismuthbronze*": 600,
+		"*-blackbronze": 650,
+		"*-iron": 750,
+		"*-meteoriciron": 975,
+		"*-steel": 1250,
+		"*-gold": 750,
+		"*-silver": 750,
+  },
+  "creativeinventory": {"general": ["*"], "ignisclothing": ["*"]},
+  "guiTransformByType": {
+    "*-solarmordhau*-*": {
+		translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: -143, y: -38, z: -27 },
+		origin: { x: 0.9, y: 0.9, z: 1.25 },
+		scale: 1.52
+    }
+  },
+  "groundTransformByType": {
+      "*-solar*-*": {
+        "translation": {"x": 0, "y": 0, "z": 0}, "rotation": {"x": 0, "y": 0, "z": 0}, "origin": {"x": 0, "y": 0, "z": 0}, "scale": 6
+      }
+  },
+  "tpHandTransformByType": {
+      "*-solarmordhau*-*": {
+		translation: { x: -1.3, y: 0.05, z: -0.49 },
+		rotation: { x: 90, y: 180, z: 0 },
+		origin: { x: 0, y: 0, z: 0.5 },
+		scale: 1.01
+      }
+  }
+}

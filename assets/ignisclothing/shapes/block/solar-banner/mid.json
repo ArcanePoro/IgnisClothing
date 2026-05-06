@@ -1,0 +1,72 @@
+{
+  "editor": {
+    "allAngles": false,
+    "entityTextureMode": false,
+    "singleTexture": false,
+    "vsFormatConverted": false
+  },
+  "textureWidth": 16,
+  "textureHeight": 16,
+  "textureSizes": {
+    "solarbanner.png": [16, 16]
+  },
+    "textures": {
+        "solarbanner.png": "ignisclothing:solarbanner"
+    },
+  "elements": [
+    {
+      "name": "origin rug",
+      "from": [7.5, 16, -0.2],
+      "to": [7.5, 16, -0.2],
+      "rotationOrigin": [7.5, 16, -0.2],
+      "children": [
+        {
+          "name": "segment 1",
+          "from": [-7.5, -16, 0],
+          "to": [8.5, 0, 0.5],
+          "rotationOrigin": [0.5, 0, 0],
+          "faces": {
+            "north": {
+              "texture": "#solarbanner.png",
+              "uv": [0, 0, 16, 16],
+              "autoUv": false,
+              "snapUv": false
+            },
+            "east": {
+              "texture": "#solarbanner.png",
+              "uv": [0, 0, 0.5, 16],
+              "autoUv": false,
+              "snapUv": false
+            },
+            "south": {
+              "texture": "#solarbanner.png",
+              "uv": [0, 0, 16, 16],
+              "autoUv": false,
+              "snapUv": false
+            },
+            "west": {
+              "texture": "#solarbanner.png",
+              "uv": [0, 0, 0.5, 16],
+              "autoUv": false,
+              "snapUv": false
+            },
+            "up": {
+              "texture": "#solarbanner.png",
+              "uv": [0, 0, 16, 0.5],
+              "autoUv": false,
+              "snapUv": false
+            },
+            "down": {
+              "texture": "#solarbanner.png",
+              "uv": [0, 0, 16, 0.5],
+              "autoUv": false,
+              "snapUv": false
+            }
+          },
+          "shade": false
+        }
+      ]
+    }
+  ],
+  "animations": []
+}

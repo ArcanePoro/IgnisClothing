@@ -1,0 +1,85 @@
+[
+	{
+		"ingredientPattern": "SPS,CBF,OOO",
+		"ingredients": {
+			"S": {
+				"type": "block",
+				"code": "game:metal-scraps",
+				"quantity": 2
+			},
+			"P": {
+				"type": "item",
+				"code": "game:powder-iron-oxide",
+				"quantity": 8
+			},
+			"B": {
+				"type": "item",
+				"code": "game:blastingpowder",
+				"quantity": 4
+			},
+			"C": {
+				"type": "item",
+				"code": "game:flaxtwine"
+			},
+			"F": {
+				"type": "block",
+				"code": "game:linen-*"
+			},
+			"O": {
+				"type": "item",
+				"code": "game:vegetable-onion"
+			}
+		},
+		"name": "bomb-scrap-onion",
+		"width": 3,
+		"height": 3,
+		"shapeless": true,
+		"output": {
+			"type": "block",
+			"code": "ignisclothing:bomb-scrap-onion",
+			"quantity": 8
+		}
+	},
+	{
+		"ingredientPattern": "SPS,CBF,OOO",
+		"ingredients": {
+			"S": {
+				"type": "item",
+				"code": "game:metalnailsandstrips-*",
+				"quantity": 4
+			},
+			"P": {
+				"type": "item",
+				"code": "game:powder-iron-oxide",
+				"quantity": 8
+			},
+			"B": {
+				"type": "item",
+				"code": "game:blastingpowder",
+				"quantity": 4
+			},
+			"C": {
+				"type": "item",
+				"code": "game:flaxtwine"
+			},
+			"F": {
+				"type": "block",
+				"code": "game:linen-*"
+			},
+			"O": {
+				"type": "item",
+				"code": "game:vegetable-onion"
+			}
+		},
+		"recipegroup": 1,
+		"name": "bomb-scrap-onion",
+		"width": 3,
+		"height": 3,
+		"shapeless": true,
+		"output": {
+			"type": "block",
+			"code": "ignisclothing:bomb-scrap-onion",
+			"quantity": 8
+		}
+	}
+]

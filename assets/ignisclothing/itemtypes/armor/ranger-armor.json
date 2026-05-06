@@ -1,0 +1,128 @@
+{
+	code: "armor-ignis",
+	class: "ItemWearable",
+	heldTpIdleAnimation: "holdunderarm",
+	variantgroups: [
+		{ code: "bodypart",  states: ["head", "body", "legs"] },
+		{ code: "construction",  states: ["ranger"]},
+		{ code: "material", states: ["copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold"]},
+	],
+	shapeByType: {		
+		"*": { base: "ignisclothing:item/armor/ranger/ranger{bodypart}" }
+	},
+	textures: {
+		"metal": { "base": "game:block/metal/plate/{material}" }
+	},
+	"texturesByType": {
+		"*": {
+			"seraph": { "base": "game:block/transparent" }
+		}
+	},
+	storageFlags: 128,
+	// 'keepElements names must also be added to game/entities/humanoid/player file, under the 'disableElements' attribute.
+	attributes: {
+		"footStepSoundByType": {
+			"*-body-*": "game:wearable/leather*"
+		},
+		"handbook": {
+			"groupBy": [ "armor-{bodypart}-{material}-*" ]
+		},
+		"visibleDamageEffect": true,
+		"clothesCategoryByType": {
+			"*-head-*": "armorhead",
+			"*-body-*": "armorbody",
+			"*-legs-*": "armorlegs"
+		},
+		"attachableToEntity": {
+			"texturePrefixCode": "armor-{bodypart}-{material}-*",
+			"categoryCodeByType": {
+				"*-head-*": "armorhead",
+				"*-body-*": "armorbody",
+				"*-legs-*": "armorlegs"
+			},
+			"disableElementsByType": {
+				"*-head-*": [ "hidehat", "hidemask", "hoodup", "hoodupperover", "Hair tile upper part", "ponytailhigh", "ponytaillow", "Hair", "hair-uncovered", "hidefacialhair", "sidehigh", "sidelow", "bangs" ],
+				"*-body-*": [ "Waist", "hideupperbody", "hideupperarm", "hidelowerarm", "mittenfrill-l", "mittenfrill-r", "glovefrill-l", "glovefrill-r" ],
+				"*-legs-*": [ "hideshoeL", "hideshoeR" ]
+			}
+		},
+		"defaultProtLoss": {
+			"perTierRelativeProtectionLoss": [ 0.03, 0.15 ],
+			"perTierFlatDamageReductionLoss": [ 0.1, 0.2 ]
+		},
+		"protectionModifiersByType": {
+			"*": {
+				"relativeProtection": 0.65,
+				"flatDamageReduction": 0.5,
+				"protectionTier": 2
+			}
+		},
+		"statModifiersByType": {
+			"*": {
+				"walkSpeed": -0.02,
+				"healingeffectivness": -0.1,
+				"hungerrate": 0.03
+			}
+		}
+	},
+	creativeinventory: { "general": ["*"], "items": ["*"], "clothing": ["*"], "ignisclothing": ["*"] },
+	renderAlphaTest: 0.25,
+	durabilityByType: {
+		"*": 1400,
+	},
+	tpHandTransformByType: {
+		"*-head-*": {
+			translation: { x: 0.1, y: -1.7, z: -1.1 },
+			rotation: { x: 20, y: 180, z: 20 },
+			origin: { x: 0, y: 0, z: 1 },
+			scale: 0.8
+		},
+		"*-body-*": {
+			translation: { x: 0, y: 0, z: -0.4 },
+			rotation: { x: 92, y: 35, z: -89 },
+			scale: 0.8
+		},
+		"*-legs-*": {
+			translation: { x: -0.5, y: -0.4, z: -0.4 },
+			rotation: { x: -90, y: 0, z: -90 },
+			scale: 0.8
+		}
+	},
+	guiTransformByType: {
+		"*-head-*": {
+			translation: { x: 0, y: 0, z: 0 },
+			rotation: { x: -26, y: -46, z: -180 },
+			origin: { x: 0.55, y: 1.65, z: 0.5 },
+			scale: 2
+		},
+		"*-body-*": {
+			"translation": {"x": 3, "y": 0, "z": 0}, 
+			"rotation": {"x": -26, "y": -46, "z": -180}, 
+			"origin": {"x": 0.5, "y": 1.11, "z": 0.5}, 
+			"scale": 1.37
+		},
+		"*-legs-*": {
+			translation: { x: 1, y: 0, z: 0 },
+			rotation: { x: -26, y: -135, z: -180 },
+			origin: { x: 0.5, y: 0.6, z: 0.5 },
+			scaleXyz: { x: -1.1, y: 1.1, z: 1.1 }
+		}
+	},
+	groundTransformByType: {
+		"*-head-*": {
+			translation: { x: -0.55, y: 0.2, z: 1.2 },
+			rotation: { x: 90, y: 0, z: -90 },
+			scale: 3
+		},
+		"*-body-*": {
+			translation: { x: 0.1, y: 0.15, z: 0.6 },
+			rotation: { x: 90, y: 0, z: -90 },
+			scale: 3
+		},
+		"*-legs-*": {
+			translation: { x: 0, y: 0.2, z: -0.35 },
+			rotation: { x: 90, y: 0, z: -90 },
+			scale: 3
+		}
+	}
+}

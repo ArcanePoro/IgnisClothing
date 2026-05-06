@@ -1,0 +1,548 @@
+[
+	{
+		"ingredientPattern": "HAN",
+		"recipeGroup": 3,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-head-ranger-copper"
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [ "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ],
+				"quantity": 2
+			},
+			"H": {
+				"type": "item",
+				"code": "game:hammer-*",
+				"isTool": true,
+				"toolDurabilityCost": 5
+			}
+		},
+		"width": 3,
+		"height": 1,
+		"name": "ranger armor head upgrade copper",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-head-ranger-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "HAN",
+		"recipeGroup": 3,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-head-ranger-tinbronze"
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [ "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ],
+				"quantity": 2
+			},
+			"H": {
+				"type": "item",
+				"code": "game:hammer-*",
+				"isTool": true,
+				"toolDurabilityCost": 5
+			}
+		},
+		"width": 3,
+		"height": 1,
+		"name": "ranger armor head upgrade tinbronze",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-head-ranger-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "HAN",
+		"recipeGroup": 3,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-head-ranger-bismuthbronze"
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [ "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ],
+				"quantity": 2
+			},
+			"H": {
+				"type": "item",
+				"code": "game:hammer-*",
+				"isTool": true,
+				"toolDurabilityCost": 5
+			}
+		},
+		"width": 3,
+		"height": 1,
+		"name": "ranger armor head upgrade bismuthbronze",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-head-ranger-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "HAN",
+		"recipeGroup": 3,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-head-ranger-blackbronze"
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [ "iron", "meteoriciron", "steel", "silver", "gold" ],
+				"quantity": 2
+			},
+			"H": {
+				"type": "item",
+				"code": "game:hammer-*",
+				"isTool": true,
+				"toolDurabilityCost": 5
+			}
+		},
+		"width": 3,
+		"height": 1,
+		"name": "ranger armor head upgrade blackbronze",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-head-ranger-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "HAN",
+		"recipeGroup": 3,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-head-ranger-*",
+				"name": "armortype",
+				"allowedVariants": [ "iron", "silver", "gold" ]
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [ "meteoriciron", "steel" ],
+				"quantity": 2
+			},
+			"H": {
+				"type": "item",
+				"code": "game:hammer-*",
+				"isTool": true,
+				"toolDurabilityCost": 5
+			}
+		},
+		"width": 3,
+		"height": 1,
+		"name": "ranger armor head upgrade iron",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-head-ranger-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "HAN",
+		"recipeGroup": 3,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-head-ranger-meteoriciron"
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [ "steel" ],
+				"quantity": 2
+			},
+			"H": {
+				"type": "item",
+				"code": "game:hammer-*",
+				"isTool": true,
+				"toolDurabilityCost": 5
+			}
+		},
+		"width": 3,
+		"height": 1,
+		"name": "ranger armor head upgrade meteoriciron",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-head-ranger-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "HAN",
+		"recipeGroup": 3,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-body-ranger-copper"
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [ "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ],
+				"quantity": 3
+			},
+			"H": {
+				"type": "item",
+				"code": "game:hammer-*",
+				"isTool": true,
+				"toolDurabilityCost": 5
+			}
+		},
+		"width": 3,
+		"height": 1,
+		"name": "ranger armor body upgrade copper",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-body-ranger-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "HAN",
+		"recipeGroup": 3,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-body-ranger-tinbronze"
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [ "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ],
+				"quantity": 3
+			},
+			"H": {
+				"type": "item",
+				"code": "game:hammer-*",
+				"isTool": true,
+				"toolDurabilityCost": 5
+			}
+		},
+		"width": 3,
+		"height": 1,
+		"name": "ranger armor body upgrade tinbronze",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-body-ranger-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "HAN",
+		"recipeGroup": 3,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-body-ranger-bismuthbronze"
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [ "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ],
+				"quantity": 3
+			},
+			"H": {
+				"type": "item",
+				"code": "game:hammer-*",
+				"isTool": true,
+				"toolDurabilityCost": 5
+			}
+		},
+		"width": 3,
+		"height": 1,
+		"name": "ranger armor body upgrade bismuthbronze",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-body-ranger-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "HAN",
+		"recipeGroup": 3,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-body-ranger-blackbronze"
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [ "iron", "meteoriciron", "steel", "silver", "gold" ],
+				"quantity": 3
+			},
+			"H": {
+				"type": "item",
+				"code": "game:hammer-*",
+				"isTool": true,
+				"toolDurabilityCost": 5
+			}
+		},
+		"width": 3,
+		"height": 1,
+		"name": "ranger armor body upgrade blackbronze",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-body-ranger-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "HAN",
+		"recipeGroup": 3,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-body-ranger-*",
+				"name": "armortype",
+				"allowedVariants": [ "iron", "silver", "gold" ]
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [ "meteoriciron", "steel" ],
+				"quantity": 3
+			},
+			"H": {
+				"type": "item",
+				"code": "game:hammer-*",
+				"isTool": true,
+				"toolDurabilityCost": 5
+			}
+		},
+		"width": 3,
+		"height": 1,
+		"name": "ranger armor body upgrade iron",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-body-ranger-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "HAN",
+		"recipeGroup": 3,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-body-ranger-meteoriciron"
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [ "steel" ],
+				"quantity": 3
+			},
+			"H": {
+				"type": "item",
+				"code": "game:hammer-*",
+				"isTool": true,
+				"toolDurabilityCost": 5
+			}
+		},
+		"width": 3,
+		"height": 1,
+		"name": "ranger armor body upgrade meteoriciron",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-body-ranger-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "HAN",
+		"recipeGroup": 3,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-legs-ranger-copper"
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [ "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ],
+				"quantity": 2
+			},
+			"H": {
+				"type": "item",
+				"code": "game:hammer-*",
+				"isTool": true,
+				"toolDurabilityCost": 5
+			}
+		},
+		"width": 3,
+		"height": 1,
+		"name": "ranger armor legs upgrade copper",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-legs-ranger-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "HAN",
+		"recipeGroup": 3,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-legs-ranger-tinbronze"
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [ "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ],
+				"quantity": 2
+			},
+			"H": {
+				"type": "item",
+				"code": "game:hammer-*",
+				"isTool": true,
+				"toolDurabilityCost": 5
+			}
+		},
+		"width": 3,
+		"height": 1,
+		"name": "ranger armor legs upgrade tinbronze",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-legs-ranger-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "HAN",
+		"recipeGroup": 3,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-legs-ranger-bismuthbronze"
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [ "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ],
+				"quantity": 2
+			},
+			"H": {
+				"type": "item",
+				"code": "game:hammer-*",
+				"isTool": true,
+				"toolDurabilityCost": 5
+			}
+		},
+		"width": 3,
+		"height": 1,
+		"name": "ranger armor legs upgrade bismuthbronze",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-legs-ranger-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "HAN",
+		"recipeGroup": 3,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-legs-ranger-blackbronze"
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [ "iron", "meteoriciron", "steel", "silver", "gold" ],
+				"quantity": 2
+			},
+			"H": {
+				"type": "item",
+				"code": "game:hammer-*",
+				"isTool": true,
+				"toolDurabilityCost": 5
+			}
+		},
+		"width": 3,
+		"height": 1,
+		"name": "ranger armor legs upgrade blackbronze",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-legs-ranger-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "HAN",
+		"recipeGroup": 3,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-legs-ranger-*",
+				"name": "armortype",
+				"allowedVariants": [ "iron", "silver", "gold" ]
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [ "meteoriciron", "steel" ],
+				"quantity": 2
+			},
+			"H": {
+				"type": "item",
+				"code": "game:hammer-*",
+				"isTool": true,
+				"toolDurabilityCost": 5
+			}
+		},
+		"width": 3,
+		"height": 1,
+		"name": "ranger armor legs upgrade iron",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-legs-ranger-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "HAN",
+		"recipeGroup": 3,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-ignis-legs-ranger-meteoriciron"
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalplate-*",
+				"name": "metal",
+				"allowedVariants": [ "steel" ],
+				"quantity": 2
+			},
+			"H": {
+				"type": "item",
+				"code": "game:hammer-*",
+				"isTool": true,
+				"toolDurabilityCost": 5
+			}
+		},
+		"width": 3,
+		"height": 1,
+		"name": "ranger armor legs upgrade meteoriciron",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-ignis-legs-ranger-{metal}"
+		}
+	}
+]

@@ -1,0 +1,287 @@
+{
+	"code": "solar",
+	"class": "Block",
+	"variantgroups": [
+		{
+			"code": "type",
+			"states": [ "bottom", "bottomleft", "bottommid", "bottomright", "mid", "mid2", "top", "topleft", "topmid", "topright" ]
+		},
+		{
+			"code": "side",
+			"loadFromProperties": "abstract/horizontalorientation"
+		}
+	],
+	"shape": {
+		"base": "ignisclothing:block/solar-banner/{type}",
+		"rotateYByType": {
+			"*-north": 0,
+			"*-east": 270,
+			"*-south": 190,
+			"*-west": 90
+		}
+	},
+	"behaviors": [
+		{
+			"name": "HorizontalOrientable",
+			"properties": { "dropBlockFace": "north" }
+		}
+	],
+	"sideopaqueByType": {
+		"*-north": {
+			"all": false
+		},
+		"*-east": {
+			"all": false
+		},
+		"*-west": {
+			"all": false
+		},
+		"*-south": {
+			"all": false
+		}
+	},
+	"blockmaterial": "Cloth",
+	"creativeinventory": {
+		"general": [ "*-north" ],
+		"ignisclothing": [ "*-north" ]
+	},
+	"replaceable": 700,
+	"resistance": 1,
+	"lightAbsorption": 0,
+	"selectionboxByType": {
+		"*-bottom*-*": {
+			"x1": -0.1,
+			"y1": 0.9,
+			"z1": -0.1,
+			"x2": 1.1,
+			"y2": 1,
+			"z2": 0.1,
+			"rotateYByType": {
+				"*-north": 0,
+				"*-east": 270,
+				"*-south": 180,
+				"*-west": 90
+			}
+		},
+		"*-mid*-*": {
+			"x1": 0,
+			"y1": 0,
+			"z1": -0.02,
+			"x2": 1,
+			"y2": 1,
+			"z2": 0.02,
+			"rotateYByType": {
+				"*-north": 0,
+				"*-east": 270,
+				"*-south": 180,
+				"*-west": 90
+			}
+		},
+		"*-top*-*": {
+			"x1": -0.1,
+			"y1": 0,
+			"z1": -0.05,
+			"x2": 1.1,
+			"y2": 0.15,
+			"z2": 0.05,
+			"rotateYByType": {
+				"*-north": 0,
+				"*-east": 270,
+				"*-south": 180,
+				"*-west": 90
+			}
+		}
+	},
+	"collisionboxByType": {
+		"*-bottom*-*": {
+			"x1": -0.1,
+			"y1": 0.9,
+			"z1": -0.1,
+			"x2": 1.1,
+			"y2": 1,
+			"z2": 0.1,
+			"rotateYByType": {
+				"*-north": 0,
+				"*-east": 270,
+				"*-south": 180,
+				"*-west": 90
+			}
+		},
+		"*-mid*-*": {
+			"x1": 0,
+			"y1": 0,
+			"z1": -0.02,
+			"x2": 1,
+			"y2": 1,
+			"z2": 0.02,
+			"rotateYByType": {
+				"*-north": 0,
+				"*-east": 270,
+				"*-south": 180,
+				"*-west": 90
+			}
+		},
+		"*-top*-*": {
+			"x1": -0.1,
+			"y1": 0,
+			"z1": -0.05,
+			"x2": 1.1,
+			"y2": 0.15,
+			"z2": 0.05,
+			"rotateYByType": {
+				"*-north": 0,
+				"*-east": 270,
+				"*-south": 180,
+				"*-west": 90
+			}
+		}
+
+	},
+	"combustibleProps": {
+		"burnTemperature": 400,
+		"burnDuration": 4
+	},
+	"guiTransformByType": {
+		"*-bottom*-*": {
+			"rotation": {
+				"x": -22,
+				"y": 142,
+				"z": 0
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.9,
+				"z": 0
+			},
+			"scale": 1.7
+		},
+		"*-mid*-*": {
+			"origin": {
+				"x": 0.5,
+				"y": 0.5,
+				"z": 0
+			},
+			"scale": 1.22
+		},
+		"*-top*-*": {
+			"rotation": {
+				"x": -22,
+				"y": 142,
+				"z": 0
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.2,
+				"z": 0
+			},
+			"scale": 1.7
+		}
+	},
+	"groundTransformByType": {
+		"*-bottom*-*": {
+			"translation": {
+				"x": 0,
+				"y": 0.45,
+				"z": 0
+			},
+			"rotation": {
+				"x": -90,
+				"y": 0,
+				"z": 0
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0,
+				"z": 0.5
+			},
+			"scale": 4.01
+		},
+		"*-mid*-*": {
+			"translation": {
+				"x": 0,
+				"y": 0.45,
+				"z": 0
+			},
+			"rotation": {
+				"x": -90,
+				"y": 0,
+				"z": 0
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0,
+				"z": 0.5
+			},
+			"scale": 4.01
+		},
+		"*-top*-*": {
+			"translation": {
+				"x": 0,
+				"y": 0.45,
+				"z": 0
+			},
+			"rotation": {
+				"x": -90,
+				"y": 0,
+				"z": 0
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0,
+				"z": 0.5
+			},
+			"scale": 4.01
+		}
+	},
+	"heldTpIdleAnimation": "holdbothhandslarge",
+	"heldRightReadyAnimation": "heldblockready",
+	"heldTpUseAnimation": "twohandplaceblock",
+	"tpHandTransformByType": {
+		"*-bottom*-*": {
+			"translation": {
+				"x": -0.2,
+				"y": -1,
+				"z": -0.5
+			},
+			"rotation": {
+				"x": -76,
+				"y": 0,
+				"z": -103
+			},
+			"scale": 1
+		},
+		"*-mid*-*": {
+			"translation": {
+				"x": -0.4,
+				"y": -1.1,
+				"z": -0.5
+			},
+			"rotation": {
+				"x": -76,
+				"y": 0,
+				"z": -103
+			},
+			"scale": 1
+		},
+		"*-top*-*": {
+			"translation": {
+				"x": -1.05,
+				"y": -1,
+				"z": -0.325
+			},
+			"rotation": {
+				"x": -76,
+				"y": 0,
+				"z": -103
+			},
+			"scale": 1
+		}
+	},
+	"sounds": {
+		"place": "game:block/cloth",
+		"break": "game:block/cloth",
+		"hit": "game:block/cloth",
+		"walk": "game:walk/cloth"
+	},
+	"materialDensity": 200
+}

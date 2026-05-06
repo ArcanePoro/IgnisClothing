@@ -1,0 +1,499 @@
+{
+	"code": "armor-ignis",
+	"class": "ItemWearable",
+	"heldTpIdleAnimation": "holdunderarm",
+	"variantgroups": [
+		{
+			"code": "bodypart",
+			"states": [ "head", "body", "chestplate", "arms", "hands", "legs", "pants", "boots" ]
+		},
+		{
+			"code": "construction",
+			"states": [ "dunekin" ]
+		},
+		{
+			"code": "material",
+			"states": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+		}
+	],
+	"shapeByType": {
+		"*": { "base": "ignisclothing:item/armor/dunekin/dunekin{bodypart}" }
+	},
+	"textures": {
+		"seraph": { "base": "game:block/transparent" }
+	},
+	"texturesByType": {
+		"*-copper": {
+			"metal": { "base": "game:item/tool/shield/metal/copper" },
+			"metaldunehelm.png": { "base": "ignisclothing:dunekin-helm/copper-dunehelm" }
+		},
+		"*-tinbronze": {
+			"metal": { "base": "game:item/tool/shield/metal/tinbronze" },
+			"metaldunehelm.png": { "base": "ignisclothing:dunekin-helm/tinbronze-dunehelm" }
+		},
+		"*-bismuthbronze": {
+			"metal": { "base": "game:item/tool/shield/metal/bismuthbronze" },
+			"metaldunehelm.png": { "base": "ignisclothing:dunekin-helm/bismuthbronze-dunehelm" }
+		},
+		"*-blackbronze": {
+			"metal": { "base": "game:item/tool/shield/metal/blackbronze" },
+			"metaldunehelm.png": { "base": "ignisclothing:dunekin-helm/blackbronze-dunehelm" }
+		},
+		"*-iron": {
+			"metal": { "base": "game:item/tool/shield/metal/iron" },
+			"metaldunehelm.png": { "base": "ignisclothing:dunekin-helm/iron-dunehelm" }
+		},
+		"*-meteoriciron": {
+			"metal": { "base": "game:item/tool/shield/metal/meteoriciron" },
+			"metaldunehelm.png": { "base": "ignisclothing:dunekin-helm/meteoriciron-dunehelm" }
+		},
+		"*-steel": {
+			"metal": { "base": "game:item/tool/shield/metal/steel" },
+			"metaldunehelm.png": { "base": "ignisclothing:dunekin-helm/steel-dunehelm" }
+		},
+		"*-silver": {
+			"metal": { "base": "game:item/tool/shield/metal/silver" },
+			"metaldunehelm.png": { "base": "ignisclothing:dunekin-helm/silver-dunehelm" }
+		},
+		"*-gold": {
+			"metal": { "base": "game:item/tool/shield/metal/gold" },
+			"metaldunehelm.png": { "base": "ignisclothing:dunekin-helm/gold-dunehelm" }
+		},
+		"*": {
+			"seraph": { "base": "game:block/transparent" }
+		}
+	},
+	"storageFlags": 128,
+	// 'keepElements names must also be added to game/entities/humanoid/player file, under the 'disableElements' attribute.
+	"attributes": {
+		"handbook": {
+			"groupBy": [ "armor-{bodypart}-{material}-*" ]
+		},
+		"visibleDamageEffect": true,
+		"clothesCategoryByType": {
+			"*-head-*": "armorhead",
+			"*-body-*": "armorbody",
+			"*-legs-*": "armorlegs"
+		},
+		"attachableToEntity": {
+			"texturePrefixCode": "armor-{bodypart}-{material}-*",
+			"categoryCodeByType": {
+				"*-head-*": "armorhead",
+				"*-body-*": "armorbody",
+				"*-legs-*": "armorlegs"
+			},
+			"disableElementsByType": {
+				"*-head-*": [ "hidehat", "hidemask", "Hood", "hoodupperover", "Hair tile upper part", "ponytailhigh", "ponytaillow", "Hair", "hair-uncovered", "sidehigh", "sidelow", "bangs" ],
+				"*-body-*": [ "Waist", "hideupperbody", "hidelowerbody", "hideupperarm", "hidelowerarm" ],
+				"*-chestplate-*": [ "Waist" ],
+				"*-arms-*": [ "hideupperarm" ],
+				"*-hands-*": [ "hidelowerarm" ],
+				"*-legs-*": [ "hideshoeL", "hideshoeR" ],
+				"*-boots-*": [ "hideshoeL", "hideshoeR" ]
+			}
+		},
+		"defaultProtLoss": {
+			"perTierRelativeProtectionLoss": [ 0.03, 0.15 ],
+			"perTierFlatDamageReductionLoss": [ 0.1, 0.2 ]
+		},
+		"protectionModifiersByType": {
+			"*": {
+				"relativeProtection": 0.65,
+				"flatDamageReduction": 0.5,
+				"protectionTier": 2
+			}
+		},
+		"statModifiersByType": {
+			"*": {
+				"walkSpeed": -0.02,
+				"healingeffectivness": -0.1,
+				"hungerrate": 0.03
+			}
+		}
+	},
+	"creativeinventory": {
+		"general": [ "*" ],
+		"items": [ "*" ],
+		"clothing": [ "*" ],
+		"ignisclothing": [ "*" ]
+	},
+	"renderAlphaTest": 0.25,
+	"durabilityByType": {
+		"*": 1400
+	},
+	"tpHandTransformByType": {
+		"*-head-*": {
+			"translation": {
+				"x": 0.1,
+				"y": -1.7,
+				"z": -1.1
+			},
+			"rotation": {
+				"x": 20,
+				"y": 180,
+				"z": 20
+			},
+			"origin": {
+				"x": 0,
+				"y": 0,
+				"z": 1
+			},
+			"scale": 0.8
+		},
+		"*-body-*": {
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": -0.4
+			},
+			"rotation": {
+				"x": 92,
+				"y": 35,
+				"z": -89
+			},
+			"scale": 0.8
+		},
+		"*-chestplate-*": {
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": -0.4
+			},
+			"rotation": {
+				"x": 92,
+				"y": 35,
+				"z": -89
+			},
+			"scale": 0.8
+		},
+		"*-arms-*": {
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": -0.4
+			},
+			"rotation": {
+				"x": 92,
+				"y": 35,
+				"z": -89
+			},
+			"scale": 0.8
+		},
+		"*-hands-*": {
+			"translation": {
+				"x": -0.5,
+				"y": -0.2,
+				"z": -0.4
+			},
+			"rotation": {
+				"x": 92,
+				"y": 35,
+				"z": -89
+			},
+			"scale": 0.8
+		},
+		"*-legs-*": {
+			"translation": {
+				"x": -0.5,
+				"y": -0.4,
+				"z": -0.4
+			},
+			"rotation": {
+				"x": -90,
+				"y": 0,
+				"z": -90
+			},
+			"scale": 0.8
+		},
+		"*-pants-*": {
+			"translation": {
+				"x": -0.5,
+				"y": -0.4,
+				"z": -0.4
+			},
+			"rotation": {
+				"x": -90,
+				"y": 0,
+				"z": -90
+			},
+			"scale": 0.8
+		},
+		"*-boots-*": {
+			"translation": {
+				"x": -0.5,
+				"y": -0.4,
+				"z": -0.4
+			},
+			"rotation": {
+				"x": -90,
+				"y": 0,
+				"z": -90
+			},
+			"scale": 0.8
+		}
+	},
+	"guiTransformByType": {
+		"*-head-*": {
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -26,
+				"y": -46,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.55,
+				"y": 1.65,
+				"z": 0.5
+			},
+			"scale": 2
+		},
+		"*-body-*": {
+			"translation": {
+				"x": 3,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -26,
+				"y": -46,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1.11,
+				"z": 0.5
+			},
+			"scale": 1.37
+		},
+		"*-chestplate-*": {
+			"translation": {
+				"x": 3,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -26,
+				"y": -46,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1.11,
+				"z": 0.5
+			},
+			"scale": 1.6
+		},
+		"*-arms-*": {
+			"translation": {
+				"x": 3,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -26,
+				"y": -46,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1.4,
+				"z": 0.5
+			},
+			"scale": 1.8
+		},
+		"*-hands-*": {
+			"translation": {
+				"x": 3,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -26,
+				"y": -46,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.9,
+				"z": 0.5
+			},
+			"scale": 1.8
+		},
+		"*-legs-*": {
+			"translation": {
+				"x": 1,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -26,
+				"y": -135,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.6,
+				"z": 0.5
+			},
+			"scaleXyz": {
+				"x": -1.1,
+				"y": 1.1,
+				"z": 1.1
+			}
+		},
+		"*-pants-*": {
+			"translation": {
+				"x": 1,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -26,
+				"y": -135,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.6,
+				"y": 0.85,
+				"z": 0.5
+			},
+			"scaleXyz": {
+				"x": -1.81,
+				"y": 1.81,
+				"z": 1.81
+			}
+		},
+		"*-boots-*": {
+			"translation": {
+				"x": 1,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -26,
+				"y": -135,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.3,
+				"z": 0.5
+			},
+			"scaleXyz": {
+				"x": -1.8,
+				"y": 1.8,
+				"z": 1.8
+			}
+		}
+	},
+	"groundTransformByType": {
+		"*-head-*": {
+			"translation": {
+				"x": -0.55,
+				"y": 0.2,
+				"z": 1.2
+			},
+			"rotation": {
+				"x": 90,
+				"y": 0,
+				"z": -90
+			},
+			"scale": 3
+		},
+		"*-body-*": {
+			"translation": {
+				"x": 0.1,
+				"y": 0.15,
+				"z": 0.6
+			},
+			"rotation": {
+				"x": 90,
+				"y": 0,
+				"z": -90
+			},
+			"scale": 3
+		},
+		"*-chestplate-*": {
+			"translation": {
+				"x": 0.1,
+				"y": 0.15,
+				"z": 0.6
+			},
+			"rotation": {
+				"x": 90,
+				"y": 0,
+				"z": -90
+			},
+			"scale": 3
+		},
+		"*-arms-*": {
+			"translation": {
+				"x": 0.1,
+				"y": 0.15,
+				"z": 0.6
+			},
+			"rotation": {
+				"x": 90,
+				"y": 0,
+				"z": -90
+			},
+			"scale": 3
+		},
+		"*-hands-*": {
+			"translation": {
+				"x": 0.1,
+				"y": 0.15,
+				"z": 0.6
+			},
+			"rotation": {
+				"x": 90,
+				"y": 0,
+				"z": -90
+			},
+			"scale": 3
+		},
+		"*-legs-*": {
+			"translation": {
+				"x": 0,
+				"y": 0.2,
+				"z": -0.35
+			},
+			"rotation": {
+				"x": 90,
+				"y": 0,
+				"z": -90
+			},
+			"scale": 3
+		},
+		"*-pants-*": {
+			"translation": {
+				"x": 0,
+				"y": 0.2,
+				"z": -0.35
+			},
+			"rotation": {
+				"x": 90,
+				"y": 0,
+				"z": -90
+			},
+			"scale": 3
+		},
+		"*-boots-*": {
+			"translation": {
+				"x": 0,
+				"y": 0.2,
+				"z": -0.35
+			},
+			"rotation": {
+				"x": 90,
+				"y": 0,
+				"z": -90
+			},
+			"scale": 3
+		}
+	}
+}

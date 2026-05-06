@@ -1,0 +1,16 @@
+{
+    "$schema": "https://moddbcdn.vintagestory.at/schema/modinfo.latest.json",
+    "type": "Content",
+    "modid": "ignisclothing",
+    "name": "IgnisClothing",
+    "authors": [
+        "ArcanePoro",
+        "Tchou",
+        "Th3"
+    ],
+    "description": "Custom Clothing/Items for Ignis Group.",
+    "version": "1.0.8",
+    "dependencies": {
+        "game": "1.21.0"
+    }
+}

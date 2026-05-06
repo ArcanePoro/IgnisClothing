@@ -1,0 +1,241 @@
+﻿{
+  "code": "halberd",
+  "class": "CombatOverhaul:MeleeWeapon",
+  "tags": ["weapon", "weapon-melee", "halberd", "polearm", "twohanded"],
+  "behaviors": [
+    {
+      "name": "GroundStorable",
+      "properties": {
+        "layout": "WallHalves",
+        "wallOffY": 3,
+        "sprintKey": true,
+        "selectionBox": {"x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.1, "z2": 1},
+        "collisionBox": {"x1": 0, "y1": 0, "z1": 0, "x2": 0, "y2": 0, "z2": 0}
+      }
+    }
+  ],
+  "variantgroups": [
+      {"code": "type", "states": ["billhookpole"]}, 
+      {"code": "material", "states": ["copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold"]}
+  ],
+  "shape": {"base": "item/weapons/billhookpole"},
+  "texturesByType": {
+        "*-copper": {
+        	"metal": { base: "game:item/tool/shield/metal/copper" },
+        },
+        "*-tinbronze": {
+        	"metal": { base: "game:item/tool/shield/metal/tinbronze" },
+        },
+              "*-bismuthbronze": {
+        	"metal": { base: "game:item/tool/shield/metal/bismuthbronze" }
+        },
+              "*-blackbronze": {
+        	"metal": { base: "game:item/tool/shield/metal/blackbronze" }
+        },
+              "*-iron": {
+        	"metal": { base: "game:item/tool/shield/metal/iron" }
+        },
+              "*-meteoriciron": {
+        	"metal": { base: "game:item/tool/shield/metal/meteoriciron" }
+        },
+              "*-steel": {
+        	"metal": { base: "game:item/tool/shield/metal/steel" }
+        },
+              "*-silver": {
+        	"metal": { base: "game:item/tool/shield/metal/silver" }
+        },
+              "*-gold": {
+        	"metal": { base: "game:item/tool/shield/metal/gold" }
+        }
+  },
+  "tool": "halberd",
+  "attributes": {
+    "handbook": {"groupBy": ["halberd-plain-*"]},
+    "groundStorageTransform": {
+			translation: { x: 0.5, y: 0.1, z: 0.01 },
+			rotation: { x: 10, y: 0, z: 90 },
+			origin: { x: 0, y: 0, z: 0 }
+    },
+    "toolrackTransform": {
+			translation: { x: -1, y: 0.4, z: 0 },
+			origin: { x: 0, y: 0, z: 0.5 }
+    },
+    "ProficiencyStats": ["meleeProficiency", "halberdsProficiency"],
+    "RenderingOffset": false,
+    "OneHandedStance": {
+      "CanAttack": false,
+      "CanParry": false,
+      "CanBlock": false,
+      "CanSprint": true,
+      "CanThrow": false,
+      "SpeedPenalty": 0,
+      "ReadyAnimation": "armory:halberd-idle-1h",
+      "IdleAnimation": "armory:halberd-idle-1h"
+    },
+    "TwoHandedStance": {
+      "CanAttack": true,
+      "CanParry": false,
+      "CanBlock": false,
+      "CanSprint": true,
+      "CanThrow": false,
+      "SpeedPenalty": 0,
+      "BlockCooldownMs": 750,
+      "GripLengthFactor": 4,
+      "GripMinLength": 0,
+      "GripMaxLength": 20,
+      "DirectionalAttacksByType": {
+          "*-billhookpole-*" : {
+            "Top": {
+              "StopOnTerrainHit": true,
+              "StopOnEntityHit": false,
+              "CollideWithTerrain": true,
+              "HitOnlyOneEntity": false,
+              "MaxReach": 15,
+              "DamageTypes": [
+                {
+                  "DamageByType": {
+                    "*-billhookpole-copper":        {"DamageType": "SlashingAttack", "Tier": 2, "Damage": 5},
+                    "*-billhookpole-tinbronze":     {"DamageType": "SlashingAttack", "Tier": 3, "Damage": 5.5},
+                    "*-billhookpole-bismuthbronze": {"DamageType": "SlashingAttack", "Tier": 3, "Damage": 5.5},
+                    "*-billhookpole-blackbronze":   {"DamageType": "SlashingAttack", "Tier": 4, "Damage": 5.5},
+                    "*-billhookpole-iron":          {"DamageType": "SlashingAttack", "Tier": 4, "Damage": 6},
+                    "*-billhookpole-meteoriciron":  {"DamageType": "SlashingAttack", "Tier": 5, "Damage": 6},
+                    "*-billhookpole-steel":         {"DamageType": "SlashingAttack", "Tier": 6, "Damage": 6.5},
+                    "*-billhookpole-silver":        {"DamageType": "SlashingAttack", "Tier": 4, "Damage": 6},
+                    "*-billhookpole-gold":          {"DamageType": "SlashingAttack", "Tier": 4, "Damage": 6}
+                  },
+                  "Knockback": 1,
+                  "DurabilityDamage": 1,
+                  "Collider": [2.3, 0, 0.5, 2.7, 0, 0.19999999]
+                },
+              ]
+            },
+            "Left": {
+              "StopOnTerrainHit": true,
+              "StopOnEntityHit": false,
+              "CollideWithTerrain": true,
+              "HitOnlyOneEntity": false,
+              "MaxReach": 15,
+              "DamageTypes": [
+                {
+                  "DamageByType": {
+                    "*-billhookpole-copper":        {"DamageType": "SlashingAttack", "Tier": 2, "Damage": 5},
+                    "*-billhookpole-tinbronze":     {"DamageType": "SlashingAttack", "Tier": 3, "Damage": 5.5},
+                    "*-billhookpole-bismuthbronze": {"DamageType": "SlashingAttack", "Tier": 3, "Damage": 5.5},
+                    "*-billhookpole-blackbronze":   {"DamageType": "SlashingAttack", "Tier": 4, "Damage": 5.5},
+                    "*-billhookpole-iron":          {"DamageType": "SlashingAttack", "Tier": 4, "Damage": 6},
+                    "*-billhookpole-meteoriciron":  {"DamageType": "SlashingAttack", "Tier": 5, "Damage": 6},
+                    "*-billhookpole-steel":         {"DamageType": "SlashingAttack", "Tier": 6, "Damage": 6.5},
+                    "*-billhookpole-silver":        {"DamageType": "SlashingAttack", "Tier": 4, "Damage": 6},
+                    "*-billhookpole-gold":          {"DamageType": "SlashingAttack", "Tier": 4, "Damage": 6}
+                  },
+                  "Knockback": 1,
+                  "DurabilityDamage": 1,
+                  "Collider": [2.3, 0, 0.5, 2.7, 0, 0.19999999]
+                },
+              ]
+            },
+            "Right": {
+              "StopOnTerrainHit": true,
+              "StopOnEntityHit": false,
+              "CollideWithTerrain": true,
+              "HitOnlyOneEntity": false,
+              "MaxReach": 15,
+              "DamageTypes": [
+                {
+                  "DamageByType": {
+                    "*-billhookpole-copper":        {"DamageType": "SlashingAttack", "Tier": 2, "Damage": 5},
+                    "*-billhookpole-tinbronze":     {"DamageType": "SlashingAttack", "Tier": 3, "Damage": 5.5},
+                    "*-billhookpole-bismuthbronze": {"DamageType": "SlashingAttack", "Tier": 3, "Damage": 5.5},
+                    "*-billhookpole-blackbronze":   {"DamageType": "SlashingAttack", "Tier": 4, "Damage": 5.5},
+                    "*-billhookpole-iron":          {"DamageType": "SlashingAttack", "Tier": 4, "Damage": 6},
+                    "*-billhookpole-meteoriciron":  {"DamageType": "SlashingAttack", "Tier": 5, "Damage": 6},
+                    "*-billhookpole-steel":         {"DamageType": "SlashingAttack", "Tier": 6, "Damage": 6.5},
+                    "*-billhookpole-silver":        {"DamageType": "SlashingAttack", "Tier": 4, "Damage": 6},
+                    "*-billhookpole-gold":          {"DamageType": "SlashingAttack", "Tier": 4, "Damage": 6}
+                  },
+                  "Knockback": 1,
+                  "DurabilityDamage": 1,
+                  "Collider": [2.3, 0, 0.5, 2.7, 0, 0.19999999]
+                },
+              ]
+            },
+            "Bottom": {
+              "StopOnTerrainHit": true,
+              "StopOnEntityHit": false,
+              "CollideWithTerrain": true,
+              "HitOnlyOneEntity": true,
+              "MaxReach": 15,
+              "DamageTypes": [
+                {
+                  "DamageByType": {
+                    "*-billhookpole-copper":        {"DamageType": "SlashingAttack", "Tier": 2, "Damage": 5},
+                    "*-billhookpole-tinbronze":     {"DamageType": "SlashingAttack", "Tier": 3, "Damage": 5.5},
+                    "*-billhookpole-bismuthbronze": {"DamageType": "SlashingAttack", "Tier": 3, "Damage": 5.5},
+                    "*-billhookpole-blackbronze":   {"DamageType": "SlashingAttack", "Tier": 4, "Damage": 5.5},
+                    "*-billhookpole-iron":          {"DamageType": "SlashingAttack", "Tier": 4, "Damage": 6},
+                    "*-billhookpole-meteoriciron":  {"DamageType": "SlashingAttack", "Tier": 5, "Damage": 6},
+                    "*-billhookpole-steel":         {"DamageType": "SlashingAttack", "Tier": 6, "Damage": 6.5},
+                    "*-billhookpole-silver":        {"DamageType": "SlashingAttack", "Tier": 4, "Damage": 6},
+                    "*-billhookpole-gold":          {"DamageType": "SlashingAttack", "Tier": 4, "Damage": 6}
+                  },
+                  "Knockback": -4,
+                  "DurabilityDamage": 1,
+                  "Collider": [2.3, 0, 0.5, 2.7, 0, 0.19999999]
+                }
+              ]
+            }
+          },
+      },
+      "HandleAttack": {
+        "StopOnTerrainHit": true,
+        "StopOnEntityHit": false,
+        "CollideWithTerrain": true,
+        "MaxReach": 9,
+        "DamageTypes": [{"Damage": {"DamageType": "BluntAttack", "Tier": 1, "Damage": 0.5}, "Knockback": 1, "DurabilityDamage": 0, "Collider": [0, 0, 0.5, 2.3, 0, 0.5]}]
+      },
+      "AttackHitSound": "game:sounds/thud",
+      "HandleHitSound": "game:sounds/held/shieldblock-wood-light",
+      "AttackDirectionsType": "Square",
+      "AttackAnimationByType": {
+          "*-billhookpole-*": {
+            "Top": ["armory:halberd-slash-2h-top"],
+            "Left": ["armory:halberd-slash-2h-left"],
+            "Right": ["armory:halberd-slash-2h-right"],
+            "Bottom": ["ignisclothing:billhook-thrustpull-2h-bottom"]
+        },
+      },
+      "TpAttackAnimation": {"Top": "combatoverhaul-falx-slash", "Left": "combatoverhaul-falx-slash", "Right": "combatoverhaul-falx-slash", "Bottom": "combatoverhaul-spear-hit"},
+      "ReadyAnimation": "armory:halberd-ready-2h",
+      "IdleAnimation": "armory:halberd-idle-1h",
+      "AttackTpAnimation": "spearhit"
+    }
+  },
+  "durabilitybytype": {
+        "*-copper": 300,
+		"*-tinbronze": 550,
+		"*-bismuthbronze*": 600,
+		"*-blackbronze": 650,
+		"*-iron": 750,
+		"*-meteoriciron": 975,
+		"*-steel": 1250,
+		"*-gold": 750,
+		"*-silver": 750
+  },
+  "creativeinventory": {"general": ["*"], "ignisclothing": ["*"]},
+  "guiTransform": {
+        translation: { x: 0, y: 0, z: 0 },
+		rotation: { x: 46, y: 45, z: -156 },
+		origin: { x: 2.4, y: -0.2, z: 0.6 },
+		scale: 2.05
+  },
+  "groundTransform": {
+      "translation": {"x": 0, "y": 0, "z": 0}, "rotation": {"x": 0, "y": 0, "z": 0}, "origin": {"x": 0, "y": 0, "z": 0}, "scale": 4
+  },
+  "tpHandTransform": {
+      	translation: { x: 0, y: 0, z: -0.5 },
+		rotation: { x: 90, y: 0, z: 0 },
+		origin: { x: 0, y: 0, z: 0.5 },
+		scale: 1
+  }
+}

@@ -1,0 +1,352 @@
+[
+	{
+		"ingredientPattern": "NS_,LB_,_B_",
+		"ingredients": {
+			"B": {
+				"type": "item",
+				"code": "game:bone"
+			},
+			"S": {
+				"type": "item",
+				"code": "game:clutter-skull/humanoid"
+			},
+			"L": {
+				"type": "item",
+				"code": "game:leather-normal-*"
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalnailsandstrips-*",
+				"name": "metal",
+				"allowedVariants": [ "tinbronze", "bismuthbronze", "blackbronze" ],
+				"quantity": 4
+			}
+		},
+		"width": 3,
+		"height": 3,
+		"name": "bone club",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:club-skeleton-{metal}",
+			"quantity": 1
+		}
+	},
+	{
+		"ingredientPattern": "_NW,_HN,R__",
+		"ingredients": {
+			"H": {
+				"type": "item",
+				"code": "armory:handle-medium"
+			},
+			"W": {
+				"type": "item",
+				"code": "game:wrench-*",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			},
+			"R": {
+				"type": "item",
+				"code": "game:rod-*",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			},
+			"N": {
+				"type": "item",
+				"code": "game:metalnailsandstrips-tinbronze"
+			}
+		},
+		"width": 3,
+		"height": 3,
+		"name": "big wrench",
+		"recipeGroup": 1,
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:club-bigwrench-{metal}",
+			"quantity": 1
+		}
+	},
+	{
+		"ingredientPattern": "P,H",
+		"ingredients": {
+			"H": {
+				"type": "item",
+				"code": "armory:handle-medium"
+			},
+			"P": {
+				"type": "item",
+				"code": "ignisclothing:parts-solarlongsword-*",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			}
+		},
+		"width": 1,
+		"height": 2,
+		"name": "solar longsword",
+		"recipeGroup": 1,
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:sword-long-solar-{metal}",
+			"quantity": 1
+		}
+	},
+	{
+		"ingredientPattern": "P,H",
+		"ingredients": {
+			"H": {
+				"type": "item",
+				"code": "armory:handle-short"
+			},
+			"P": {
+				"type": "item",
+				"code": "ignisclothing:parts-parrydagger-*",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			}
+		},
+		"width": 1,
+		"height": 2,
+		"name": "parry dagger",
+		"recipeGroup": 1,
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:sword-short-parrydagger-{metal}",
+			"quantity": 1
+		}
+	},
+	{
+		"ingredientPattern": "P,H",
+		"ingredients": {
+			"H": {
+				"type": "item",
+				"code": "armory:handle-long"
+			},
+			"P": {
+				"type": "item",
+				"code": "ignisclothing:parts-billhookpole-*",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			}
+		},
+		"width": 1,
+		"height": 2,
+		"name": "billhook polarm",
+		"recipeGroup": 1,
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:halberd-billhookpole-{metal}",
+			"quantity": 1
+		}
+	},
+	{
+		"ingredientPattern": "CCP,__H",
+		"ingredients": {
+			"C": {
+				"type": "item",
+				"code": "game:cloth-plain",
+				"quantity": 2
+			},
+			"H": {
+				"type": "item",
+				"code": "armory:handle-long"
+			},
+			"P": {
+				"type": "item",
+				"code": "ignisclothing:parts-solarpike-*",
+				"name": "metal",
+				"allowedVariants": [ "wood", "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			}
+		},
+		"width": 3,
+		"height": 2,
+		"name": "solar banner pike",
+		"recipeGroup": 1,
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:pike-solarbanner-{metal}",
+			"quantity": 1
+		}
+	},
+	{
+		"ingredientPattern": "CCP,__H",
+		"ingredients": {
+			"C": {
+				"type": "item",
+				"code": "game:cloth-plain",
+				"quantity": 2
+			},
+			"H": {
+				"type": "item",
+				"code": "armory:handle-long"
+			},
+			"P": {
+				"type": "item",
+				"code": "ignisclothing:parts-solarpike-wood"
+			}
+		},
+		"width": 3,
+		"height": 2,
+		"name": "solar banner pike ceremonal",
+		"recipeGroup": 1,
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:pike-solarbanner-wood",
+			"quantity": 1
+		}
+	},
+	{
+		"ingredientPattern": "KW,_S",
+		"ingredients": {
+			"K": {
+				"type": "item",
+				"code": "game:knife-*",
+				"quantity": 1,
+				"isTool": true
+			},
+			"W": {
+				"type": "block",
+				"code": "game:log-placed-*-ud",
+				"name": "wood",
+				"quantity": 1
+			},
+			"S": {
+				"type": "item",
+				"code": "game:stick"
+			}
+		},
+		"width": 2,
+		"height": 2,
+		"name": "solar banner pike ceremonal part log",
+		"recipeGroup": 1,
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:parts-solarpike-wood",
+			"quantity": 1
+		}
+	},
+	{
+		"ingredientPattern": "KW,_S",
+		"ingredients": {
+			"K": {
+				"type": "item",
+				"code": "game:knife-*",
+				"quantity": 1,
+				"isTool": true
+			},
+			"W": {
+				"type": "block",
+				"code": "game:debarkedlog-*-ud",
+				"name": "wood",
+				"quantity": 1
+			},
+			"S": {
+				"type": "item",
+				"code": "game:stick"
+			}
+		},
+		"width": 2,
+		"height": 2,
+		"name": "solar banner pike ceremonal part debarked log",
+		"recipeGroup": 1,
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:parts-solarpike-wood",
+			"quantity": 1
+		}
+	},
+	{
+		"ingredientPattern": "L",
+		"ingredients": {
+			"L": {
+				"type": "item",
+				"code": "ignisclothing:sword-long-solar-{metal}",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			}
+		},
+		"width": 1,
+		"height": 1,
+		"name": "solar knight longsword mordhau converison",
+		"recipeGroup": 2,
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:sword-long-solarmordhau-{metal}",
+			"quantity": 1
+		}
+	},
+	{
+		"ingredientPattern": "L",
+		"ingredients": {
+			"L": {
+				"type": "item",
+				"code": "ignisclothing:sword-long-solarmordhau-{metal}",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			}
+		},
+		"width": 1,
+		"height": 1,
+		"name": "solar knight longsword mordhau sword converison",
+		"recipeGroup": 2,
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:sword-long-solar-{metal}",
+			"quantity": 1
+		}
+	},
+	{
+		"ingredientPattern": "B,P,T",
+		"recipeGroup": 1,
+		"ingredients": {
+			"B": {
+				"type": "item",
+				"code": "armory:part-greatsword-*",
+				"name": "metal",
+				"allowedVariants": [ "iron", "steel" ]
+			},
+			"P": {
+				"type": "item",
+				"code": "game:leather-normal-*",
+				"quantity": 1,
+			},
+			"T": {
+				"type": "item",
+				"code": "game:gear-temporal",
+				"quantity": 1
+			}
+		},
+		"width": 1,
+		"height": 3,
+		"name": "sword",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:sword-great-lich-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "S,B,P",
+		"recipeGroup": 1,
+		"ingredients": {
+			"S": {
+				"type": "item",
+				"code": "armory:part-shortsword-steel"
+			},
+			"B": {
+				"type": "item",
+				"code": "game:blade-blackguard-iron",
+				"quantity": 1
+			},
+			"P": {
+				"type": "item",
+				"code": "game:metalplate-gold",
+				"quantity": 1
+			}
+		},
+		"width": 1,
+		"height": 3,
+		"name": "sword",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:sword-short-oscar-steel"
+		}
+	}
+]

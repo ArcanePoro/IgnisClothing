@@ -1,0 +1,182 @@
+﻿{
+    "code": "atlatldart",
+    "class": "Item",
+    "maxstacksize": 12,
+    "storageFlags": 513,
+    "variantgroups": [
+        {
+            "code": "material",
+            "states": [ "flint", "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+        }
+    ],
+    "shape": { "base": "ignisclothing:item/weapons/atlatldart" },
+    "texturesByType": {
+        "*-flint": {
+            "metal": { "base": "game:block/stone/flint" }
+        },
+        "*-copper": {
+            "metal": { "base": "game:item/tool/shield/metal/copper" }
+        },
+        "*-tinbronze": {
+            "metal": { "base": "game:item/tool/shield/metal/tinbronze" }
+        },
+        "*-bismuthbronze": {
+            "metal": { "base": "game:item/tool/shield/metal/bismuthbronze" }
+        },
+        "*-blackbronze": {
+            "metal": { "base": "game:item/tool/shield/metal/blackbronze" }
+        },
+        "*-iron": {
+            "metal": { "base": "game:item/tool/shield/metal/iron" }
+        },
+        "*-meteoriciron": {
+            "metal": { "base": "game:item/tool/shield/metal/meteoriciron" }
+        },
+        "*-steel": {
+            "metal": { "base": "game:item/tool/shield/metal/steel" }
+        },
+        "*-silver": {
+            "metal": { "base": "game:item/tool/shield/metal/silver" }
+        },
+        "*-gold": {
+            "metal": { "base": "game:item/tool/shield/metal/gold" }
+        }
+    },
+    "creativeinventory": {
+        "general": [ "*" ],
+        "ignisclothing": [ "*" ]
+    },
+    "guiTransform": {
+        "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "rotation": {
+            "x": 67,
+            "y": 13,
+            "z": -119
+        },
+        "origin": {
+            "x": 2.5,
+            "y": 0.7,
+            "z": 0
+        },
+        "scaleXyz": {
+            "x": -4.24,
+            "y": 4.24,
+            "z": 4.24
+        }
+    },
+    "tpHandTransform": {
+        "translation": {
+            "x": -0.45,
+            "y": 0.05,
+            "z": -0.525
+        },
+        "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "scale": 1
+    },
+    "groundTransform": {
+        "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "origin": {
+            "x": 0.5,
+            "y": 0,
+            "z": 0.5
+        },
+        "scale": 4
+    },
+    "behaviors": [
+        {
+            "name": "CombatOverhaul:Projectile",
+            "properties": {
+                "stats": {
+                    "CollisionRadius": 0.04,
+                    "PenetrationDistance": 0.3,
+                    "DamageStatsByType": {
+                        "*-flint": {
+                            "DamageType": "PiercingAttack",
+                            "Damage": 3.5
+                        },
+                        "*-copper": {
+                            "DamageType": "PiercingAttack",
+                            "Damage": 4
+                        },
+                        "*-tinbronze": {
+                            "DamageType": "PiercingAttack",
+                            "Damage": 4.5
+                        },
+                        "*-bismuthbronze": {
+                            "DamageType": "PiercingAttack",
+                            "Damage": 4.5
+                        },
+                        "*-blackbronze": {
+                            "DamageType": "PiercingAttack",
+                            "Damage": 4.5
+                        },
+                        "*-iron": {
+                            "DamageType": "PiercingAttack",
+                            "Damage": 5
+                        },
+                        "*-gold": {
+                            "DamageType": "PiercingAttack",
+                            "Damage": 5
+                        },
+                        "*-silver": {
+                            "DamageType": "PiercingAttack",
+                            "Damage": 5
+                        },
+                        "*-meteoriciron": {
+                            "DamageType": "PiercingAttack",
+                            "Damage": 5.5
+                        },
+                        "*-steel": {
+                            "DamageType": "PiercingAttack",
+                            "Damage": 6
+                        }
+                    },
+                    "SpeedThreshold": 1,
+                    "Knockback": 1,
+                    "EntityCode": "ignisclothing:atlatldart-{material}",
+                    "DropChanceByType": {
+                        "*-flint": 0.75,
+                        "*-copper": 0.9,
+                        "*-tinbronze": 0.95,
+                        "*-bismuthbronze": 0.95,
+                        "*-blackbronze": 0.95,
+                        "*-iron": 0.98,
+                        "*-gold": 0.98,
+                        "*-silver": 0.98,
+                        "*-meteoriciron": 0.99,
+                        "*-steel": 0.995
+                    },
+                    "DamageTierBonusByType": {
+                        "*-flint": 1,
+                        "*-copper": 2,
+                        "*-tinbronze": 3,
+                        "*-bismuthbronze": 3,
+                        "*-blackbronze": 4,
+                        "*-iron": 4,
+                        "*-gold": 4,
+                        "*-silver": 4,
+                        "*-meteoriciron": 5,
+                        "*-steel": 6,
+                    }
+                }
+            }
+        }
+    ]
+}

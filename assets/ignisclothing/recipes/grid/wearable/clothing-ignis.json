@@ -1,0 +1,137 @@
+[	
+	{
+		ingredientPattern: "LLLCLCLBL",
+		ingredients: {
+			"C": { type: "item", code: "game:charcoal"},
+			"L": { type: "item", code: "game:cloth-plain"},
+			"B": { type: "item", code: "game:bone", quantity: 2 }
+		},
+		width: 3,
+		height: 3,
+		name: "owl mask",
+		output: { type: "item", code: "ignisclothing:clothes-face-barnowl", quantity: 1 }
+	},
+	{
+		ingredientPattern: "W_WBWBWBW",
+		ingredients: {
+			"W": { type: "item", code: "game:cloth-plain", quantity: 2},
+			"B": { type: "item", code: "game:cloth-black", quantity: 2}
+		},
+		width: 3,
+		height: 3,
+		name: "gambling suit",
+		output: { type: "item", code: "ignisclothing:clothes-upperbody-bennysuit", quantity: 1 }
+	},
+	{
+		ingredientPattern: "Q_QFBF",
+		ingredients: {
+			"Q": { type: "item", code: "game:ore-quartz"},
+			"B": { type: "item", code: "game:metalplate-brass"},
+			"F": { type: "item", code: "game:flaxtwine"}
+		},
+		width: 3,
+		height: 2,
+		name: "bugs goggles",
+		output: { type: "item", code: "ignisclothing:clothes-face-bugsgoggles", quantity: 1 }
+	},
+	{
+		ingredientPattern: "LCL",
+		ingredients: {
+			"C": { type: "item", code: "game:clay-red", quantity: 2 },
+			"L": { type: "item", code: "game:cloth-plain"}
+		},
+		width: 3,
+		height: 1,
+		name: "hair bow",
+		output: { type: "item", code: "ignisclothing:clothes-head-hairbow", quantity: 1 }
+	},
+	{
+		ingredientPattern: "F__,_FL,_LL",
+		ingredients: {
+			"F": { type: "item", code: "game:flaxtwine", quantity: 2 },
+			"L": { type: "item", code: "game:leather-normal-*", quantity: 3 },
+		},
+		width: 3,
+		height: 3,
+		name: "messenger bag",
+		output: { type: "item", code: "ignisclothing:backpack-messengerbag", quantity: 1 }
+	},
+	{
+		ingredientPattern: "BLB_M_",
+		ingredients: {
+			"B": { type: "item", code: "game:bone", quantity: 2 },
+			"L": { type: "item", code: "game:hide-pelt-large", quantity: 2 },
+			"M": { type: "item", code: "game:hide-pelt-medium", quantity: 2 }
+		},
+		width: 3,
+		height: 2,
+		name: "hyena shoulder pelt",
+		output: { type: "item", code: "ignisclothing:clothes-shoulder-shoulderpelthyena", quantity: 1 }
+	},
+	{
+		ingredientPattern: "F_FLML",
+		ingredients: {
+			"F": { type: "item", code: "game:flaxtwine", quantity: 2 },
+			"M": { type: "item", code: "game:flaxtwine" },
+			"L": { type: "item", code: "game:leather-normal-*", quantity: 2 },
+		},
+		width: 3,
+		height: 2,
+		name: "skeleton bra",
+		output: { type: "item", code: "ignisclothing:clothes-neck-skelebra", quantity: 1 }
+	},
+	{
+		ingredientPattern: "WBWBBB",
+		ingredients: {
+			"W": { type: "item", code: "game:cloth-plain"},
+			"B": { type: "item", code: "game:cloth-black"}
+		},
+		width: 3,
+		height: 2,
+		name: "sombrero",
+		output: { type: "item", code: "ignisclothing:clothes-head-sombrero", quantity: 1 }
+	},
+	{
+		ingredientPattern: "BWB,B_B,_B_",
+		ingredients: {
+			"W": {
+				type: "item",
+				code: "game:cloth-plain",
+				quantity: 2
+			},
+			"B": {
+				type: "item",
+				code: "game:cloth-black"
+			}
+		},
+		width: 3,
+		height: 3,
+		name: "poncho",
+		output: {
+			type: "item",
+			code: "ignisclothing:clothes-neck-poncho",
+			quantity: 1
+		}
+	},
+	{
+		"ingredientPattern": "F_F,FCF,_F_",
+		"ingredients": {
+			"F": {
+				"type": "item",
+				"code": "game:flaxtwine"
+			},
+			"C": {
+				"type": "item",
+				"code": "game:cloth-plain"
+			}
+		},
+		"width": 3,
+		"height": 3,
+		"name": "swimsuit",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:clothes-upperbody-swimsuit",
+			"quantity": 1
+		}
+	}
+]
