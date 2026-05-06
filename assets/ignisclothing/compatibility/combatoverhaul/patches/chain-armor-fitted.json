@@ -1,0 +1,388 @@
+﻿[
+    {
+        "file": "ignisclothing:itemtypes/armor/chain-armor-fitted",
+        "op": "addmerge",
+        "path": "/behaviors",
+        "dependsOn": [ { "modId": "combatoverhaul" } ],
+        "value": [
+            {
+                "name": "CombatOverhaul:Armor",
+                "propertiesByType": {
+                    "armor-head-fittedchain-copper": {
+                        "Layers": [ "Middle" ],
+                        "Zones": [ "Head", "Neck", "Face" ],
+                        "Resists": {
+                            "PiercingAttack": 0,
+                            "SlashingAttack": 2,
+                            "BluntAttack": 0
+                        },
+                        "FlatReduction": {},
+                        "PlayerStats": {
+                            "walkspeed": 0,
+                            "manipulationSpeed": 0,
+                            "steadyAim": -0.02,
+                            "healingeffectivness": -0.09,
+                            "hungerrate": 0.09
+                        }
+                    },
+                    "armor-body-fittedchain-copper": {
+                        "Layers": [ "Middle" ],
+                        "Zones": [ "Torso", "Arms", "Hands" ],
+                        "Resists": {
+                            "PiercingAttack": 0,
+                            "SlashingAttack": 2,
+                            "BluntAttack": 0
+                        },
+                        "FlatReduction": {},
+                        "PlayerStats": {
+                            "walkspeed": 0,
+                            "manipulationSpeed": -0.04,
+                            "steadyAim": -0.06,
+                            "healingeffectivness": -0.09,
+                            "hungerrate": 0.09
+                        }
+                    },
+                    "armor-legs-fittedchain-copper": {
+                        "Layers": [ "Middle" ],
+                        "Zones": [ "Legs", "Feet" ],
+                        "Resists": {
+                            "PiercingAttack": 0,
+                            "SlashingAttack": 2,
+                            "BluntAttack": 0
+                        },
+                        "FlatReduction": {},
+                        "PlayerStats": {
+                            "walkspeed": -0.04,
+                            "manipulationSpeed": 0,
+                            "steadyAim": 0,
+                            "healingeffectivness": -0.06,
+                            "hungerrate": 0.06
+                        }
+                    },
+                    "armor-head-fittedchain-*bronze": {
+                        "Layers": [ "Middle" ],
+                        "Zones": [ "Head", "Neck", "Face" ],
+                        "Resists": {
+                            "PiercingAttack": 1,
+                            "SlashingAttack": 3,
+                            "BluntAttack": 0
+                        },
+                        "FlatReduction": {},
+                        "PlayerStats": {
+                            "walkspeed": 0,
+                            "manipulationSpeed": 0,
+                            "steadyAim": -0.02,
+                            "healingeffectivness": -0.09,
+                            "hungerrate": 0.09
+                        }
+                    },
+                    "armor-body-fittedchain-*bronze": {
+                        "Layers": [ "Middle" ],
+                        "Zones": [ "Torso", "Arms", "Hands" ],
+                        "Resists": {
+                            "PiercingAttack": 1,
+                            "SlashingAttack": 3,
+                            "BluntAttack": 0
+                        },
+                        "FlatReduction": {},
+                        "PlayerStats": {
+                            "walkspeed": 0,
+                            "manipulationSpeed": -0.04,
+                            "steadyAim": -0.06,
+                            "healingeffectivness": -0.09,
+                            "hungerrate": 0.09
+                        }
+                    },
+                    "armor-legs-fittedchain-*bronze": {
+                        "Layers": [ "Middle" ],
+                        "Zones": [ "Legs", "Feet" ],
+                        "Resists": {
+                            "PiercingAttack": 1,
+                            "SlashingAttack": 3,
+                            "BluntAttack": 0
+                        },
+                        "FlatReduction": {},
+                        "PlayerStats": {
+                            "walkspeed": -0.04,
+                            "manipulationSpeed": 0,
+                            "steadyAim": 0,
+                            "healingeffectivness": -0.06,
+                            "hungerrate": 0.06
+                        }
+                    },
+                    "armor-head-fittedchain-*iron": {
+                        "Layers": [ "Middle" ],
+                        "Zones": [ "Head", "Neck", "Face" ],
+                        "Resists": {
+                            "PiercingAttack": 2,
+                            "SlashingAttack": 4,
+                            "BluntAttack": 0
+                        },
+                        "FlatReduction": {},
+                        "PlayerStats": {
+                            "walkspeed": 0,
+                            "manipulationSpeed": 0,
+                            "steadyAim": -0.02,
+                            "healingeffectivness": -0.09,
+                            "hungerrate": 0.09
+                        }
+                    },
+                    "armor-body-fittedchain-*iron": {
+                        "Layers": [ "Middle" ],
+                        "Zones": [ "Torso", "Arms", "Hands" ],
+                        "Resists": {
+                            "PiercingAttack": 2,
+                            "SlashingAttack": 4,
+                            "BluntAttack": 0
+                        },
+                        "FlatReduction": {},
+                        "PlayerStats": {
+                            "walkspeed": 0,
+                            "manipulationSpeed": -0.04,
+                            "steadyAim": -0.06,
+                            "healingeffectivness": -0.09,
+                            "hungerrate": 0.09
+                        }
+                    },
+                    "armor-legs-fittedchain-*iron": {
+                        "Layers": [ "Middle" ],
+                        "Zones": [ "Legs", "Feet" ],
+                        "Resists": {
+                            "PiercingAttack": 2,
+                            "SlashingAttack": 4,
+                            "BluntAttack": 0
+                        },
+                        "FlatReduction": {},
+                        "PlayerStats": {
+                            "walkspeed": -0.04,
+                            "manipulationSpeed": 0,
+                            "steadyAim": 0,
+                            "healingeffectivness": -0.06,
+                            "hungerrate": 0.06
+                        }
+                    },
+                    "armor-head-fittedchain-steel": {
+                        "Layers": [ "Middle" ],
+                        "Zones": [ "Head", "Neck", "Face" ],
+                        "Resists": {
+                            "PiercingAttack": 3,
+                            "SlashingAttack": 5,
+                            "BluntAttack": 0
+                        },
+                        "FlatReduction": {},
+                        "PlayerStats": {
+                            "walkspeed": 0,
+                            "manipulationSpeed": 0,
+                            "steadyAim": -0.02,
+                            "healingeffectivness": -0.09,
+                            "hungerrate": 0.09
+                        }
+                    },
+                    "armor-body-fittedchain-steel": {
+                        "Layers": [ "Middle" ],
+                        "Zones": [ "Torso", "Arms", "Hands" ],
+                        "Resists": {
+                            "PiercingAttack": 3,
+                            "SlashingAttack": 5,
+                            "BluntAttack": 0
+                        },
+                        "FlatReduction": {},
+                        "PlayerStats": {
+                            "walkspeed": 0,
+                            "manipulationSpeed": -0.04,
+                            "steadyAim": -0.06,
+                            "healingeffectivness": -0.09,
+                            "hungerrate": 0.09
+                        }
+                    },
+                    "armor-legs-fittedchain-steel": {
+                        "Layers": [ "Middle" ],
+                        "Zones": [ "Legs", "Feet" ],
+                        "Resists": {
+                            "PiercingAttack": 3,
+                            "SlashingAttack": 5,
+                            "BluntAttack": 0
+                        },
+                        "FlatReduction": {},
+                        "PlayerStats": {
+                            "walkspeed": -0.04,
+                            "manipulationSpeed": 0,
+                            "steadyAim": 0,
+                            "healingeffectivness": -0.06,
+                            "hungerrate": 0.06
+                        }
+                    },
+                    "armor-head-fittedchain-gold": {
+                        "Layers": [ "Middle" ],
+                        "Zones": [ "Head", "Neck", "Face" ],
+                        "Resists": {
+                            "PiercingAttack": 0,
+                            "SlashingAttack": 2,
+                            "BluntAttack": 0
+                        },
+                        "FlatReduction": {},
+                        "PlayerStats": {
+                            "walkspeed": 0,
+                            "manipulationSpeed": 0,
+                            "steadyAim": -0.02,
+                            "healingeffectivness": -0.09,
+                            "hungerrate": 0.09
+                        }
+                    },
+                    "armor-body-fittedchain-gold": {
+                        "Layers": [ "Middle" ],
+                        "Zones": [ "Torso", "Arms", "Hands" ],
+                        "Resists": {
+                            "PiercingAttack": 0,
+                            "SlashingAttack": 2,
+                            "BluntAttack": 0
+                        },
+                        "FlatReduction": {},
+                        "PlayerStats": {
+                            "walkspeed": 0,
+                            "manipulationSpeed": -0.04,
+                            "steadyAim": -0.06,
+                            "healingeffectivness": -0.09,
+                            "hungerrate": 0.09
+                        }
+                    },
+                    "armor-legs-fittedchain-gold": {
+                        "Layers": [ "Middle" ],
+                        "Zones": [ "Legs", "Feet" ],
+                        "Resists": {
+                            "PiercingAttack": 0,
+                            "SlashingAttack": 2,
+                            "BluntAttack": 0
+                        },
+                        "FlatReduction": {},
+                        "PlayerStats": {
+                            "walkspeed": -0.04,
+                            "manipulationSpeed": 0,
+                            "steadyAim": 0,
+                            "healingeffectivness": -0.06,
+                            "hungerrate": 0.06
+                        }
+                    },
+                    "armor-head-fittedchain-silver": {
+                        "Layers": [ "Middle" ],
+                        "Zones": [ "Head", "Neck", "Face" ],
+                        "Resists": {
+                            "PiercingAttack": 0,
+                            "SlashingAttack": 2,
+                            "BluntAttack": 0
+                        },
+                        "FlatReduction": {},
+                        "PlayerStats": {
+                            "walkspeed": 0,
+                            "manipulationSpeed": 0,
+                            "steadyAim": -0.02,
+                            "healingeffectivness": -0.09,
+                            "hungerrate": 0.09
+                        }
+                    },
+                    "armor-body-fittedchain-silver": {
+                        "Layers": [ "Middle" ],
+                        "Zones": [ "Torso", "Arms", "Hands" ],
+                        "Resists": {
+                            "PiercingAttack": 0,
+                            "SlashingAttack": 2,
+                            "BluntAttack": 0
+                        },
+                        "FlatReduction": {},
+                        "PlayerStats": {
+                            "walkspeed": 0,
+                            "manipulationSpeed": -0.04,
+                            "steadyAim": -0.06,
+                            "healingeffectivness": -0.09,
+                            "hungerrate": 0.09
+                        }
+                    },
+                    "armor-legs-fittedchain-silver": {
+                        "Layers": [ "Middle" ],
+                        "Zones": [ "Legs", "Feet" ],
+                        "Resists": {
+                            "PiercingAttack": 0,
+                            "SlashingAttack": 2,
+                            "BluntAttack": 0
+                        },
+                        "FlatReduction": {},
+                        "PlayerStats": {
+                            "walkspeed": -0.04,
+                            "manipulationSpeed": 0,
+                            "steadyAim": 0,
+                            "healingeffectivness": -0.06,
+                            "hungerrate": 0.06
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "file": "ignisclothing:itemtypes/armor/chain-armor-fitted",
+        "op": "replace",
+        "path": "/durabilityByType",
+        "dependsOn": [ { "modId": "combatoverhaul" } ],
+        "value": {
+            "armor-head-fittedchain-gold": 1000,
+            "armor-head-fittedchain-copper": 1200,
+            "armor-head-fittedchain-silver": 1400,
+            "armor-head-fittedchain-tinbronze": 1400,
+            "armor-head-fittedchain-bismuthbronze": 1300,
+            "armor-head-fittedchain-blackbronze": 1500,
+            "armor-head-fittedchain-iron": 1600,
+            "armor-head-fittedchain-meteoriciron": 1800,
+            "armor-head-fittedchain-steel": 4000,
+            "armor-body-fittedchain-gold": 3000,
+            "armor-body-fittedchain-copper": 3600,
+            "armor-body-fittedchain-silver": 4200,
+            "armor-body-fittedchain-tinbronze": 4200,
+            "armor-body-fittedchain-bismuthbronze": 3900,
+            "armor-body-fittedchain-blackbronze": 4500,
+            "armor-body-fittedchain-iron": 4800,
+            "armor-body-fittedchain-meteoriciron": 5400,
+            "armor-body-fittedchain-steel": 12000,
+            "armor-legs-fittedchain-gold": 2000,
+            "armor-legs-fittedchain-copper": 2400,
+            "armor-legs-fittedchain-silver": 2800,
+            "armor-legs-fittedchain-tinbronze": 2800,
+            "armor-legs-fittedchain-bismuthbronze": 2600,
+            "armor-legs-fittedchain-blackbronze": 3000,
+            "armor-legs-fittedchain-iron": 3200,
+            "armor-legs-fittedchain-meteoriciron": 3600,
+            "armor-legs-fittedchain-steel": 8000
+        }
+    },
+    {
+        "file": "ignisclothing:itemtypes/armor/chain-armor-fitted",
+        "dependsOn": [ { "modId": "combatoverhaul" } ],
+        "op": "replace",
+        "path": "/attributes/protectionModifiersByType",
+        "value": { "*": null }
+    },
+    {
+        "file": "ignisclothing:itemtypes/armor/chain-armor-fitted",
+        "dependsOn": [ { "modId": "combatoverhaul" } ],
+        "op": "replace",
+        "path": "/attributes/statModifiersByType",
+        "value": { "*": null }
+    },
+    {
+        "file": "ignisclothing:itemtypes/armor/chain-armor-fitted",
+        "dependsOn": [ { "modId": "combatoverhaul" } ],
+        "op": "replace",
+        "path": "/class",
+        "value": "CombatOverhaul:WearableArmor"
+    },
+    {
+        "file": "ignisclothing:itemtypes/armor/chain-armor-fitted",
+        "dependsOn": [ { "modId": "combatoverhaul" } ],
+        "op": "add",
+        "path": "/attributes/materialCountByType",
+        "value": {
+            "*-head-*": 8,
+            "*-body-*": 16,
+            "*-legs-*": 8
+        }
+    }
+]

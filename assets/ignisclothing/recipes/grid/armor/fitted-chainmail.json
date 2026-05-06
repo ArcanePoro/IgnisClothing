@@ -1,0 +1,194 @@
+[
+	{
+		"ingredientPattern": "A",
+		"recipeGroup": 1,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "game:armor-head-chain-{metal}",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			}
+		},
+		"width": 1,
+		"height": 1,
+		"name": "chainmail head to fitted chainmail head",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-head-fittedchain-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "A",
+		"recipeGroup": 1,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "game:armor-body-chain-{metal}",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			}
+		},
+		"width": 1,
+		"height": 1,
+		"name": "chainmail body to fitted chainmail body",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-body-fittedchain-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "A",
+		"recipeGroup": 1,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "game:armor-legs-chain-{metal}",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			}
+		},
+		"width": 1,
+		"height": 1,
+		"name": "chainmail legs to fitted chainmail legs",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-legs-fittedchain-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "A",
+		"recipeGroup": 3,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-head-fittedchain-{metal}",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			}
+		},
+		"width": 1,
+		"height": 1,
+		"name": "fitted chainmail head to chainmail head",
+		"output": {
+			"type": "item",
+			"code": "game:armor-head-chain-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "A",
+		"recipeGroup": 3,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-body-fittedchain-{metal}",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			}
+		},
+		"width": 1,
+		"height": 1,
+		"name": "fitted chainmail body to chainmail body",
+		"output": {
+			"type": "item",
+			"code": "game:armor-body-chain-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "A",
+		"recipeGroup": 3,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-legs-fittedchain-{metal}",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			}
+		},
+		"width": 1,
+		"height": 1,
+		"name": "fitted chainmail legs to chainmail legs",
+		"output": {
+			"type": "item",
+			"code": "game:armor-legs-chain-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "A,C",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-head-fittedchain-{metal}",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			},
+			"C": {
+				"type": "item",
+				"code": "game:metalchain-*",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ],
+				"quantity": 1
+			}
+		},
+		"width": 1,
+		"height": 2,
+		"name": "fitted chainmail head repair",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-head-fittedchain-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "A,C",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-body-fittedchain-{metal}",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			},
+			"C": {
+				"type": "item",
+				"code": "game:metalchain-*",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ],
+				"quantity": 1
+			}
+		},
+		"width": 1,
+		"height": 2,
+		"name": "fitted chainmail body repair",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-body-fittedchain-{metal}"
+		}
+	},
+	{
+		"ingredientPattern": "A,C",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {
+				"type": "item",
+				"code": "ignisclothing:armor-legs-fittedchain-{metal}",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ]
+			},
+			"C": {
+				"type": "item",
+				"code": "game:metalchain-*",
+				"name": "metal",
+				"allowedVariants": [ "copper", "tinbronze", "bismuthbronze", "blackbronze", "iron", "meteoriciron", "steel", "silver", "gold" ],
+				"quantity": 1
+			}
+		},
+		"width": 1,
+		"height": 2,
+		"name": "fitted chainmail legs repair",
+		"output": {
+			"type": "item",
+			"code": "ignisclothing:armor-legs-fittedchain-{metal}"
+		}
+	}
+]

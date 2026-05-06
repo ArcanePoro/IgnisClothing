@@ -16,7 +16,7 @@
 		"rotateYByType": {
 			"*-north": 0,
 			"*-east": 270,
-			"*-south": 190,
+			"*-south": 180,
 			"*-west": 90
 		}
 	},

@@ -1,0 +1,145 @@
+{
+	"editor": {
+		"backDropShape": "E:/Programs/VSModelCreator/seraph-hairless",
+		"allAngles": true,
+		"entityTextureMode": true
+	},
+	"textureWidth": 64,
+	"textureHeight": 64,
+	"textureSizes": {
+		"material": [64, 64]
+	},
+	"textures": {
+		"material": "game:entity/humanoid/serapharmor/chain/bismuthbronze"
+	},
+	"elements": [
+		{
+			"name": "ArmorHelmet",
+			"from": [0.1, -0.7, -0.6],
+			"to": [0.1, -0.7, -0.6],
+			"rotationOrigin": [0.1, -0.7, -0.6],
+			"children": [
+				{
+					"name": "ArmorHelmetFace",
+					"from": [0.02, 3.8, 0.35],
+					"to": [0.34, 6.12, 5.85],
+					"rotationOrigin": [-0.16, 3.8, 0.05],
+					"uv": [32, 36],
+					"shade": true,
+					"faces": {
+						"north": {"texture": "#material", "uv": [24, 41, 24.5, 43], "autoUv": false, "snapUv": false},
+						"east": {"texture": "#material", "uv": [0, 0, 1, 1], "autoUv": false, "snapUv": false},
+						"south": {"texture": "#material", "uv": [30.5, 41, 31, 43], "autoUv": false, "snapUv": false},
+						"west": {"texture": "#material", "uv": [24.5, 41, 30.5, 43], "autoUv": false, "snapUv": false},
+						"up": {"texture": "#material", "uv": [23, 40, 23.5, 46], "rotation": 180, "autoUv": false, "snapUv": false},
+						"down": {"texture": "#material", "uv": [23.5, 40, 24, 46], "autoUv": false, "snapUv": false}
+					}
+				},
+				{
+					"name": "ArmorHelmetFace2",
+					"from": [0.02, 0, 0.35],
+					"to": [0.34, 2.55, 5.85],
+					"rotationOrigin": [-0.16, 0, 0.05],
+					"uv": [32, 36],
+					"shade": true,
+					"faces": {
+						"north": {"texture": "#material", "uv": [24, 41, 24.5, 43.5], "autoUv": false, "snapUv": false},
+						"east": {"texture": "#material", "uv": [0, 0, 1, 1], "autoUv": false, "snapUv": false},
+						"south": {"texture": "#material", "uv": [30.5, 41, 31, 43.5], "autoUv": false, "snapUv": false},
+						"west": {"texture": "#material", "uv": [24.5, 41, 30.5, 43.5], "autoUv": false, "snapUv": false},
+						"up": {"texture": "#material", "uv": [23, 40, 23.5, 46], "rotation": 180, "autoUv": false, "snapUv": false},
+						"down": {"texture": "#material", "uv": [23.5, 40, 24, 46], "autoUv": false, "snapUv": false}
+					}
+				},
+				{
+					"name": "ArmorHelmetFace3",
+					"from": [0.02, 2.54, 0.35],
+					"to": [0.34, 3.8, 0.7],
+					"rotationOrigin": [-0.16, 2.5, 0.275],
+					"uv": [32, 36],
+					"shade": true,
+					"faces": {
+						"north": {"texture": "#material", "uv": [24, 41, 24.5, 42], "autoUv": false, "snapUv": false},
+						"east": {"texture": "#material", "uv": [0, 0, 1, 1], "autoUv": false, "snapUv": false},
+						"south": {"texture": "#material", "uv": [30.5, 41, 31, 42], "autoUv": false, "snapUv": false},
+						"west": {"texture": "#material", "uv": [24.5, 41, 25, 42], "autoUv": false, "snapUv": false},
+						"up": {"texture": "#material", "uv": [23, 40, 23.5, 40.5], "rotation": 180, "autoUv": false, "snapUv": false},
+						"down": {"texture": "#material", "uv": [23.5, 40, 24, 40.5], "autoUv": false, "snapUv": false}
+					}
+				},
+				{
+					"name": "ArmorHelmetFace4",
+					"from": [0.02, 2.54, 5.5],
+					"to": [0.34, 3.8, 5.85],
+					"rotationOrigin": [-0.16, 2.5, 5.425],
+					"uv": [32, 36],
+					"shade": true,
+					"faces": {
+						"north": {"texture": "#material", "uv": [24, 41, 24.5, 42], "autoUv": false, "snapUv": false},
+						"east": {"texture": "#material", "uv": [0, 0, 1, 1], "autoUv": false, "snapUv": false},
+						"south": {"texture": "#material", "uv": [30.5, 41, 31, 42], "autoUv": false, "snapUv": false},
+						"west": {"texture": "#material", "uv": [24.5, 41, 25, 42], "autoUv": false, "snapUv": false},
+						"up": {"texture": "#material", "uv": [23, 40, 23.5, 40.5], "rotation": 180, "autoUv": false, "snapUv": false},
+						"down": {"texture": "#material", "uv": [23.5, 40, 24, 40.5], "autoUv": false, "snapUv": false}
+					}
+				},
+				{
+					"name": "ArmorHelmetFace5",
+					"from": [0.02, 0, 0.35],
+					"to": [0.64, 0.55, 5.85],
+					"rotationOrigin": [0.02, 0, 0.05],
+					"uv": [32, 36],
+					"shade": true,
+					"faces": {
+						"north": {"texture": "#material", "uv": [24, 41, 24.5, 41.5], "autoUv": false, "snapUv": false},
+						"east": {"texture": "#material", "uv": [0, 0, 1, 1], "autoUv": false, "snapUv": false},
+						"south": {"texture": "#material", "uv": [30.5, 41, 31, 41.5], "autoUv": false, "snapUv": false},
+						"west": {"texture": "#material", "uv": [24.5, 41, 30.5, 41.5], "autoUv": false, "snapUv": false},
+						"up": {"texture": "#material", "uv": [23, 40, 23.5, 46], "rotation": 180, "autoUv": false, "snapUv": false},
+						"down": {"texture": "#material", "uv": [23.5, 40, 24, 46], "autoUv": false, "snapUv": false}
+					},
+					"rotationZ": -50
+				},
+				{
+					"name": "ArmorHelmet_geo",
+					"from": [0.34, 0.1, 0.35],
+					"to": [5.46, 6.02, 5.85],
+					"rotationOrigin": [0.04, 0, 0.05],
+					"uv": [36, 17.5],
+					"shade": true,
+					"faces": {
+						"north": {"texture": "#material", "uv": [18, 28, 23.5, 34], "autoUv": false, "snapUv": false},
+						"east": {"texture": "#material", "uv": [12, 28, 18, 34], "autoUv": false, "snapUv": false},
+						"south": {"texture": "#material", "uv": [29.5, 28, 35, 34], "autoUv": false, "snapUv": false},
+						"west": {"texture": "#material", "uv": [0, 0, 1, 1], "autoUv": false, "snapUv": false},
+						"up": {"texture": "#material", "uv": [3, 28, 8.5, 34], "rotation": 180, "autoUv": false, "snapUv": false},
+						"down": {"texture": "#material", "uv": [42, 29, 47.5, 35], "autoUv": false, "snapUv": false}
+					}
+				}
+			],
+			"stepParentName": "Head"
+		},
+		{
+			"name": "ArmorHelmetBody",
+			"from": [-0.325, 3.6, -0.075],
+			"to": [5.325, 5.6, 6.275],
+			"rotationOrigin": [-0.6, 3.6, -0.5],
+			"uv": [0, 39.5],
+			"shade": true,
+			"faces": {
+				"north": {"texture": "#material", "uv": [0, 46.5, 6, 48.5], "autoUv": false, "snapUv": false},
+				"east": {"texture": "#material", "uv": [6, 46.5, 13, 48.5], "autoUv": false, "snapUv": false},
+				"south": {"texture": "#material", "uv": [13, 46.5, 19, 48.5], "autoUv": false, "snapUv": false},
+				"west": {"texture": "#material", "uv": [19, 46.5, 26, 48.5], "autoUv": false, "snapUv": false},
+				"up": {"texture": "#material", "uv": [0, 39.5, 6, 46.5], "autoUv": false, "snapUv": false},
+				"down": {"texture": "#material", "uv": [6, 39.5, 12, 46.5], "autoUv": false, "snapUv": false}
+			},
+			"stepParentName": "UpperTorso",
+			"climateColorMap": "",
+			"gradientShade": false,
+			"renderPass": 0,
+			"seasonColorMap": ""
+		}
+	],
+	"animations": []
+}

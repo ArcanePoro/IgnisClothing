@@ -1,0 +1,388 @@
+{
+	"code": "armor",
+	"class": "ItemWearable",
+	"heldTpIdleAnimation": "holdunderarm",
+	"variantgroups": [
+		{
+			"code": "bodypart",
+			"states": [ "head", "body", "legs" ]
+		},
+		{
+			"code": "construction",
+			"states": [
+				"fittedchain"
+			]
+		},
+		{
+			"code": "material",
+			"states": [
+				"copper",
+				"tinbronze",
+				"bismuthbronze",
+				"blackbronze",
+				"iron",
+				"meteoriciron",
+				"steel",
+				"gold",
+				"silver"
+			]
+		}
+	],
+	"shapeByType": {
+		"armor-head-fittedchain-*": { "base": "ignisclothing:item/armor/chain-fitted/chain-head" },
+		"armor-body-fittedchain-*": { "base": "ignisclothing:item/armor/chain-fitted/chain-body" },
+		"armor-legs-fittedchain-*": { "base": "ignisclothing:item/armor/chain-fitted/chain-legs" }
+	},
+	"textures": {
+		"material": { "base": "game:entity/humanoid/serapharmor/chain/{material}" }
+	},
+	"texturesByType": {
+		"*": {
+			"seraph": { "base": "game:block/transparent" },
+			"material": {
+				"baseByType": {
+					"*": "game:entity/humanoid/serapharmor/chain/{material}"
+				}
+			}
+		}
+	},
+	"storageFlags": 128,
+	// 'keepElements names must also be added to game/entities/humanoid/player file, under the 'disableElements' attribute.
+	"attributes": {
+		"handbook": {
+			"groupBy": [ "armor-{bodypart}-{construction}-*" ]
+		},
+		"visibleDamageEffect": true,
+		"clothesCategoryByType": {
+			"armor-head-*": "armorhead",
+			"armor-body-*": "armorbody",
+			"armor-legs-*": "armorlegs"
+		},
+		"attachableToEntity": {
+			"texturePrefixCode": "armor-{bodypart}-{construction}-{material}",
+			"categoryCodeByType": {
+				"armor-head-*": "armorhead",
+				"armor-body-*": "armorbody",
+				"armor-legs-*": "armorlegs"
+			},
+			"disableElementsByType": {
+				"armor-head-fittedchain-*": [ "hidehat", "Hair tile upper part", "ponytailhigh", "ponytaillow", "hair-uncovered", "sidehigh", "sidelow", "bangs" ],
+				"armor-head-*": [ "hidehat", "Hair tile upper part", "ponytailhigh", "ponytaillow", "hair-uncovered", "sidehigh", "sidelow", "bangs" ],
+				"armor-body-*": [ "Waist", "hideupperarm", "hidelowerarm", "mittenfrill-l", "mittenfrill-r", "glovefrill-l", "glovefrill-r" ],
+				"armor-legs-*": [ "hideshoeL", "hideshoeR", "shoefluffL", "shoefluffR" ]
+			},
+			"keepElementsByType": {
+				"armor-head-fittedchain-*": [ "hair-covered" ],
+				"armor-head-*": [ "hair-covered" ]
+			}
+		},
+		"defaultProtLoss": {
+			"perTierRelativeProtectionLoss": [ 0.03, 0.15 ],
+			"perTierFlatDamageReductionLoss": [ 0.1, 0.2 ]
+		},
+		"footStepSoundByType": {
+			"armor-body-fittedchain-*": "wearable/chain*"
+		},
+		"protectionModifiersByType": {
+			"armor-*-fittedchain-copper": {
+				"relativeProtection": 0.8,
+				"flatDamageReduction": 1.1,
+				"protectionTier": 1
+			},
+			"armor-*-fittedchain-gold": {
+				"relativeProtection": 0.82,
+				"flatDamageReduction": 1.2,
+				"protectionTier": 1
+			},
+			"armor-*-fittedchain-silver": {
+				"relativeProtection": 0.82,
+				"flatDamageReduction": 1.2,
+				"protectionTier": 2
+			},
+			"armor-*-fittedchain-tinbronze": {
+				"relativeProtection": 0.82,
+				"flatDamageReduction": 1.2,
+				"protectionTier": 2
+			},
+			"armor-*-fittedchain-bismuthbronze": {
+				"relativeProtection": 0.81,
+				"flatDamageReduction": 1.2,
+				"protectionTier": 2
+			},
+			"armor-*-fittedchain-blackbronze": {
+				"relativeProtection": 0.83,
+				"flatDamageReduction": 1.25,
+				"protectionTier": 2
+			},
+			"armor-*-fittedchain-iron": {
+				"relativeProtection": 0.84,
+				"flatDamageReduction": 1.3,
+				"protectionTier": 3
+			},
+			"armor-*-fittedchain-meteoriciron": {
+				"relativeProtection": 0.845,
+				"flatDamageReduction": 1.35,
+				"protectionTier": 3
+			},
+			"armor-*-fittedchain-steel": {
+				"relativeProtection": 0.86,
+				"flatDamageReduction": 1.4,
+				"protectionTier": 4
+			}
+		},
+		"statModifiersByType": {
+			"armor-*-fittedchain-*": {
+				"rangedWeaponsAcc": -0.03,
+				"rangedWeaponsSpeed": -0.06,
+				"walkSpeed": -0.03,
+				"healingeffectivness": -0.1,
+				"hungerrate": 0.075
+			}
+		}
+	},
+	"creativeinventory": {
+		"general": [ "*" ],
+		"items": [ "*" ],
+		"clothing": [ "*" ],
+		"ignisclothing": [ "*" ]
+	},
+	"renderAlphaTest": 0.25,
+	"durabilityByType": {
+
+		"armor-*-fittedchain-gold": 500,
+		"armor-*-fittedchain-copper": 600,
+		"armor-*-fittedchain-silver": 700,
+		"armor-*-fittedchain-tinbronze": 700,
+		"armor-*-fittedchain-bismuthbronze": 650,
+		"armor-*-fittedchain-blackbronze": 750,
+		"armor-*-fittedchain-iron": 800,
+		"armor-*-fittedchain-meteoriciron": 900,
+		"armor-*-fittedchain-steel": 2000
+
+	},
+
+	"fpHandTransformByType": {
+		"armor-head-*": {
+			"translation": {
+				"x": 0.4,
+				"y": -1.9,
+				"z": -0.5
+			},
+			"rotation": {
+				"x": 163,
+				"y": -111,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1.7,
+				"z": 0.5
+			},
+			"scale": 2.15
+		},
+		"armor-body-*": {
+			"translation": {
+				"x": 0.4,
+				"y": -1.2,
+				"z": -0.5
+			},
+			"rotation": {
+				"x": 163,
+				"y": -111,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1.6,
+				"z": 0.5
+			},
+			"scale": 2.15
+		},
+		"armor-legs-*": {
+			"translation": {
+				"x": 0.4,
+				"y": -1.2,
+				"z": -0.5
+			},
+			"rotation": {
+				"x": 163,
+				"y": -111,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1.6,
+				"z": 0.5
+			},
+			"scale": 2.15
+		}
+	},
+	"tpHandTransformByType": {
+		"armor-head-*": {
+			"translation": {
+				"x": -0.82,
+				"y": -2.2,
+				"z": -0.5
+			},
+			"rotation": {
+				"x": 18,
+				"y": 169,
+				"z": 30
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1.7,
+				"z": 0.5
+			},
+			"scale": 0.64
+		},
+		"armor-body-*": {
+			"translation": {
+				"x": -1,
+				"y": -1.9,
+				"z": -0.5
+			},
+			"rotation": {
+				"x": 97,
+				"y": -168,
+				"z": 94
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1.5,
+				"z": 0.5
+			},
+			"scale": 0.67
+		},
+		"armor-legs-*": {
+			"translation": {
+				"x": -0.7,
+				"y": -0.6,
+				"z": -0.4
+			},
+			"rotation": {
+				"x": 95,
+				"y": -20,
+				"z": -91
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.7,
+				"z": 0.5
+			},
+			"scale": 0.74
+		}
+	},
+	"guiTransformByType": {
+		"armor-head-*": {
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -26,
+				"y": -46,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.6,
+				"y": 1.72,
+				"z": 0.5
+			},
+			"scale": 2
+		},
+		"armor-body-*": {
+			"translation": {
+				"x": 3,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -26,
+				"y": -46,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1.11,
+				"z": 0.5
+			},
+			"scale": 1.37
+		},
+		"armor-legs-*": {
+			"translation": {
+				"x": 1,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": -26,
+				"y": -46,
+				"z": -180
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 0.6,
+				"z": 0.5
+			},
+			"scale": 1.25
+		}
+	},
+	"groundTransformByType": {
+		"armor-head-*": {
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"origin": {
+				"x": 0.34,
+				"y": 1.71,
+				"z": 0.5
+			},
+			"scale": 3.1
+		},
+		"armor-body-*": {
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": 90
+			},
+			"origin": {
+				"x": 0.34,
+				"y": 1.12,
+				"z": 0.5
+			},
+			"scale": 3.1
+		},
+		"armor-legs-*": {
+			"translation": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"rotation": {
+				"x": 0,
+				"y": 0,
+				"z": 90
+			},
+			"origin": {
+				"x": 0.34,
+				"y": 1.12,
+				"z": 0.5
+			},
+			"scale": 3.1
+		}
+	}
+}

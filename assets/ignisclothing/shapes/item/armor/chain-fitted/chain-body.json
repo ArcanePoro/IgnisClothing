@@ -1,0 +1,171 @@
+{
+	"editor": {
+		"backDropShape": "E:/Programs/VSModelCreator/seraph-faceless",
+		"collapsedPaths": "Root/ArmorLowerArmL,Root/GamCoatL,Root/ArmorCoatL,Root/GamCoatR,Root/ArmorLowerArmR,Root/ArmorUpperArmR,Root/ArmorUpperArmL,Root/ArmorCoatR",
+		"allAngles": true,
+		"entityTextureMode": true
+	},
+	"textureWidth": 64,
+	"textureHeight": 64,
+	"textureSizes": {
+		"material": [64, 64]
+	},
+	"textures": {
+		"material": "game:entity/humanoid/serapharmor/chain/blackbronze"
+	},
+	"elements": [
+		{
+			"name": "ArmorUpperTorso",
+			"from": [-0.05, -0.19, -0.15],
+			"to": [5.15, 5.19, 6.35],
+			"rotationOrigin": [-0.225, -0.2, -0.3],
+			"uv": [0, 0],
+			"shade": true,
+			"faces": {
+				"north": {"texture": "#material", "uv": [0, 6.5, 5.5, 11.5], "autoUv": false, "snapUv": false},
+				"east": {"texture": "#material", "uv": [5.5, 6.5, 12, 11.5], "autoUv": false, "snapUv": false},
+				"south": {"texture": "#material", "uv": [12, 6.5, 17.5, 11.5], "autoUv": false, "snapUv": false},
+				"west": {"texture": "#material", "uv": [17.5, 6.5, 24, 11.5], "autoUv": false, "snapUv": false},
+				"up": {"texture": "#material", "uv": [0, 0, 5.5, 6.5], "autoUv": false, "snapUv": false},
+				"down": {"texture": "#material", "uv": [5.5, 0, 11, 6.5], "autoUv": false, "snapUv": false}
+			},
+			"stepParentName": "UpperTorso"
+		},
+		{
+			"name": "ArmorLowerTorso",
+			"from": [-0.09, -0.49, -0.465],
+			"to": [5.09, 5.09, 6.465],
+			"rotationOrigin": [-0.175, -0.5, -0.3],
+			"uv": [2, 11.5],
+			"shade": true,
+			"faces": {
+				"north": {"texture": "#material", "uv": [0, 18, 5.5, 23.5], "autoUv": false, "snapUv": false},
+				"east": {"texture": "#material", "uv": [5.5, 18, 12, 23.5], "autoUv": false, "snapUv": false},
+				"south": {"texture": "#material", "uv": [12, 18, 17.5, 23.5], "autoUv": false, "snapUv": false},
+				"west": {"texture": "#material", "uv": [17.5, 18, 24, 23.5], "autoUv": false, "snapUv": false},
+				"up": {"texture": "#material", "uv": [0, 11.5, 5.5, 18], "autoUv": false, "snapUv": false},
+				"down": {"texture": "#material", "uv": [5.5, 11.5, 11, 18], "autoUv": false, "snapUv": false}
+			},
+			"stepParentName": "LowerTorso"
+		},
+		{
+			"name": "ArmorCoatR",
+			"from": [-0.425, 0.75, -0.3],
+			"to": [4.665, 7.04, 2.75],
+			"rotationOrigin": [-0.675, 0.2, -0.675],
+			"uv": [18, 24.5],
+			"shade": true,
+			"faces": {
+				"north": {"texture": "#material", "uv": [18, 28, 23.5, 35], "autoUv": false, "snapUv": false},
+				"east": {"texture": "#material", "uv": [23.5, 28, 27, 35], "autoUv": false, "snapUv": false},
+				"south": {"texture": "#material", "uv": [27, 28, 32.5, 35], "autoUv": false, "snapUv": false},
+				"west": {"texture": "#material", "uv": [32.5, 28, 36, 35], "autoUv": false, "snapUv": false},
+				"up": {"texture": "#material", "uv": [18, 24.5, 23.5, 28], "rotation": 180, "autoUv": false, "snapUv": false},
+				"down": {"texture": "#material", "uv": [23.5, 24.5, 29, 28], "rotation": 180, "autoUv": false, "snapUv": false}
+			},
+			"stepParentName": "UpperFootR"
+		},
+		{
+			"name": "ArmorCoatL",
+			"from": [-0.45, 0.75, 0.475],
+			"to": [4.64, 7.04, 3.565],
+			"rotationOrigin": [-0.7, 0.2, 0.1],
+			"uv": [0, 24.5],
+			"shade": true,
+			"faces": {
+				"north": {"texture": "#material", "uv": [0, 28, 5.5, 35], "autoUv": false, "snapUv": false},
+				"east": {"texture": "#material", "uv": [5.5, 28, 9, 35], "autoUv": false, "snapUv": false},
+				"south": {"texture": "#material", "uv": [9, 28, 14.5, 35], "autoUv": false, "snapUv": false},
+				"west": {"texture": "#material", "uv": [14.5, 28, 18, 35], "autoUv": false, "snapUv": false},
+				"up": {"texture": "#material", "uv": [0, 24.5, 5.5, 28], "autoUv": false, "snapUv": false},
+				"down": {"texture": "#material", "uv": [5.5, 24.5, 11, 28], "autoUv": false, "snapUv": false}
+			},
+			"stepParentName": "UpperFootL"
+		},
+		{
+			"name": "ArmorLowerArmL",
+			"from": [-0.05, 1.8, -0.125],
+			"to": [2.55, 8.2, 2.125],
+			"rotationOrigin": [-0.2, 1.8, -0.3],
+			"uv": [26, 9],
+			"shade": true,
+			"faces": {
+				"north": {"texture": "#material", "uv": [26, 11.5, 28.5, 17.5], "autoUv": false, "snapUv": false},
+				"east": {"texture": "#material", "uv": [28.5, 11.5, 31, 17.5], "autoUv": false, "snapUv": false},
+				"south": {"texture": "#material", "uv": [31, 11.5, 33.5, 17.5], "autoUv": false, "snapUv": false},
+				"west": {"texture": "#material", "uv": [33.5, 11.5, 36, 17.5], "autoUv": false, "snapUv": false},
+				"up": {"texture": "#material", "uv": [26, 9, 28.5, 11.5], "autoUv": false, "snapUv": false},
+				"down": {"texture": "#material", "uv": [28.5, 9, 31, 11.5], "autoUv": false, "snapUv": false}
+			},
+			"stepParentName": "LowerArmL",
+			"climateColorMap": "",
+			"gradientShade": false,
+			"renderPass": 0,
+			"seasonColorMap": ""
+		},
+		{
+			"name": "ArmorLowerArmR",
+			"from": [-0.05, 1.8, -0.125],
+			"to": [2.55, 8.2, 2.125],
+			"rotationOrigin": [-0.2, 1.8, -0.4],
+			"uv": [36, 9],
+			"shade": true,
+			"faces": {
+				"north": {"texture": "#material", "uv": [36, 11.5, 38.5, 17.5], "autoUv": false, "snapUv": false},
+				"east": {"texture": "#material", "uv": [38.5, 11.5, 41, 17.5], "autoUv": false, "snapUv": false},
+				"south": {"texture": "#material", "uv": [41, 11.5, 43.5, 17.5], "autoUv": false, "snapUv": false},
+				"west": {"texture": "#material", "uv": [43.5, 11.5, 46, 17.5], "autoUv": false, "snapUv": false},
+				"up": {"texture": "#material", "uv": [36, 9, 38.5, 11.5], "autoUv": false, "snapUv": false},
+				"down": {"texture": "#material", "uv": [38.5, 9, 41, 11.5], "autoUv": false, "snapUv": false}
+			},
+			"stepParentName": "LowerArmR",
+			"climateColorMap": "",
+			"gradientShade": false,
+			"renderPass": 0,
+			"seasonColorMap": ""
+		},
+		{
+			"name": "ArmorUpperArmL",
+			"from": [-0.05, -0.2, -0.075],
+			"to": [3.025, 7.2, 2.075],
+			"rotationOrigin": [-0.2, -0.2, -0.2],
+			"uv": [26, 0],
+			"shade": true,
+			"faces": {
+				"north": {"texture": "#material", "uv": [26, 2, 29, 9], "autoUv": false, "snapUv": false},
+				"east": {"texture": "#material", "uv": [29, 2, 31, 9], "autoUv": false, "snapUv": false},
+				"south": {"texture": "#material", "uv": [31, 2, 34, 9], "autoUv": false, "snapUv": false},
+				"west": {"texture": "#material", "uv": [34, 2, 36, 9], "autoUv": false, "snapUv": false},
+				"up": {"texture": "#material", "uv": [26, 0, 29, 2], "autoUv": false, "snapUv": false},
+				"down": {"texture": "#material", "uv": [29, 0, 32, 2], "autoUv": false, "snapUv": false}
+			},
+			"stepParentName": "UpperArmL",
+			"climateColorMap": "",
+			"gradientShade": false,
+			"renderPass": 0,
+			"seasonColorMap": ""
+		},
+		{
+			"name": "ArmorUpperArmR",
+			"from": [-0.05, -0.2, -0.175],
+			"to": [3.025, 7.2, 1.975],
+			"rotationOrigin": [-0.2, -0.2, -0.3],
+			"uv": [36, 0],
+			"shade": true,
+			"faces": {
+				"north": {"texture": "#material", "uv": [36, 2, 39, 9], "autoUv": false, "snapUv": false},
+				"east": {"texture": "#material", "uv": [39, 2, 41, 9], "autoUv": false, "snapUv": false},
+				"south": {"texture": "#material", "uv": [41, 2, 44, 9], "autoUv": false, "snapUv": false},
+				"west": {"texture": "#material", "uv": [44, 2, 46, 9], "autoUv": false, "snapUv": false},
+				"up": {"texture": "#material", "uv": [36, 0, 39, 2], "autoUv": false, "snapUv": false},
+				"down": {"texture": "#material", "uv": [39, 0, 42, 2], "autoUv": false, "snapUv": false}
+			},
+			"stepParentName": "UpperArmR",
+			"climateColorMap": "",
+			"gradientShade": false,
+			"renderPass": 0,
+			"seasonColorMap": ""
+		}
+	],
+	"animations": []
+}

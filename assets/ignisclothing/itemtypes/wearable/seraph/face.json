@@ -1,53 +1,67 @@
 {
-	code: "clothes",
-	class: "ItemWearable",
-	variantgroups: [
-		{ code: "category",  states: ["face"] },
-		{ code: "face", states: [
-			"bugsgoggles", "barnowl", "yeenhead"
-		  ] }
+	"code": "clothes",
+	"class": "ItemWearable",
+	"variantgroups": [
+		{
+			"code": "category",
+			"states": [ "face" ]
+		},
+		{
+			"code": "face",
+			"states": [
+				"bugsgoggles",
+				"barnowl",
+				"yeenhead",
+				"disguiseglasses"
+			]
+		}
 	],
-	shapeByType: { 
-		"*": {	base: "ignisclothing:entity/humanoid/seraph/clothing/face/{face}" }
+	"shapeByType": {
+		"*": { "base": "ignisclothing:entity/humanoid/seraph/clothing/face/{face}" }
 	},
-	storageFlags: 128,
-	attributes: {
-		clothescategory: "face",
-		wearableAttachment: true,
-		warmth: 0.25,
-		handbook: {
-			groupBy: ["clothes-{category}-*"]
+	"storageFlags": 128,
+	"attributes": {
+		"clothescategory": "face",
+		"wearableAttachment": true,
+		"warmth": 0.25,
+		"handbook": {
+			"groupBy": [ "clothes-{category}-*" ]
 		}
 	},
-	attributesByType: {
-		"*-face-bugsgoggles": { eyeprotective: true },
+	"attributesByType": {
+		"*-face-bugsgoggles": { "eyeprotective": true },
 		"*-face-barnowl": {
-			disableElements: ["hidefacialhair"]
+			"disableElements": [ "hidefacialhair" ]
 		},
 		"*": {
-			disableElements: ["hidefacialhair"]
+			"disableElements": [ "hidefacialhair" ]
 		}
 	},
-	textures: {
-		"seraph": { base: "game:block/transparent" }
+	"textures": {
+		"seraph": { "base": "game:block/transparent" }
 	},
-	texturesByType: {
+	"texturesByType": {
 		"*-face-bugsgoggles": {
-			"black.png": { base: "game:block/black" },
-			"smoky.png": { base: "game:block/glass/smoky" },
-			"linen.png": { base: "game:block/linen" },
-			"brass.png": { base: "game:block/metal/ingot/brass" }
+			"black.png": { "base": "game:block/black" },
+			"smoky.png": { "base": "game:block/glass/smoky" },
+			"linen.png": { "base": "game:block/linen" },
+			"brass.png": { "base": "game:block/metal/ingot/brass" }
 		},
 		"*-face-barnowl": {
-			"black.png": { base: "game:block/black" },
-			"pinkoyster.png": { base: "game:block/plant/mushroom/pinkoyster/pinkoyster" },
-			"plain.png": { base: "game:item/tool/shield/leather/plain" },
-			"white.png": { base: "game:item/tool/shield/leather/white" }
+			"black.png": { "base": "game:block/black" },
+			"pinkoyster.png": { "base": "game:block/plant/mushroom/pinkoyster/pinkoyster" },
+			"plain.png": { "base": "game:item/tool/shield/leather/plain" },
+			"white.png": { "base": "game:item/tool/shield/leather/white" }
 		}
 	},
-	creativeinventory: { "general": ["*"], "items": ["*"], "clothing": ["*"], "ignisclothing": ["*"] },
-	renderAlphaTest: 0.25,
-	guiTransformByType: {
+	"creativeinventory": {
+		"general": [ "*" ],
+		"items": [ "*" ],
+		"clothing": [ "*" ],
+		"ignisclothing": [ "*" ]
+	},
+	"renderAlphaTest": 0.25,
+	"guiTransformByType": {
 		"*-face-bugsgoggles": {
 			"rotate": false,
 			"translation": {
@@ -105,6 +119,24 @@
 			},
 			"scale": 2.25
 		},
+		"*-face-disguiseglasses": {
+			"translation": {
+				"x": 7,
+				"y": 5,
+				"z": 0
+			},
+			"rotation": {
+				"x": 1,
+				"y": -121,
+				"z": -167
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1.62,
+				"z": 0.5
+			},
+			"scale": 3.96
+		},
 		"*": {
 			"rotation": {
 				"x": 1,
@@ -119,7 +151,7 @@
 			"scale": 3.23
 		}
 	},
-	tpHandTransformByType: {
+	"tpHandTransformByType": {
 		"*-face-bugsgoggles": {
 			"translation": {
 				"x": -0.74,
@@ -175,6 +207,24 @@
 			},
 			"scale": 0.7
 		},
+		"*-face-disguiseglasses": {
+			"translation": {
+				"x": -0.4,
+				"y": -1.6,
+				"z": -0.5
+			},
+			"rotation": {
+				"x": 0,
+				"y": 180,
+				"z": 25
+			},
+			"origin": {
+				"x": 0.5,
+				"y": 1.5,
+				"z": 0.5
+			},
+			"scale": 1
+		},
 		"*": {
 			"translation": {
 				"x": -0.8,
@@ -194,9 +244,17 @@
 			"scale": 0.55
 		}
 	},
-	groundTransform: {
-		rotation: { x: 0, y: 0, z: 0 },
-		origin: { x: 0.5, y: 1.5, z: 0.5299 },
-		scale: 2.58
+	"groundTransform": {
+		"rotation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"origin": {
+			"x": 0.5,
+			"y": 1.5,
+			"z": 0.5299
+		},
+		"scale": 2.58
 	}
 }

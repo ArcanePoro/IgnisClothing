@@ -9,7 +9,7 @@
         "Th3"
     ],
     "description": "Custom Clothing/Items for Ignis Group.",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "dependencies": {
         "game": "1.21.0"
     }

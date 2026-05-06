@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "IgnisClothing/1.0.0": {
+        "runtime": {
+          "IgnisClothing.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "IgnisClothing/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
